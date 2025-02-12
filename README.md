@@ -1,5 +1,5 @@
 # Binabox - homework project
 
-Student: 
+Student: Maryna Strynatko
 
-Mentor: 
+Mentor: Andrii Datsenko
