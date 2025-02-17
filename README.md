@@ -1,5 +1,7 @@
-# Binabox - homework project
+# _Binabox - homework project_
 
-Student: Maryna Strynatko
+**Student:** [Maryna Strynatko][def]
 
-Mentor: Andrii Datsenko
+**Mentor:** Andrii Datsenko
+
+[def]: https://github.com/marynamango
