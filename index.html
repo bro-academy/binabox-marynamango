@@ -9,36 +9,36 @@
 
   <body>
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header__wrapper">
         <a class="logo">
           <img src="#" alt="Binabox logo" width="35" height="40" />
           <img src="#" alt="Binabox" width="133" height="21" />
         </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Home</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="blog.html">Blog</a>
+            <li class="nav__item">
+              <a class="nav__link" href="blog.html">Blog</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Catalog</a>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Catalog</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="contact-us.html">Contact us</a>
+            <li class="nav__item">
+              <a class="nav__link" href="contact-us.html">Contact us</a>
             </li>
           </ul>
         </nav>
         <form class="search">
-          <input class="search-input" type="search" placeholder="search" />
-          <button class="search-button" type="submit">&#128269;</button>
+          <input class="search__input" type="search" placeholder="search" />
+          <button class="search__button" type="submit">&#128269;</button>
         </form>
-        <a class="button button--secondary header__button" href="#" target="_blank">
+        <a class="button button--secondary button__icon-left" href="#" target="_blank">
           <img src="#" alt="Discord logo" width="24" height="24" />
           Discord
         </a>
-        <a class="button button--primary header__button" href="#" target="_blank">
+        <a class="button button--primary button__icon-left" href="#" target="_blank">
           <img src="#" alt="Connect icon" width="24" height="24" />
           Connect
         </a>
@@ -47,10 +47,10 @@
 
     <main>
       <section class="hero">
-        <div class="hero-wrapper">
-          <div class="hero-content-wrapper">
-            <h1 class="hero__title">WITH <span class="hero-section__company-name">BINABOX</span> EXPLORE NFT COLLECTION</h1>
-            <p class="hero__description">
+        <div class="hero__wrapper">
+          <div class="hero__content-wrapper">
+            <h1 class="hero__title">WITH <span class="hero__highlight">BINABOX</span> EXPLORE NFT COLLECTION</h1>
+            <p class="hero__desc">
               We are the best way to check the rarity of NFT collection
             </p>
             <div class="hero__stats">
@@ -63,8 +63,8 @@
                 <p class="hero__stat-value">1000+</p>
               </div>
             </div>
-            <a class="button button--primary hero__button" href="#">Connect Wallet</a>
-            <a class="button button--secondary hero__button" href="#">Whitelist now</a>
+            <a class="button button--primary" href="#">Connect Wallet</a>
+            <a class="button button--secondary" href="#">Whitelist now</a>
           </div>
           <img class="hero__img" src="#" alt="Binabox cube" width="576" height="576" />
         </div>
@@ -72,49 +72,50 @@
 
       <section class="catalog">
         <div class="catalog__header-wrapper">
-          <h2 class="catalog__title">Catalog</h2>
+          <h2 class="catalog__title">
+            <img src="#" alt="folder icon" width="24" height="24">Catalog</h2>
           <div class="catalog__controls">
-            <a class="button button--secondary catalog__button" href="#">See all</a>
-            <button class="button button--secondary scroll-button" type="button">&lt;</button> <!--blocks-->
-            <button class="button button--primary scroll-button" type="button">&gt;</button>
+            <a class="button button--secondary" href="#">See all</a>
+            <button class="button button--secondary button__only-icon" type="button">&lt;</button> <!--blocks-->
+            <button class="button button--primary button__only-icon" type="button">&gt;</button>
           </div>
         </div>
         <!-- Catalog Products -->
-        <div class="product-wrapper">
-          <a class="product__link" href="#">
-            <article class="product">
+        <div class="product__wrapper">
+          <a class="product" href="#">
+            <article class="product__card">
               <span class="label">New</span>
               <img class="product__img" src="#" alt="Skeleton" />
               <p class="product__price">$199</p>
               <h3 class="product__name">Name Product</h3>
             </article>
           </a>
-          <a class="product__link" href="#">
-            <article class="product">
+          <a class="product" href="#">
+            <article class="product__card">
               <span class="label">New</span>
               <img class="product__img" src="#" alt="Cat" />
               <p class="product__price">$199</p>
               <h3 class="product__name">Name Product</h3>
             </article>
           </a>
-          <a class="product__link" href="#">
-            <article class="product">
+          <a class="product" href="#">
+            <article class="product__card">
               <span class="label label--updated">Sold out</span>
               <img class="product__img" src="#" alt="Scissors" />
               <p class="product__price">$199</p>
               <h3 class="product__name">Name Product</h3>
             </article>
           </a>
-          <a class="product__link" href="#">
-            <article class="product">
+          <a class="product" href="#">
+            <article class="product__card">
               <span class="label">New</span>
               <img class="product__img" src="#" alt="Device" />
               <p class="product__price">$199</p>
               <h3 class="product__name">Name Product</h3>
             </article>
           </a>
-          <a class="product__link" href="#">
-            <article class="product">
+          <a class="product" href="#">
+            <article class="product__card">
               <span class="label">New</span>
               <img class="product__img" src="#" alt="Gamebox" />
               <p class="product__price">$199</p>
@@ -127,161 +128,161 @@
       <section class="blog">
         <div class="blog__wrapper">
           <h2 class="blog__title">Our Blog</h2>
-          <div class="blog-post-wrapper">
+          <div class="blog__list">
             <!-- Blog Article 1 -->
-            <article class="blog-post">
-              <a class="blog-post__link" href="#">
+            <article class="post">
+              <a class="post__link" href="#">
                 <span class="label">NFT</span>
-                <img class="blog-post__img" src="#" alt="Face" />
+                <img class="post__img" src="#" alt="Face" />
               </a>
-              <div class="blog-post__info-wrapper">
-                <span class="blog-post__profile-info">
-                  <img class="blog-post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
+              <div class="post__info-wrapper">
+                <span class="post__profile-info">
+                  <img class="post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time class="blog-post__date-info" datetime="2022-06-20">
-                  <img class="blog-post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
+                <time class="post__date-info" datetime="2022-06-20">
+                  <img class="post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3 class="blog-post__title">Sonic live</h3>
-              <p class="blog-post__description">
+              <h3 class="post__title">Sonic live</h3>
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="blog-post__button-wrapper">
-                <a class="button button--secondary blog-post__button" href="#">Read more ></a>
+              <div class="button__icon-right-wrapper">
+                <a class="button button--secondary button__icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 2 and 3 (Right side block divided by two articles) -->
-            <article class="blog-post">
-              <a class="blog-post__link" href="#">
+            <article class="post">
+              <a class="post__link" href="#">
                 <span class="label">NFT</span>
-                <img class="blog-post__img" src="#" alt="Skeleton" />
+                <img class="post__img" src="#" alt="Skeleton" />
               </a>
-              <div class="blog-post__info-wrapper">
-                <span class="blog-post__profile-info">
-                  <img class="blog-post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
+              <div class="post__info-wrapper">
+                <span class="post__profile-info">
+                  <img class="post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time class="blog-post__date-info" datetime="2022-06-20">
-                  <img class="blog-post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
+                <time class="post__date-info" datetime="2022-06-20">
+                  <img class="post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3 class="blog-post__title">Sonic live</h3>
-              <p class="blog-post__description">
+              <h3 class="post__title">Sonic live</h3>
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="blog-post__button-wrapper">
-                <a class="button button--secondary blog-post__button" href="#">Read more ></a>
+              <div class="button__icon-right-wrapper">
+                <a class="button button--secondary button__icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 3 -->
-            <article class="blog-post">
-              <a class="blog-post__link" href="#">
+            <article class="post">
+              <a class="post__link" href="#">
                 <span class="label">NFT</span>
-                <img class="blog-post__img" src="#" alt="Cat" />
+                <img class="post__img" src="#" alt="Cat" />
               </a>
-              <div class="blog-post__info-wrapper">
-                <span class="blog-post__profile-info">
-                  <img class="blog-post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
+              <div class="post__info-wrapper">
+                <span class="post__profile-info">
+                  <img class="post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time class="blog-post__date-info" datetime="2022-06-20">
-                  <img class="blog-post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
+                <time class="post__date-info" datetime="2022-06-20">
+                  <img class="post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3 class="blog-post__title">Sonic live</h3>
-              <p class="blog-post__description">
+              <h3 class="post__title">Sonic live</h3>
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="blog-post__button-wrapper">
-                <a class="button button--secondary blog-post__button" href="#">Read more ></a>
+              <div class="button__icon-right-wrapper">
+                <a class="button button--secondary button__icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 4 and 5 (Left side block divided by 2 articles) -->
-            <article class="blog-post">
-              <a class="blog-post__link" href="#">
+            <article class="post">
+              <a class="post__link" href="#">
                 <span class="label">NFT</span>
-                <img class="blog-post__img" src="#" alt="Chimpanzee" />
+                <img class="post__img" src="#" alt="Chimpanzee" />
               </a>
-              <div class="blog-post__info-wrapper">
-                <span class="blog-post__profile-info">
-                  <img class="blog-post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
+              <div class="post__info-wrapper">
+                <span class="post__profile-info">
+                  <img class="post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time class="blog-post__date-info" datetime="2022-06-20">
-                  <img class="blog-post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
+                <time class="post__date-info" datetime="2022-06-20">
+                  <img class="post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3 class="blog-post__title">Sonic live</h3>
-              <p class="blog-post__description">
+              <h3 class="post__title">Sonic live</h3>
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="blog-post__button-wrapper">
-                <a class="button button--secondary blog-post__button" href="#">Read more ></a>
+              <div class="button__icon-right-wrapper">
+                <a class="button button--secondary button__icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 5 -->
-            <article class="blog-post">
-              <a class="blog-post__link" href="#">
+            <article class="post">
+              <a class="post__link" href="#">
                 <span class="label">NFT</span>
-                <img class="blog-post__img" src="#" alt="Pigeon" />
+                <img class="post__img" src="#" alt="Pigeon" />
               </a>
-              <div class="blog-post__info-wrapper">
-                <span class="blog-post__profile-info">
-                  <img class="blog-post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
+              <div class="post__info-wrapper">
+                <span class="post__profile-info">
+                  <img class="post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time class="blog-post__date-info" datetime="2022-06-20">
-                  <img class="blog-post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
+                <time class="post__date-info" datetime="2022-06-20">
+                  <img class="post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3 class="blog-post__title">Sonic live</h3>
-              <p class="blog-post__description">
+              <h3 class="post__title">Sonic live</h3>
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="blog-post__button-wrapper">
-                <a class="button button--secondary blog-post__button" href="#">Read more ></a>
+              <div class="button__icon-right-wrapper">
+                <a class="button button--secondary button__icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 6 -->
-            <article class="blog-post">
-              <a class="blog-post__link" href="#">
+            <article class="post">
+              <a class="post__link" href="#">
                 <span class="label">NFT</span>
-                <img class="blog-post__img" src="#" alt="Gamebox" />
+                <img class="post__img" src="#" alt="Gamebox" />
               </a>
-              <div class="blog-post__info-wrapper">
-                <span class="blog-post__profile-info">
-                  <img class="blog-post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
+              <div class="post__info-wrapper">
+                <span class="post__profile-info">
+                  <img class="post__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time class="blog-post__date-info" datetime="2022-06-20">
-                  <img class="blog-post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
+                <time class="post__date-info" datetime="2022-06-20">
+                  <img class="post__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3 class="blog-post__title">Sonic live</h3>
-              <p class="blog-post__description">
+              <h3 class="post__title">Sonic live</h3>
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="blog-post__button-wrapper">
-                <a class="button button--secondary blog-post__button" href="#">Read more ></a>
+              <div class="button__icon-right-wrapper">
+                <a class="button button--secondary button__icon-right" href="#">Read more ></a>
               </div>
             </article>
           </div>
           <!-- Read more button after all the blocks -->
-          <div class="section-button-wrapper">
-            <a class="button button--secondary section-button" href="#">Read more</a>
+          <div class="button__wrapper">
+            <a class="button button--secondary" href="#">Read more</a>
           </div>
         </div>
       </section>
@@ -289,7 +290,7 @@
       <section class="about-us">
         <div class="about-us__wrapper">
           <h2 class="about-us__title">About us</h2>
-          <p class="about-us__description">
+          <p class="about-us__desc">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat
             cupidatat non proident, sunt in culpa qui officia dese runt mollit
@@ -299,36 +300,36 @@
           <ol class="about-us__list">
             <li class="about-us__item">
               <h3 class="about-us__item-title">High quality</h3>
-              <p class="about-us_item-description">
+              <p class="about-us__item-desc">
                 Lorem Ipsum is simply dummy text of the printing and Ipsum
                 typesetting industry.
               </p>
             </li>
             <li class="about-us__item--highlighted">
               <h3 class="about-us__item-title">Big collection</h3>
-              <p class="about-us_item-description">
+              <p class="about-us__item-desc">
                 Lorem Ipsum is simply dummy text of the printing and Ipsum
                 typesetting industry.
               </p>
             </li>
             <li class="about-us__item">
               <h3 class="about-us__item-title">Top resourse</h3>
-              <p class="about-us_item-description">
+              <p class="about-us__item-desc">
                 Lorem Ipsum is simply dummy text of the printing and Ipsum
                 typesetting industry.
               </p>
             </li>
             <li class="about-us__item">
               <h3 class="about-us__item-title">Big community</h3>
-              <p class="about-us_item-description">
+              <p class="about-us__item-desc">
                 Lorem Ipsum is simply dummy text of the printing and Ipsum
                 typesetting industry.
               </p>
             </li>
           </ol>
           <!-- Read more after "About us" -->
-          <div class="section-button-wrapper">
-            <a class="button button--secondary section-button" href="#">Read more</a>
+          <div class="button__wrapper">
+            <a class="button button--secondary" href="#">Read more</a>
           </div>
         </div>
       </section>
@@ -600,38 +601,38 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="logo-description-wrapper">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__col">
           <a class="logo">
             <img src="#" alt="Binabox logo" width="36" height="40" />
             <img src="#" alt="Binabox" width="133" height="21" />
           </a>
-          <p class="footer-description">We are the best way to check the rarity of NFT collection.</p>
+          <p class="footer__text">We are the best way to check the rarity of NFT collection.</p>
         </div>
-        <div class="footer-nav-wrapper">
+        <div class="footer__col">
           <div class="footer-nav">
             <strong class="footer-nav__title">Subscribe</strong>
             <ul class="footer-nav__list">
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Home</a></li>
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Blog</a></li>
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Catalog</a></li>
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Contact us</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Home</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Catalog</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Contact us</a></li>
             </ul>
           </div>
           <div class="footer-nav">
             <strong class="footer-nav__title">Company</strong>
             <ul class="footer-nav__list">
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Terms Conditions</a></li>
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Privacy Policy</a></li>
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Whitepaper</a></li>
-              <li class="footer-nav__item"><a class="footer-nav_link" href="#">Help Center</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Terms Conditions</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Privacy Policy</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Whitepaper</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Help Center</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main-footer__wrapper">
-        <p class="footer-copyright">BINABOX 2022 - All rights reserved</p>
+      <div class="footer__wrapper">
+        <p class="copyright">BINABOX 2022 - All rights reserved</p>
         <ul class="social">
           <li class="social__item">
             <a class="social__link" href="#">
