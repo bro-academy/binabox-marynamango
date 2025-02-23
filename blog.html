@@ -33,11 +33,11 @@
           <input class="search__input" type="search" placeholder="search" />
           <button class="search__button" type="submit">&#128269;</button>
         </form>
-        <a class="button button--secondary button__icon-left" href="#" target="_blank">
+        <a class="button button--secondary button__icon-text" href="#" target="_blank">
           <img src="#" alt="Discord logo" width="24" height="24" />
           Discord
         </a>
-        <a class="button button--primary button__icon-left" href="#" target="_blank">
+        <a class="button button--primary button__icon-text" href="#" target="_blank">
           <img src="#" alt="Connect icon" width="24" height="24" />
           Connect
         </a>
@@ -61,8 +61,8 @@
 
       <div>
         <aside class="aside">
-          <div class="aside__list-wrapper">
-            <strong class="section-title-small">Categories</strong> <!--Same as catalog title 24px left-->
+          <div class="aside__box">
+            <strong class="aside__title">Categories</strong> <!--Same as catalog title 24px left-->
             <ul class="aside__list">
               <li class="aside__item"><a class="aside__link" href="blog.html">Our blog (12)</a></li>
               <li class="aside__item"><a class="aside__link" href="#">Metaverse (24)</a></li>
@@ -73,15 +73,15 @@
               <li class="aside__item"><a class="aside__link" href="#">Crypto (430)</a></li>
             </ul>
           </div>
-          <div class="aside__list-wrapper">
-            <strong class="section-title-small">Tag</strong> <!--Same as catalog title 24px left-->
-            <ul class="tags">
-              <li class="tags__item"><a class="tags__link" href="#">NFT</a></li>
-              <li class="tags__item"><a class="tags__link" href="#">ICO</a></li>
-              <li class="tags__item"><a class="tags__link" href="#">Robot</a></li>
-              <li class="tags__item"><a class="tags__link" href="#">Crypto</a></li>
-              <li class="tags__item"><a class="tags__link" href="#">Lauchpad</a></li>
-              <li class="tags__item"><a class="tags__link" href="#">Metaverse</a></li>
+          <div class="aside__box">
+            <strong class="aside__title">Tag</strong> <!--Same as catalog title 24px left-->
+            <ul class="action-tag">
+              <li class="action-tag__item"><a class="action-tag__link" href="#">NFT</a></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">ICO</a></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">Robot</a></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">Crypto</a></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">Lauchpad</a></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">Metaverse</a></li>
             </ul>
           </div>
         </aside>
@@ -145,18 +145,18 @@
           </ul>
           <div class="quote-wrapper">
             <blockquote class="quote">
-              <p class="quote__text"> <!--Same as article-subtitle (maybe different padding)? 28px left-->
+              <p class="quote__text">
                 “The first huge metaverse arena to arrange live sports, hang out
                 and even make bets and wagers”
               </p>
             </blockquote>
             <div class="quote__footer">
-              <img class="quote__rating-icon" src="#" alt="Rating" width="15" height="15" />
+              <img class="quote__rating-icon" src="#" alt="Rating icon" width="15" height="15" />
               <span class="quote__rating">8.5/10</span>
               <cite class="quote__author">Markout Corporation</cite>
             </div>
           </div>
-          <div class="figure__wrapper">
+          <div class="figure-wrapper">
             <figure class="figure">
               <img class="figure__img" src="#" alt="Dragon head" width="500" height="394" />
               <figcaption class="figure__caption">Photo caption</figcaption>
@@ -184,7 +184,7 @@
             nickname, it will be standardized and used across the Binance
             ecosystem.
           </p>
-          <h3 class="article-subtitle">NFT Avatar Generators</h3> <!--Article__subtitle 28px left-->
+          <h3 class="article__subtitle">NFT Avatar Generators</h3> <!--Article__subtitle 28px left-->
           <p class="article__text">
             You can find a range of NFT marketplaces where you can buy existing
             NFTs or list your own NFTs for sale.
@@ -194,27 +194,27 @@
           <!--Tags and links-->
           <!--div for centering-->
           <div class="article__footer-wrapper">
-            <ul class="tags">
-              <li class="tags__item"><span class="article__footer__label">Tags:</span></li>
-              <li class="tags__item"><a class="tags__link" href="#">NFT</a></li>
-              <li class="tags__item"><a class="tags__link" href="#">ICO</a></li>
-              <li class="tags__item"><a class="tags__link" href="#">Crypto</a></li>
+            <ul class="action-tag">
+              <li class="action-tag__item"><span class="article__footer-label">Tags:</span></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">NFT</a></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">ICO</a></li>
+              <li class="action-tag__item"><a class="action-tag__link" href="#">Crypto</a></li>
             </ul>
-            <ul class="footer-social">
-              <li class="footer-social__item"><span class="article__footer__label">Share:</span></li>
-              <li class="footer-social__item">
-                <a class="footer-social__link" href="#">
-                  <img class="footer-social__img" src="#" alt="Twitter logo" width="16" height="16" />
+            <ul class="action-tag">
+              <li class="action-tag__item"><span class="article__footer-label">Share:</span></li>
+              <li class="action-tag__item">
+                <a class="action-tag__link" href="#">
+                  <img class="action-tag__img" src="#" alt="Twitter logo" width="16" height="16" />
                 </a>
               </li>
-              <li class="footer-social__item">
-                <a class="footer-social__link" href="#">
-                  <img class="footer-social__img" src="#" alt="Facebook logo" width="16" height="16" />
+              <li class="action-tag__item">
+                <a class="action-tag__link" href="#">
+                  <img class="action-tag__img" src="#" alt="Facebook logo" width="16" height="16" />
                 </a>
               </li>
-              <li class="footer-social__item">
-                <a class="footer-social__link" href="#">
-                  <img class="footer-social__img" src="#" alt="Instagram logo" width="16" height="16" />
+              <li class="action-tag__item">
+                <a class="action-tag__link" href="#">
+                  <img class="action-tag__img" src="#" alt="Instagram logo" width="16" height="16" />
                 </a>
               </li>
             </ul>
