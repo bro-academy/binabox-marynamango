@@ -17,7 +17,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="index.html">Home</a>
+              <a class="nav__link nav__link--active" href="index.html">Home</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="blog.html">Blog</a>
@@ -34,11 +34,11 @@
           <input class="search__input" type="search" placeholder="search" />
           <button class="search__button" type="submit">&#128269;</button>
         </form>
-        <a class="button button--secondary button__icon-text" href="#" target="_blank">
+        <a class="button button--secondary button--icon-left" href="#" target="_blank">
           <img src="#" alt="Discord logo" width="24" height="24" />
           Discord
         </a>
-        <a class="button button--primary button__icon-text" href="#" target="_blank">
+        <a class="button button--primary button--icon-left" href="#" target="_blank">
           <img src="#" alt="Connect icon" width="24" height="24" />
           Connect
         </a>
@@ -63,71 +63,75 @@
                 <p class="promo__stat-value">1000+</p>
               </div>
             </div>
-            <a class="button button--primary" href="#">Connect Wallet</a>
-            <a class="button button--secondary" href="#">Whitelist now</a>
+            <div class="button-layout">
+              <a class="button button--primary" href="#">Connect Wallet</a>
+              <a class="button button--secondary" href="#">Whitelist now</a>
+            </div>
           </div>
           <img class="promo__img" src="#" alt="Binabox cube" width="576" height="576" />
         </div>
       </section>
 
       <section class="catalog">
-        <div class="catalog__header-wrapper">
-          <h2 class="catalog__title">
-            <img src="#" alt="folder icon" width="24" height="24">Catalog</h2>
-          <div class="catalog__controls">
-            <a class="button button--secondary" href="#">See all</a>
-            <button class="button button--secondary button__only-icon" type="button">&lt;</button>
-            <button class="button button--primary button__only-icon" type="button">&gt;</button>
+        <div class="catalog__wrapper">
+          <div class="catalog__header-wrapper">
+            <h2 class="catalog__title">
+              <img src="#" alt="folder icon" width="24" height="24">Catalog</h2>
+            <div class="catalog__controls">
+              <a class="button button--secondary" href="#">See all</a>
+              <button class="button button--secondary button--only-icon" type="button">&lt;</button>
+              <button class="button button--primary button--only-icon" type="button">&gt;</button>
+            </div>
           </div>
-        </div>
-        <!-- Catalog Products -->
-        <div class="catalog__list">
-          <a class="product" href="#"> <!--product product__dtl class on explore page-->
-            <article class="product__card">
-              <span class="label">New</span>
-              <img class="product__img" src="#" alt="Skeleton" width="253" height="324" />
-              <p class="product__price">$199</p>
-              <h3 class="product__name">Name Product</h3>
-            </article>
-          </a>
-          <a class="product" href="#">
-            <article class="product__card">
-              <span class="label">New</span>
-              <img class="product__img" src="#" alt="Cat" width="253" height="324" />
-              <p class="product__price">$199</p>
-              <h3 class="product__name">Name Product</h3>
-            </article>
-          </a>
-          <a class="product" href="#">
-            <article class="product__card">
-              <span class="label label--updated">Sold out</span>
-              <img class="product__img" src="#" alt="Scissors" width="253" height="324" />
-              <p class="product__price">$199</p>
-              <h3 class="product__name">Name Product</h3>
-            </article>
-          </a>
-          <a class="product" href="#">
-            <article class="product__card">
-              <span class="label">New</span>
-              <img class="product__img" src="#" alt="Device" width="253" height="324" />
-              <p class="product__price">$199</p>
-              <h3 class="product__name">Name Product</h3>
-            </article>
-          </a>
-          <a class="product" href="#">
-            <article class="product__card">
-              <span class="label">New</span>
-              <img class="product__img" src="#" alt="Gamebox" width="253" height="324" />
-              <p class="product__price">$199</p>
-              <h3 class="product__name">Name Product</h3>
-            </article>
-          </a>
+          <!-- Catalog Products -->
+          <div class="catalog__list">
+            <a class="product" href="#"> <!--product product__dtl class on explore page-->
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Skeleton" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Cat" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label label--updated">Sold out</span>
+                <img class="product__img" src="#" alt="Scissors" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Device" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Gamebox" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="blog">
         <div class="blog__wrapper">
-          <h2 class="section-title">Our Blog</h2> <!--Section title 36px centered-->
+          <h2 class="section-title section-title--center">Our Blog</h2> <!--Section title 36px centered-->
           <div class="blog__list">
             <!-- Blog Article 1 -->
             <article class="post">
@@ -150,8 +154,8 @@
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="button-text-icon-wrapper">
-                <a class="button button--secondary button__text-icon" href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 2 and 3 (Right side block divided by two articles) -->
@@ -175,8 +179,8 @@
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="button-text-icon-wrapper">
-                <a class="button button--secondary button__text-icon" href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 3 -->
@@ -200,8 +204,8 @@
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="button-text-icon-wrapper">
-                <a class="button button--secondary button__text-icon" href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 4 and 5 (Left side block divided by 2 articles) -->
@@ -225,8 +229,8 @@
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="button-text-icon-wrapper">
-                <a class="button button--secondary button__text-icon" href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 5 -->
@@ -250,8 +254,8 @@
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="button-text-icon-wrapper">
-                <a class="button button--secondary button__text-icon" href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 6 -->
@@ -275,8 +279,8 @@
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="button-text-icon-wrapper">
-                <a class="button button--secondary button__text-icon" href="#">Read more ></a>
+              <div class="button-wrapper">
+                <a class="button button--secondary button--icon-right button--narrow" href="#">Read more ></a>
               </div>
             </article>
           </div>
@@ -289,7 +293,7 @@
 
       <section class="about-us">
         <div class="about-us__wrapper">
-          <h2 class="section-title">About us</h2> <!--Section title 36px centered-->
+          <h2 class="section-title section-title--center">About us</h2> <!--Section title 36px centered-->
           <p class="about-us__desc">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat
@@ -299,32 +303,40 @@
           </p>
           <ol class="about-us__list">
             <li class="about-us__item">
-              <h3 class="about-us__item-title">High quality</h3>
-              <p class="about-us__item-desc">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">High quality</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
             <li class="about-us__item--highlighted">
-              <h3 class="about-us__item-title">Big collection</h3>
-              <p class="about-us__item-desc">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">Big collection</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
             <li class="about-us__item">
-              <h3 class="about-us__item-title">Top resourse</h3>
-              <p class="about-us__item-desc">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">Top resourse</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
             <li class="about-us__item">
-              <h3 class="about-us__item-title">Big community</h3>
-              <p class="about-us__item-desc">
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">Big community</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
           </ol>
           <!-- Read more after "About us" -->
@@ -336,8 +348,8 @@
 
       <section class="team">
         <div class="team__wrapper">
-          <h2 class="section-title">Our team</h2> <!--Section title 36px centered-->
-          <div class="team__members-wrapper">
+          <h2 class="section-title section-title--center">Our team</h2> <!--Section title 36px centered-->
+          <div class="team__list">
             <div class="member">
               <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
               <h3 class="member__name">Jason Smith</h3>
@@ -568,7 +580,7 @@
 
       <section class="faq">
         <div class="faq__wrapper">
-          <h2 class="section-title">FAQs</h2> <!--Section title 36px centered-->
+          <h2 class="section-title section-title--center">FAQs</h2> <!--Section title 36px centered-->
           <details class="faq__item" open>
             <summary class="faq__question">What are the NFTs?</summary>
             <p class="faq__answer">
