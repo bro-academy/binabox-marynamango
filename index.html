@@ -8,555 +8,567 @@
   </head>
 
   <body>
-    <header>
-      <div>
-        <a>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="logo">
           <img src="#" alt="Binabox logo" width="35" height="40" />
           <img src="#" alt="Binabox" width="133" height="21" />
         </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="index.html">Home</a>
             </li>
-            <li>
-              <a href="blog.html">Blog</a>
+            <li class="nav__item">
+              <a class="nav__link" href="blog.html">Blog</a>
             </li>
-            <li>
-              <a href="catalog.html">Catalog</a>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Catalog</a>
             </li>
-            <li>
-              <a href="contact-us.html">Contact us</a>
+            <li class="nav__item">
+              <a class="nav__link" href="contact-us.html">Contact us</a>
             </li>
           </ul>
         </nav>
-        <form>
-          <input type="search" placeholder="search" />
-          <button type="submit">&#128269;</button>
+        <form class="search">
+          <input class="search__input" type="search" placeholder="search" />
+          <button class="search__button" type="submit">&#128269;</button>
         </form>
-        <a href="#" target="_blank">
+        <a class="button button--secondary button--icon-left" href="#" target="_blank">
           <img src="#" alt="Discord logo" width="24" height="24" />
           Discord
         </a>
-        <a href="#" target="_blank">
+        <a class="button button--primary button--icon-left" href="#" target="_blank">
           <img src="#" alt="Connect icon" width="24" height="24" />
           Connect
         </a>
       </div>
     </header>
 
-    <main>
-      <section>
-        <div>
-          <div>
-            <h1>WITH <span>BINABOX</span> EXPLORE NFT COLLECTION</h1>
-            <p>
-              We are the best way to check the rarity of NFT
-              <span>collection</span>
+    <main class="main-container">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__content-wrapper">
+            <h1 class="promo__title">WITH <span class="promo__highlight">BINABOX</span> EXPLORE NFT COLLECTION</h1>
+            <p class="promo__desc">
+              We are the best way to check the rarity of NFT collection
             </p>
-            <div>
-              <div>
-                <p>Total Iteam</p>
-                <p>2240+</p>
+            <div class="promo__stats">
+              <div class="promo__stat-item">
+                <p class="promo__stat-term">Total Iteam</p>
+                <p class="promo__stat-value">2240+</p>
               </div>
-              <div>
-                <p>Profiles whitelisted</p>
-                <p>1000+</p>
+              <div class="promo__stat-item">
+                <p class="promo__stat-term">Profiles whitelisted</p>
+                <p class="promo__stat-value">1000+</p>
               </div>
             </div>
-            <a href="#">Connect Wallet</a>
-            <a href="#">Whitelist now</a>
+            <div class="button-layout">
+              <a class="button button--primary" href="#">Connect Wallet</a>
+              <a class="button button--secondary" href="#">Whitelist now</a>
+            </div>
           </div>
-          <img src="#" alt="Binabox cube" width="576" height="576" />
+          <img class="promo__img" src="#" alt="Binabox cube" width="576" height="576" />
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Catalog</h2>
-          <div>
-            <a href="#">See all</a>
-            <button type="button">&lt;</button>
-            <button type="button">&gt;</button>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <div class="catalog__header-wrapper">
+            <h2 class="catalog__title">
+              <img src="#" alt="folder icon" width="24" height="24">Catalog</h2>
+            <div class="catalog__controls">
+              <a class="button button--secondary" href="#">See all</a>
+              <button class="button button--secondary button--only-icon" type="button">&lt;</button>
+              <button class="button button--primary button--only-icon" type="button">&gt;</button>
+            </div>
           </div>
-        </div>
-        <!-- Catalog Products -->
-        <div>
-          <a href="#">
-            <article>
-              <span>New</span>
-              <img src="#" alt="Skeleton" />
-              <p>$199</p>
-              <h3>Name Product</h3>
-            </article>
-          </a>
-          <a href="#">
-            <article>
-              <span>New</span>
-              <img src="#" alt="Cat" />
-              <p>$199</p>
-              <h3>Name Product</h3>
-            </article>
-          </a>
-          <a href="#">
-            <article>
-              <span>Sold out</span>
-              <img src="#" alt="Scissors" />
-              <p>$199</p>
-              <h3>Name Product</h3>
-            </article>
-          </a>
-          <a href="#">
-            <article>
-              <span>New</span>
-              <img src="#" alt="Device" />
-              <p>$199</p>
-              <h3>Name Product</h3>
-            </article>
-          </a>
-          <a href="#">
-            <article>
-              <span>New</span>
-              <img src="#" alt="Gamebox" />
-              <p>$199</p>
-              <h3>Name Product</h3>
-            </article>
-          </a>
+          <!-- Catalog Products -->
+          <div class="catalog__list">
+            <a class="product" href="#"> <!--product product__dtl class on explore page-->
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Skeleton" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Cat" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label label--updated">Sold out</span>
+                <img class="product__img" src="#" alt="Scissors" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Device" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+            <a class="product" href="#">
+              <article class="product__card">
+                <span class="label">New</span>
+                <img class="product__img" src="#" alt="Gamebox" width="253" height="324" />
+                <p class="product__price">$199</p>
+                <h3 class="product__name">Name Product</h3>
+              </article>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Our Blog</h2>
-          <div>
+      <section class="blog">
+        <div class="blog__wrapper">
+          <h2 class="section-title section-title--center">Our Blog</h2> <!--Section title 36px centered-->
+          <div class="blog__list">
             <!-- Blog Article 1 -->
-            <article>
-              <a href="#">
-                <span>NFT</span>
-                <img src="#" alt="Face" />
+            <article class="post">
+              <a class="post__link" href="#">
+                <span class="label">NFT</span>
+                <img class="post__img" src="#" alt="Face" width="736" height="664" />
               </a>
-              <div>
-                <span>
-                  <img src="#" alt="user-icon" width="16" height="16" />
+              <div class="info"> <!--Independent element-->
+                <span class="info__profile">
+                  <img class="info__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time datetime="2022-06-20">
-                  <img src="#" alt="calendar" width="16" height="16" />
+                <time class="info__date" datetime="2022-06-20">
+                  <img class="info__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3>Sonic live</h3>
-              <p>
+              <h3 class="post__title">Sonic live</h3> <!--Depending on the parent 36px left-->
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div>
-                <a href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 2 and 3 (Right side block divided by two articles) -->
-            <article>
-              <a href="#">
-                <span>NFT</span>
-                <img src="#" alt="Skeleton" />
+            <article class="post">
+              <a class="post__link" href="#">
+                <span class="label">NFT</span>
+                <img class="post__img" src="#" alt="Skeleton" width="736" height="198" />
               </a>
-              <div>
-                <span>
-                  <img src="#" alt="user-icon" width="16" height="16" />
+              <div class="info"> <!--Independent element-->
+                <span class="info__profile">
+                  <img class="info__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time datetime="2022-06-20">
-                  <img src="#" alt="calendar" width="16" height="16" />
+                <time class="info__date" datetime="2022-06-20">
+                  <img class="info__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3>Sonic live</h3>
-              <p>
+              <h3 class="post__title">Sonic live</h3> <!--Depending on the parent 36px left-->
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div>
-                <a href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 3 -->
-            <article>
-              <a href="#">
-                <span>NFT</span>
-                <img src="#" alt="Cat" />
+            <article class="post">
+              <a class="post__link" href="#">
+                <span class="label">NFT</span>
+                <img class="post__img" src="#" alt="Cat" width="736" height="198" />
               </a>
-              <div>
-                <span>
-                  <img src="#" alt="user-icon" width="16" height="16" />
+              <div class="info"> <!--Independent element-->
+                <span class="info__profile">
+                  <img class="info__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time datetime="2022-06-20">
-                  <img src="#" alt="calendar" width="16" height="16" />
+                <time class="info__date" datetime="2022-06-20">
+                  <img class="info__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3>Sonic live</h3>
-              <p>
+              <h3 class="post__title">Sonic live</h3> <!--Depending on the parent 36px left-->
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div>
-                <a href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 4 and 5 (Left side block divided by 2 articles) -->
-            <article>
-              <a href="#">
-                <span>NFT</span>
-                <img src="#" alt="Chimpanzee" />
+            <article class="post">
+              <a class="post__link" href="#">
+                <span class="label">NFT</span>
+                <img class="post__img" src="#" alt="Chimpanzee" width="736" height="198" />
               </a>
-              <div>
-                <span>
-                  <img src="#" alt="user-icon" width="16" height="16" />
+              <div class="info"> <!--Independent element-->
+                <span class="info__profile">
+                  <img class="info__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time datetime="2022-06-20">
-                  <img src="#" alt="calendar" width="16" height="16" />
+                <time class="info__date" datetime="2022-06-20">
+                  <img class="info__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3>Sonic live</h3>
-              <p>
+              <h3 class="post__title">Sonic live</h3> <!--Depending on the parent 36px left-->
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div>
-                <a href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 5 -->
-            <article>
-              <a href="#">
-                <span>NFT</span>
-                <img src="#" alt="Pigeon" />
+            <article class="post">
+              <a class="post__link" href="#">
+                <span class="label">NFT</span>
+                <img class="post__img" src="#" alt="Duck" width="736" height="198" />
               </a>
-              <div>
-                <span>
-                  <img src="#" alt="user-icon" width="16" height="16" />
+              <div class="info"> <!--Independent element-->
+                <span class="info__profile">
+                  <img class="info__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time datetime="2022-06-20">
-                  <img src="#" alt="calendar" width="16" height="16" />
+                <time class="info__date" datetime="2022-06-20">
+                  <img class="info__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3>Sonic live</h3>
-              <p>
+              <h3 class="post__title">Sonic live</h3> <!--Depending on the parent 36px left-->
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div>
-                <a href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 6 -->
-            <article>
-              <a href="#">
-                <span>NFT</span>
-                <img src="#" alt="Gamebox" />
+            <article class="post">
+              <a class="post__link" href="#">
+                <span class="label">NFT</span>
+                <img class="post__img" src="#" alt="Gamebox" width="736" height="664" />
               </a>
-              <div>
-                <span>
-                  <img src="#" alt="user-icon" width="16" height="16" />
+              <div class="info"> <!--Independent element-->
+                <span class="info__profile">
+                  <img class="info__profile-icon" src="#" alt="user-icon" width="16" height="16" />
                   Tony Nguyen
                 </span>
-                <time datetime="2022-06-20">
-                  <img src="#" alt="calendar" width="16" height="16" />
+                <time class="info__date" datetime="2022-06-20">
+                  <img class="info__calendar-icon" src="#" alt="calendar" width="16" height="16" />
                   20 Jun 2022
                 </time>
               </div>
-              <h3>Sonic live</h3>
-              <p>
+              <h3 class="post__title">Sonic live</h3> <!--Depending on the parent 36px left-->
+              <p class="post__desc">
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div>
-                <a href="#">Read more ></a>
+              <div class="button-wrapper">
+                <a class="button button--secondary button--icon-right button--narrow" href="#">Read more ></a>
               </div>
             </article>
           </div>
           <!-- Read more button after all the blocks -->
-          <div>
-            <a href="#">Read more</a>
+          <div class="button-wrapper">
+            <a class="button button--secondary" href="#">Read more</a>
           </div>
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>About us</h2>
-          <p>
+      <section class="about-us">
+        <div class="about-us__wrapper">
+          <h2 class="section-title section-title--center">About us</h2> <!--Section title 36px centered-->
+          <p class="about-us__desc">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat
             cupidatat non proident, sunt in culpa qui officia dese runt mollit
             anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu
             epteur sint occaecat
           </p>
-          <ol>
-            <li>
-              <h3>High quality</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+          <ol class="about-us__list">
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">High quality</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
-            <li>
-              <h3>Big collection</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+            <li class="about-us__item--highlighted">
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">Big collection</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
-            <li>
-              <h3>Top resourse</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">Top resourse</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
-            <li>
-              <h3>Big community</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and Ipsum
-                typesetting industry.
-              </p>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">
+                <h3 class="about-us__heading">Big community</h3>
+                <p class="about-us__info">
+                  Lorem Ipsum is simply dummy text of the printing and Ipsum
+                  typesetting industry.
+                </p>
+              </a>
             </li>
           </ol>
           <!-- Read more after "About us" -->
-          <div>
-            <a href="#">Read more</a>
+          <div class="button-wrapper">
+            <a class="button button--secondary" href="#">Read more</a>
           </div>
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>Our team</h2>
-          <div>
-            <div>
-              <img src="#" alt="Jason Smith photo" width="127" height="127" />
-              <h3>Jason Smith</h3>
-              <p>Co - Founder</p>
-              <ul>
-                <li>
-                  <a href="#">
+      <section class="team">
+        <div class="team__wrapper">
+          <h2 class="section-title section-title--center">Our team</h2> <!--Section title 36px centered-->
+          <div class="team__list">
+            <div class="member">
+              <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
+              <h3 class="member__name">Jason Smith</h3>
+              <p class="member__position">Co - Founder</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Twitter link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Facebook link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Telegram link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="LinkedIn link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Instagram link" width="24" height="24" />
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <img src="#" alt="Jason Smith photo" width="127" height="127" />
-              <h3>Jason Smith</h3>
-              <p>Co - Founder</p>
-              <ul>
-                <li>
-                  <a href="#">
+            <div class="member">
+              <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
+              <h3 class="member__name">Jason Smith</h3>
+              <p class="member__position">Co - Founder</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Twitter link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Facebook link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Telegram link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="LinkedIn link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Instagram link" width="24" height="24" />
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <img src="#" alt="Jason Smith photo" width="127" height="127" />
-              <h3>Jason Smith</h3>
-              <p>Co - Founder</p>
-              <ul>
-                <li>
-                  <a href="#">
+            <div class="member">
+              <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
+              <h3 class="member__name">Jason Smith</h3>
+              <p class="member__position">Co - Founder</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Twitter link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Facebook link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Telegram link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="LinkedIn link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Instagram link" width="24" height="24" />
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <img src="#" alt="Jason Smith photo" width="127" height="127" />
-              <h3>Jason Smith</h3>
-              <p>Co - Founder</p>
-              <ul>
-                <li>
-                  <a href="#">
+            <div class="member">
+              <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
+              <h3 class="member__name">Jason Smith</h3>
+              <p class="member__position">Co - Founder</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Twitter link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Facebook link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Telegram link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="LinkedIn link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Instagram link" width="24" height="24" />
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <img src="#" alt="Jason Smith photo" width="127" height="127" />
-              <h3>Jason Smith</h3>
-              <p>Co - Founder</p>
-              <ul>
-                <li>
-                  <a href="#">
+            <div class="member">
+              <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
+              <h3 class="member__name">Jason Smith</h3>
+              <p class="member__position">Co - Founder</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Twitter link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Facebook link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Telegram link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="LinkedIn link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Instagram link" width="24" height="24" />
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <img src="#" alt="Jason Smith photo" width="127" height="127" />
-              <h3>Jason Smith</h3>
-              <p>Co - Founder</p>
-              <ul>
-                <li>
-                  <a href="#">
+            <div class="member">
+              <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
+              <h3 class="member__name">Jason Smith</h3>
+              <p class="member__position">Co - Founder</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Twitter link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Facebook link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Telegram link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="LinkedIn link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Instagram link" width="24" height="24" />
                   </a>
                 </li>
               </ul>
             </div>
-            <div>
-              <img src="#" alt="Jason Smith photo" width="127" height="127" />
-              <h3>Jason Smith</h3>
-              <p>Co - Founder</p>
-              <ul>
-                <li>
-                  <a href="#">
+            <div class="member">
+              <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
+              <h3 class="member__name">Jason Smith</h3>
+              <p class="member__position">Co - Founder</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Twitter link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Facebook link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Telegram link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="LinkedIn link" width="24" height="24" />
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="social__item">
+                  <a class="social__link" href="#">
                     <img src="#" alt="Instagram link" width="24" height="24" />
                   </a>
                 </li>
@@ -566,33 +578,33 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <h2>FAQs</h2>
-          <details open>
-            <summary>What are the NFTs?</summary>
-            <p>
+      <section class="faq">
+        <div class="faq__wrapper">
+          <h2 class="section-title section-title--center">FAQs</h2> <!--Section title 36px centered-->
+          <details class="faq__item" open>
+            <summary class="faq__question">What are the NFTs?</summary>
+            <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum
               lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
             </p>
           </details>
-          <details>
-            <summary>How do i get NFTs?</summary>
-            <p>
+          <details class="faq__item">
+            <summary class="faq__question">How do i get NFTs?</summary>
+            <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum
               lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
             </p>
           </details>
-          <details>
-            <summary>How can we buy your NFTs?</summary>
-            <p>
+          <details class="faq__item">
+            <summary class="faq__question">How can we buy your NFTs?</summary>
+            <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum
               lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
             </p>
           </details>
-          <details>
-            <summary>Who are the team behind the project?</summary>
-            <p>
+          <details class="faq__item">
+            <summary class="faq__question">Who are the team behind the project?</summary>
+            <p class="faq__answer">
               Urna vitae erat et lacus, consectetur ac nulla vestibulum
               lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
             </p>
@@ -601,66 +613,66 @@
       </section>
     </main>
 
-    <footer>
-      <div>
-        <div>
-          <a>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__col">
+          <a class="logo">
             <img src="#" alt="Binabox logo" width="36" height="40" />
             <img src="#" alt="Binabox" width="133" height="21" />
           </a>
-          <p>We are the best way to check the rarity of NFT collection.</p>
+          <p class="footer__text">We are the best way to check the rarity of NFT collection.</p>
         </div>
-        <div>
-          <div>
-            <strong>Subscribe</strong>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Catalog</a></li>
-              <li><a href="#">Contact us</a></li>
+        <div class="footer__col">
+          <div class="footer-nav">
+            <strong class="footer-nav__title">Subscribe</strong>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Home</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Catalog</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Contact us</a></li>
             </ul>
           </div>
-          <div>
-            <strong>Company</strong>
-            <ul>
-              <li><a href="#">Terms Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Whitepaper</a></li>
-              <li><a href="#">Help Center</a></li>
+          <div class="footer-nav">
+            <strong class="footer-nav__title">Company</strong>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Terms Conditions</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Privacy Policy</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Whitepaper</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Help Center</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div>
-        <p>BINABOX 2022 - All rights reserved</p>
-        <ul>
-          <li>
-            <a href="#">
+      <div class="footer__wrapper">
+        <p class="copyright">BINABOX 2022 - All rights reserved</p>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <img src="#" alt="Twitter link" width="24" height="24" />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <img src="#" alt="Facebook link" width="24" height="24" />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <img src="#" alt="Telegram link" width="24" height="24" />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <img src="#" alt="YouTube link" width="24" height="24" />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <img src="#" alt="TikTok link" width="24" height="24" />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="social__item">
+            <a class="social__link" href="#">
               <img src="#" alt="Discord link" width="24" height="24" />
             </a>
           </li>
