@@ -1,0 +1,471 @@
+.bakbak-one-regular {
+    font-family: "Bakbak One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+body {
+    color: #f5f8fb;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56rem;
+    letter-spacing: 0rem;
+    font-family: "Poppins", serif;
+    background-color: #0D0D15;
+}
+
+h1 {
+    color: #f5f8fb;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.89rem;
+    line-height: 3.44rem;
+    letter-spacing: -0.03rem;
+    font-family: "Bakbak One", serif;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  padding: 0rem;
+}
+
+.nav__link {
+  color: #f5f8fb;
+  font-weight: 600;
+  font-size: 0.88em;
+  line-height: 1.33em;
+  letter-spacing: 0rem;
+  padding: 0.44rem 1.11rem;
+  text-decoration: none;
+}
+
+.nav__link--active {
+  border-bottom: 0.11rem solid #0265DC;
+}
+
+.search__input {
+  color: #e7eef7a8;
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0.11rem;
+}
+
+.button {
+  color: #f5f8fb;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.56rem;
+  text-decoration: none;
+  padding: 0.56rem 1.33rem;
+}
+
+.button--primary {
+  border: #0265DC;
+  background-color: #0265DC;
+  border-style: solid;
+  border-width: 0.11rem;
+}
+
+.button--secondary {
+  border: #D0D7FB2B;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0.11rem;
+}
+
+.promo__highlight {
+  color: #0265DC;
+}
+
+.promo__desc {
+  font-weight: 500;
+  font-size: 1.11rem;
+}
+
+.promo__stat-term {
+  color: #EFF5FAD1;
+  line-height: 1.33rem;
+}
+
+.promo__stat-value {
+  font-size: 2.89rem;
+  line-height: 3.44rem;
+  letter-spacing: -0.03;
+  font-family: "Bakbak One", serif;
+}
+
+.catalog__title {
+  color: #F8F7FF;
+  font-weight: 400;
+  font-size: 1.33rem;
+  line-height: 1.78rem;
+  font-family: "Bakbak One", serif;
+}
+
+/* Something is wrong here, i am not sure which paddings to put, or if i need to put height and witdth of the buttons */
+.button--only-icon {
+  padding: 0rem 0.89rem;
+  width: 2.67rem;
+  height: 2.67rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  text-decoration: none;
+}
+
+.product__card {
+  background-color: #1D1C28;
+}
+
+.label {
+  color: #0265DC;
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+  font-weight: 600;
+  background-color: #F5F8FB;
+  padding: 0.44rem 0.56rem;
+}
+
+.label--updated {
+  color: #f5f8fb;
+  background-color: #EA3829;
+}
+
+.product__price {
+  color: #f5f8fb;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.67rem;
+  letter-spacing: -0.03rem;
+  font-family: "Bakbak One", serif;
+}
+
+.product__name {
+  color: #EFF5FAD1;
+  font-weight: 500;
+  font-size: 1.11rem;
+}
+
+.section-title {
+  color: #F8F7FF;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.67rem;
+  letter-spacing: -0.03rem;
+  font-family: "Bakbak One", serif;
+  text-align: center;
+}
+
+.post {
+  background-color: #1D1C28;
+}
+
+.post__link {
+  text-decoration: none;
+}
+
+/* If it will be the icon from the font and not an image, will have to put it for info__profile and info__date separatelly */
+.info {
+  color: #EFF5FAD1;
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+}
+
+.post__title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.67rem;
+  letter-spacing: -0.03rem;
+  font-family: "Bakbak One", serif;
+}
+
+.post__desc {
+  color: #EFF5FAD1;
+  font-size: 0.89rem;
+  line-height: 1.33rem;
+}
+
+.button--icon-right {
+  font-size: 0.89rem;
+  line-height: 1.33rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us__desc {
+  color: #EFF5FAD1;
+  font-weight: 500;
+  font-size: 1.11rem;
+  text-align: center;
+}
+
+.about-us__item {
+  background-color: #1A1925;
+}
+
+.about-us__link {
+  text-decoration: none;
+}
+
+.about-us__heading {
+  color: #F5F8FB;
+  font-weight: 400;
+  font-size: 1.33rem;
+  line-height: 1.78rem;
+  font-family: "Bakbak One", serif;
+}
+
+.about-us__info {
+  color: #EFF5FAD1;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.member {
+  background-color: #1D1C28;
+}
+
+.member__photo {
+  border-radius: 3.11rem;
+}
+
+.member__name {
+  font-weight: 400;
+  font-size: 1.33rem;
+  line-height: 1.78rem;
+  font-family: "Bakbak One", serif;
+  text-align: center;
+}
+
+.member__position {
+  color: #EFF5FAD1;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.social__link {
+  text-decoration: none;
+}
+
+.social {
+  list-style-type: none;
+}
+
+.faq__item {
+  background-color: #1D1C28;
+  ;
+}
+
+.faq__question {
+  font-size: 1.33rem;
+  line-height: 1.78rem;
+  font-family: "Bakbak One", serif;
+}
+
+.faq__answer {
+  font-size: 0.89rem;
+  line-height: 1.33rem;
+}
+
+.footer__text {
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+}
+
+.footer-nav__title {
+  font-size: 1.11rem;
+}
+
+.footer-nav__list {
+  list-style-type: none;
+}
+
+.footer-nav__link {
+  text-decoration: none;
+  color: #F5F8FB;
+  font-weight: 600;
+  font-size: 0.67rem;
+  line-height: 0.89rem;
+}
+
+.copyright {
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+}
+
+/* Blog page styling */
+
+.breadcrumb__list {
+  list-style-type: none;
+}
+
+.breadcrumb__item {
+  color: #E7EEF7A8;
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+}
+
+.breadcrumb__link {
+  color: #F5F8FB;
+  text-decoration: none;
+}
+
+.aside__box {
+  background-color: #1D1C28;
+}
+
+.aside__title {
+  font-weight: 400;
+  font-size: 1.33rem;
+  line-height: 1.78rem;
+  font-family: "Bakbak One", serif;
+}
+
+.aside__list {
+  list-style-type: none;
+}
+
+.aside__link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+}
+
+.action-tag {
+  list-style-type: none;
+}
+
+.action-tag__link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+  border: #D0D7FB2B;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0.11rem;
+  padding: 0.33rem 0.67rem;
+}
+
+.figure__caption {
+  color: #F8F7FF;
+  font-weight: 500;
+  font-size: 0.89rem;
+  line-height: 1.33rem;
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.article__text {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.article__spotlight {
+  background-color: #0265DC;
+  font-weight: 600;
+}
+
+.article__highlight {
+  color: #78BBFA;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article__item {
+  color: #F8F7FF;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.article__custom-list {
+  color: #F8F7FF;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.quote-wrapper{
+  background-color: #002754;
+  padding: 0.89rem;
+  border-radius: 0.89rem;
+}
+
+.quote__text {
+  color: #F8F7FF;
+  font-weight: 400;
+  font-size: 1.56rem;
+  line-height: 2rem;
+  font-family: "Bakbak One", serif;
+}
+
+.quote__footer {
+  font-weight: 600;
+  font-size: 0.78rem;
+  line-height: 1.11rem;
+}
+
+.quote__rating-icon {
+  color: #E7F1FD7D;
+}
+
+.quote__rating {
+  color: #EFF5FAD1;
+}
+
+.quote__author {
+  color: #F8F7FF;
+  font-style: normal;
+}
+
+.article__subtitle {
+  color: #F8F7FF;
+  font-weight: 400;
+  font-size: 1.56rem;
+  line-height: 2rem;
+  font-family: "Bakbak One", serif;
+}
+
+.article__footer-label {
+  color: #F8F7FF;
+  font-weight: 400;
+  font-size: 0.89rem;
+  line-height: 1.33rem;
+}
