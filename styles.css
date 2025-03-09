@@ -175,8 +175,9 @@ h1 {
   color: #EFF5FAD1;
 }
 
-.button--small { /* Everything the same as the body, to remove whole class? */
+.button--small {
   line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 .button-wrapper {
@@ -415,9 +416,4 @@ h1 {
   font-size: 1.75rem;
   line-height: 2.25rem;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
-}
-
-.article__footer-label { /* Everything the same as the body, to remove the whole class? */
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
