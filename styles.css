@@ -1,100 +1,68 @@
-.bakbak-one-regular {
-    font-family: "Bakbak One", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-
 body {
-    color: #f5f8fb;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56rem;
-    letter-spacing: 0rem;
-    font-family: "Poppins", serif;
+    color: #F8F7FF;
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: "Poppins", "Helvetica Neue", Arial, Helvetica, sans-serif;
     background-color: #0D0D15;
 }
 
 h1 {
     color: #f5f8fb;
-    font-style: normal;
     font-weight: 400;
-    font-size: 2.89rem;
-    line-height: 3.44rem;
-    letter-spacing: -0.03rem;
-    font-family: "Bakbak One", serif;
+    font-size: 3.25rem;
+    line-height: 3.88rem;
+    letter-spacing: -0.5px;
+    font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .nav__list {
   list-style: none;
   display: flex;
-  padding: 0rem;
+  padding: 0;
 }
 
 .nav__link {
   color: #f5f8fb;
   font-weight: 600;
-  font-size: 0.88em;
-  line-height: 1.33em;
-  letter-spacing: 0rem;
-  padding: 0.44rem 1.11rem;
+  padding: 0.5rem 1.25rem;
   text-decoration: none;
 }
 
 .nav__link--active {
-  border-bottom: 0.11rem solid #0265DC;
+  border-bottom: 0.13rem solid #0265DC;
 }
 
 .search__input {
   color: #e7eef7a8;
-  font-size: 0.78rem;
-  line-height: 1.11rem;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
   background-color: transparent;
   border-style: solid;
-  border-width: 0.11rem;
+  border-color: #D0D7FB2B;
+  border-width: 0.13rem;
 }
 
 .button {
   color: #f5f8fb;
-  font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.56rem;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
   text-decoration: none;
-  padding: 0.56rem 1.33rem;
+  padding: 0.63rem 1.5rem;
 }
 
 .button--primary {
   border: #0265DC;
   background-color: #0265DC;
   border-style: solid;
-  border-width: 0.11rem;
+  border-width: 0.13rem;
 }
 
 .button--secondary {
   border: #D0D7FB2B;
   background-color: transparent;
   border-style: solid;
-  border-width: 0.11rem;
+  border-width: 0.13rem;
 }
 
 .promo__highlight {
@@ -102,37 +70,35 @@ h1 {
 }
 
 .promo__desc {
+  color: #F5F8FB;
   font-weight: 500;
-  font-size: 1.11rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .promo__stat-term {
   color: #EFF5FAD1;
-  line-height: 1.33rem;
 }
 
 .promo__stat-value {
-  font-size: 2.89rem;
-  line-height: 3.44rem;
-  letter-spacing: -0.03;
-  font-family: "Bakbak One", serif;
+  color: #f5f8fb;
+  font-size: 3.25rem;
+  line-height: 3.88rem;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .catalog__title {
-  color: #F8F7FF;
   font-weight: 400;
-  font-size: 1.33rem;
-  line-height: 1.78rem;
-  font-family: "Bakbak One", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
-/* Something is wrong here, i am not sure which paddings to put, or if i need to put height and witdth of the buttons */
 .button--only-icon {
-  padding: 0rem 0.89rem;
-  width: 2.67rem;
-  height: 2.67rem;
-  justify-content: center;
-  align-items: center;
+  padding: 1.06rem 1.25rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .product {
@@ -145,11 +111,11 @@ h1 {
 
 .label {
   color: #0265DC;
-  font-size: 0.78rem;
-  line-height: 1.11rem;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
   font-weight: 600;
   background-color: #F5F8FB;
-  padding: 0.44rem 0.56rem;
+  padding: 0.5rem 0.63rem;
 }
 
 .label--updated {
@@ -159,26 +125,25 @@ h1 {
 
 .product__price {
   color: #f5f8fb;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.67rem;
-  letter-spacing: -0.03rem;
-  font-family: "Bakbak One", serif;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .product__name {
   color: #EFF5FAD1;
   font-weight: 500;
-  font-size: 1.11rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .section-title {
-  color: #F8F7FF;
   font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.67rem;
-  letter-spacing: -0.03rem;
-  font-family: "Bakbak One", serif;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 
@@ -194,39 +159,36 @@ h1 {
 .info {
   color: #EFF5FAD1;
   font-weight: 600;
-  font-size: 0.78rem;
-  line-height: 1.11rem;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
 }
 
 .post__title {
   font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.67rem;
-  letter-spacing: -0.03rem;
-  font-family: "Bakbak One", serif;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .post__desc {
   color: #EFF5FAD1;
-  font-size: 0.89rem;
-  line-height: 1.33rem;
 }
 
-.button--icon-right {
-  font-size: 0.89rem;
-  line-height: 1.33rem;
+.button--small { /* Everything the same as the body, to remove whole class? */
+  line-height: 1.5rem;
 }
 
 .button-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .about-us__desc {
   color: #EFF5FAD1;
   font-weight: 500;
-  font-size: 1.11rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   text-align: center;
 }
 
@@ -241,15 +203,15 @@ h1 {
 .about-us__heading {
   color: #F5F8FB;
   font-weight: 400;
-  font-size: 1.33rem;
-  line-height: 1.78rem;
-  font-family: "Bakbak One", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .about-us__info {
   color: #EFF5FAD1;
-  font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
 }
 
 .member {
@@ -257,22 +219,22 @@ h1 {
 }
 
 .member__photo {
-  border-radius: 3.11rem;
+  border-radius: 50%;
+  text-align: center;
 }
 
 .member__name {
+  color: #F5F8FB;
   font-weight: 400;
-  font-size: 1.33rem;
-  line-height: 1.78rem;
-  font-family: "Bakbak One", serif;
-  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .member__position {
   color: #EFF5FAD1;
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
 }
 
 .social__link {
@@ -280,7 +242,7 @@ h1 {
 }
 
 .social {
-  list-style-type: none;
+  list-style: none;
 }
 
 .faq__item {
@@ -289,53 +251,58 @@ h1 {
 }
 
 .faq__question {
-  font-size: 1.33rem;
-  line-height: 1.78rem;
-  font-family: "Bakbak One", serif;
+  color: #F5F8FB;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .faq__answer {
-  font-size: 0.89rem;
-  line-height: 1.33rem;
+  color: #F5F8FB;
 }
 
 .footer__text {
-  font-size: 0.78rem;
-  line-height: 1.11rem;
+  color: #F5F8FB;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
 }
 
 .footer-nav__title {
-  font-size: 1.11rem;
+  color: #F5F8FB;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .footer-nav__list {
-  list-style-type: none;
+  list-style: none;
 }
 
 .footer-nav__link {
   text-decoration: none;
   color: #F5F8FB;
   font-weight: 600;
-  font-size: 0.67rem;
-  line-height: 0.89rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .copyright {
-  font-size: 0.78rem;
-  line-height: 1.11rem;
+  color: #F5F8FB;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
 }
 
 /* Blog page styling */
 
 .breadcrumb__list {
-  list-style-type: none;
+  list-style: none;
 }
 
 .breadcrumb__item {
   color: #E7EEF7A8;
   font-weight: 600;
-  font-size: 0.78rem;
-  line-height: 1.11rem;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
 }
 
 .breadcrumb__link {
@@ -348,46 +315,43 @@ h1 {
 }
 
 .aside__title {
+  color: #F5F8FB;
   font-weight: 400;
-  font-size: 1.33rem;
-  line-height: 1.78rem;
-  font-family: "Bakbak One", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .aside__list {
-  list-style-type: none;
+  list-style: none;
 }
 
 .aside__link {
   color: #F5F8FB;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.78rem;
-  line-height: 1.11rem;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
 }
 
 .action-tag {
-  list-style-type: none;
+  list-style: none;
 }
 
 .action-tag__link {
   color: #F5F8FB;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.78rem;
-  line-height: 1.11rem;
-  border: #D0D7FB2B;
-  background-color: transparent;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
+  border-color: #D0D7FB2B;
   border-style: solid;
-  border-width: 0.11rem;
-  padding: 0.33rem 0.67rem;
+  border-width: 0.13rem;
+  padding: 0.38rem 0.75rem;
 }
 
 .figure__caption {
-  color: #F8F7FF;
   font-weight: 500;
-  font-size: 0.89rem;
-  line-height: 1.33rem;
 }
 
 .section-title--left {
@@ -395,8 +359,8 @@ h1 {
 }
 
 .article__text {
-  font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
 }
 
 .article__spotlight {
@@ -411,39 +375,31 @@ h1 {
 }
 
 .article__item {
-  color: #F8F7FF;
-  font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
 }
 
 .article__custom-list {
-  color: #F8F7FF;
-  font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.13rem;
+  line-height: 1.75rem;
 }
 
 .quote-wrapper{
   background-color: #002754;
-  padding: 0.89rem;
-  border-radius: 0.89rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .quote__text {
-  color: #F8F7FF;
-  font-weight: 400;
-  font-size: 1.56rem;
-  line-height: 2rem;
-  font-family: "Bakbak One", serif;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .quote__footer {
   font-weight: 600;
-  font-size: 0.78rem;
-  line-height: 1.11rem;
-}
-
-.quote__rating-icon {
-  color: #E7F1FD7D;
+  font-size: 0.88rem;
+  line-height: 1.25rem;
 }
 
 .quote__rating {
@@ -451,21 +407,17 @@ h1 {
 }
 
 .quote__author {
-  color: #F8F7FF;
   font-style: normal;
 }
 
 .article__subtitle {
-  color: #F8F7FF;
   font-weight: 400;
-  font-size: 1.56rem;
-  line-height: 2rem;
-  font-family: "Bakbak One", serif;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
-.article__footer-label {
-  color: #F8F7FF;
-  font-weight: 400;
-  font-size: 0.89rem;
-  line-height: 1.33rem;
+.article__footer-label { /* Everything the same as the body, to remove the whole class? */
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
