@@ -1,7 +1,7 @@
 body {
     color: #F8F7FF;
-    font-size: 16px;
-    line-height: 1.5rem;
+    font-size: 18px;
+    line-height: 28px;
     font-family: "Poppins", "Helvetica Neue", Arial, Helvetica, sans-serif;
     background-color: #0D0D15;
 }
@@ -9,8 +9,8 @@ body {
 h1 {
     color: #f5f8fb;
     font-weight: 400;
-    font-size: 3.25rem;
-    line-height: 3.88rem;
+    font-size: 52px;
+    line-height: 62px;
     letter-spacing: -0.5px;
     font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
@@ -24,45 +24,45 @@ h1 {
 .nav__link {
   color: #f5f8fb;
   font-weight: 600;
-  padding: 0.5rem 1.25rem;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 20px;
   text-decoration: none;
 }
 
 .nav__link--active {
-  border-bottom: 0.13rem solid #0265DC;
+  border-bottom: 2px solid #0265DC;
 }
 
 .search__input {
   color: #e7eef7a8;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
   background-color: transparent;
   border-style: solid;
   border-color: #D0D7FB2B;
-  border-width: 0.13rem;
+  border-width: 2px;
 }
 
 .button {
   color: #f5f8fb;
   font-weight: 600;
-  font-size: 1.13rem;
-  line-height: 1.75rem;
   text-decoration: none;
-  padding: 0.63rem 1.5rem;
+  padding: 10px 24px;
 }
 
 .button--primary {
   border: #0265DC;
   background-color: #0265DC;
   border-style: solid;
-  border-width: 0.13rem;
+  border-width: 2px;
 }
 
 .button--secondary {
   border: #D0D7FB2B;
   background-color: transparent;
   border-style: solid;
-  border-width: 0.13rem;
+  border-width: 2px;
 }
 
 .promo__highlight {
@@ -72,33 +72,32 @@ h1 {
 .promo__desc {
   color: #F5F8FB;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 20px;
 }
 
 .promo__stat-term {
   color: #EFF5FAD1;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .promo__stat-value {
   color: #f5f8fb;
-  font-size: 3.25rem;
-  line-height: 3.88rem;
+  font-size: 52px;
+  line-height: 62px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .catalog__title {
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .button--only-icon {
-  padding: 1.06rem 1.25rem;
-  height: 3rem;
-  width: 3rem;
+  padding: 12px; /* Will add it as an icon later */
 }
 
 .product {
@@ -111,11 +110,11 @@ h1 {
 
 .label {
   color: #0265DC;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 600;
   background-color: #F5F8FB;
-  padding: 0.5rem 0.63rem;
+  padding: 8px 10px;
 }
 
 .label--updated {
@@ -125,8 +124,8 @@ h1 {
 
 .product__price {
   color: #f5f8fb;
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 36px;
+  line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
@@ -134,14 +133,13 @@ h1 {
 .product__name {
   color: #EFF5FAD1;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 20px;
 }
 
 .section-title {
   font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 36px;
+  line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
   text-align: center;
@@ -159,25 +157,27 @@ h1 {
 .info {
   color: #EFF5FAD1;
   font-weight: 600;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .post__title {
   font-weight: 400;
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 36px;
+  line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .post__desc {
   color: #EFF5FAD1;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .button--small {
-  line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .button-wrapper {
@@ -188,8 +188,7 @@ h1 {
 .about-us__desc {
   color: #EFF5FAD1;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -204,38 +203,34 @@ h1 {
 .about-us__heading {
   color: #F5F8FB;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .about-us__info {
   color: #EFF5FAD1;
-  font-size: 1.13rem;
-  line-height: 1.75rem;
 }
 
 .member {
   background-color: #1D1C28;
+  text-align: center;
 }
 
 .member__photo {
   border-radius: 50%;
-  text-align: center;
 }
 
 .member__name {
   color: #F5F8FB;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .member__position {
   color: #EFF5FAD1;
-  font-size: 1.13rem;
-  line-height: 1.75rem;
 }
 
 .social__link {
@@ -253,26 +248,27 @@ h1 {
 
 .faq__question {
   color: #F5F8FB;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .faq__answer {
   color: #F5F8FB;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .footer__text {
   color: #F5F8FB;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .footer-nav__title {
   color: #F5F8FB;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 20px;
 }
 
 .footer-nav__list {
@@ -283,14 +279,14 @@ h1 {
   text-decoration: none;
   color: #F5F8FB;
   font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .copyright {
   color: #F5F8FB;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /* Blog page styling */
@@ -302,8 +298,8 @@ h1 {
 .breadcrumb__item {
   color: #E7EEF7A8;
   font-weight: 600;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .breadcrumb__link {
@@ -318,8 +314,8 @@ h1 {
 .aside__title {
   color: #F5F8FB;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 24px;
+  line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
@@ -331,8 +327,8 @@ h1 {
   color: #F5F8FB;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .action-tag {
@@ -343,30 +339,26 @@ h1 {
   color: #F5F8FB;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
   border-color: #D0D7FB2B;
   border-style: solid;
-  border-width: 0.13rem;
-  padding: 0.38rem 0.75rem;
+  border-width: 2px;
+  padding: 6px 12px;
 }
 
 .figure__caption {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .section-title--left {
   text-align: left;
 }
 
-.article__text {
-  font-size: 1.13rem;
-  line-height: 1.75rem;
-}
-
 .article__spotlight {
   background-color: #0265DC;
-  font-weight: 600;
 }
 
 .article__highlight {
@@ -375,32 +367,22 @@ h1 {
   font-weight: 600;
 }
 
-.article__item {
-  font-size: 1.13rem;
-  line-height: 1.75rem;
-}
-
-.article__custom-list {
-  font-size: 1.13rem;
-  line-height: 1.75rem;
-}
-
 .quote-wrapper{
   background-color: #002754;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 16px;
+  border-radius: 16px;
 }
 
 .quote__text {
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+  font-size: 28px;
+  line-height: 36px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
 
 .quote__footer {
   font-weight: 600;
-  font-size: 0.88rem;
-  line-height: 1.25rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .quote__rating {
@@ -413,7 +395,7 @@ h1 {
 
 .article__subtitle {
   font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+  font-size: 28px;
+  line-height: 36px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
 }
