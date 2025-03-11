@@ -261,6 +261,10 @@ h1 {
   padding-bottom: 8px;
 }
 
+.footer {
+  background-color: #1A1925;
+}
+
 .footer__text {
   color: #F5F8FB;
   font-size: 14px;
