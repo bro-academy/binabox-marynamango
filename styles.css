@@ -1,0 +1,405 @@
+body {
+    color: #F8F7FF;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Poppins", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    background-color: #0D0D15;
+}
+
+h1 {
+    color: #f5f8fb;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.nav__link {
+  color: #f5f8fb;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.nav__link--active {
+  border-bottom: 2px solid #0265DC;
+}
+
+.search__input {
+  color: #e7eef7a8;
+  font-size: 14px;
+  line-height: 20px;
+  border: 2px solid #D0D7FB2B;
+  background-color: transparent;
+}
+
+.button {
+  color: #f5f8fb;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 24px;
+}
+
+.button--primary {
+  border: 2px solid #0265DC;
+  background-color: #0265DC;
+}
+
+.button--secondary {
+  border: 2px solid #D0D7FB2B;
+  background-color: transparent;
+}
+
+.promo__highlight {
+  color: #0265DC;
+}
+
+.promo__desc {
+  color: #F5F8FB;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.promo__stat-term {
+  color: #EFF5FAD1;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promo__stat-value {
+  color: #f5f8fb;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.catalog__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.button--only-icon {
+  padding: 12px; /* Will add it as an icon later */
+}
+
+.product {
+  text-decoration: none;
+}
+
+.product__card {
+  background-color: #1D1C28;
+}
+
+.label {
+  color: #0265DC;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  background-color: #F5F8FB;
+  padding: 8px 10px;
+}
+
+.label--updated {
+  color: #f5f8fb;
+  background-color: #EA3829;
+}
+
+.product__price {
+  color: #f5f8fb;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.product__name {
+  color: #EFF5FAD1;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.post {
+  background-color: #1D1C28;
+}
+
+.post__link {
+  text-decoration: none;
+}
+
+/* If it will be the icon from the font and not an image, will have to put it for info__profile and info__date separatelly */
+.info {
+  color: #EFF5FAD1;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.post__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.post__desc {
+  color: #EFF5FAD1;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button--small {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us__desc {
+  color: #EFF5FAD1;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-us__item {
+  background-color: #1A1925;
+}
+
+.about-us__link {
+  text-decoration: none;
+}
+
+.about-us__heading {
+  color: #F5F8FB;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.about-us__info {
+  color: #EFF5FAD1;
+}
+
+.member {
+  background-color: #1D1C28;
+  text-align: center;
+}
+
+.member__photo {
+  border-radius: 50%;
+}
+
+.member__name {
+  color: #F5F8FB;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.member__position {
+  color: #EFF5FAD1;
+}
+
+.social__link {
+  text-decoration: none;
+}
+
+.social {
+  list-style: none;
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq__item {
+  background-color: #1D1C28;
+  padding: 24px;
+}
+
+.faq__question {
+  color: #F5F8FB;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  gap: 16px;
+}
+
+.faq__answer {
+  color: #F5F8FB;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 8px;
+}
+
+.footer {
+  background-color: #1A1925;
+}
+
+.footer__text {
+  color: #F5F8FB;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-nav__title {
+  color: #F5F8FB;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-nav__list {
+  list-style: none;
+}
+
+.footer-nav__link {
+  text-decoration: none;
+  color: #F5F8FB;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright {
+  color: #F5F8FB;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Blog page styling */
+
+.breadcrumb__list {
+  list-style: none;
+}
+
+.breadcrumb__item {
+  color: #E7EEF7A8;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.breadcrumb__link {
+  color: #F5F8FB;
+  text-decoration: none;
+}
+
+.aside__box {
+  background-color: #1D1C28;
+}
+
+.aside__title {
+  color: #F5F8FB;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.aside__list {
+  list-style: none;
+}
+
+.aside__link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.action-tag {
+  list-style: none;
+}
+
+.action-tag__link {
+  color: #F5F8FB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  border: 2px solid #D0D7FB2B;
+  padding: 6px 12px;
+}
+
+.figure__caption {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.article__spotlight {
+  background-color: #0265DC;
+}
+
+.article__highlight {
+  color: #78BBFA;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.quote-wrapper{
+  background-color: #002754;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.quote__text {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}
+
+.quote__footer {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.quote__rating {
+  color: #EFF5FAD1;
+}
+
+.quote__author {
+  font-style: normal;
+}
+
+.article__subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+}

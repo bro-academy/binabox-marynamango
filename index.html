@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Binabox home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -30,18 +34,20 @@
             </li>
           </ul>
         </nav>
-        <form class="search">
-          <input class="search__input" type="search" placeholder="search" />
-          <button class="search__button" type="submit">&#128269;</button>
-        </form>
-        <a class="button button--secondary button--icon-left" href="#" target="_blank">
-          <img src="#" alt="Discord logo" width="24" height="24" />
-          Discord
-        </a>
-        <a class="button button--primary button--icon-left" href="#" target="_blank">
-          <img src="#" alt="Connect icon" width="24" height="24" />
-          Connect
-        </a>
+        <div class="header__actions">
+          <form class="search">
+            <input class="search__input" type="search" placeholder="Search" />
+            <button class="search__button" type="submit">&#128269;</button>
+          </form>
+          <a class="button button--secondary button--icon-left" href="#" target="_blank">
+            <img src="#" alt="Discord logo" width="24" height="24" />
+            Discord
+          </a>
+          <a class="button button--primary button--icon-left" href="#" target="_blank">
+            <img src="#" alt="Connect icon" width="24" height="24" />
+            Connect
+          </a>
+        </div>
       </div>
     </header>
 
@@ -131,7 +137,7 @@
 
       <section class="blog">
         <div class="blog__wrapper">
-          <h2 class="section-title section-title--center">Our Blog</h2> <!--Section title 36px centered-->
+          <h2 class="section-title">Our Blog</h2> <!--Section title 36px centered-->
           <div class="blog__list">
             <!-- Blog Article 1 -->
             <article class="post">
@@ -155,7 +161,7 @@
                 nulla imperdiet..
               </p>
               <div class="button-holder">
-                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
+                <a class="button button--secondary button--icon-right button--small" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 2 and 3 (Right side block divided by two articles) -->
@@ -180,7 +186,7 @@
                 nulla imperdiet..
               </p>
               <div class="button-holder">
-                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
+                <a class="button button--secondary button--icon-right button--small" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 3 -->
@@ -205,7 +211,7 @@
                 nulla imperdiet..
               </p>
               <div class="button-holder">
-                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
+                <a class="button button--secondary button--icon-right button--small" href="#">Read more ></a>
               </div>
             </article>
             <!-- Articles 4 and 5 (Left side block divided by 2 articles) -->
@@ -230,7 +236,7 @@
                 nulla imperdiet..
               </p>
               <div class="button-holder">
-                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
+                <a class="button button--secondary button--icon-right button--small" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 5 -->
@@ -255,7 +261,7 @@
                 nulla imperdiet..
               </p>
               <div class="button-holder">
-                <a class="button button--secondary button--icon-right" href="#">Read more ></a>
+                <a class="button button--secondary button--icon-right button--small" href="#">Read more ></a>
               </div>
             </article>
             <!-- Article 6 -->
@@ -279,8 +285,8 @@
                 One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
                 nulla imperdiet..
               </p>
-              <div class="button-wrapper">
-                <a class="button button--secondary button--icon-right button--narrow" href="#">Read more ></a>
+              <div class="button-holder">
+                <a class="button button--secondary button--icon-right button--small" href="#">Read more ></a>
               </div>
             </article>
           </div>
@@ -293,7 +299,7 @@
 
       <section class="about-us">
         <div class="about-us__wrapper">
-          <h2 class="section-title section-title--center">About us</h2> <!--Section title 36px centered-->
+          <h2 class="section-title">About us</h2> <!--Section title 36px centered-->
           <p class="about-us__desc">
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat
@@ -311,7 +317,7 @@
                 </p>
               </a>
             </li>
-            <li class="about-us__item--highlighted">
+            <li class="about-us__item about-us__item--highlighted">
               <a class="about-us__link" href="#">
                 <h3 class="about-us__heading">Big collection</h3>
                 <p class="about-us__info">
@@ -348,7 +354,7 @@
 
       <section class="team">
         <div class="team__wrapper">
-          <h2 class="section-title section-title--center">Our team</h2> <!--Section title 36px centered-->
+          <h2 class="section-title">Our team</h2> <!--Section title 36px centered-->
           <div class="team__list">
             <div class="member">
               <img class="member__photo" src="#" alt="Jason Smith photo" width="127" height="127" />
@@ -580,35 +586,37 @@
 
       <section class="faq">
         <div class="faq__wrapper">
-          <h2 class="section-title section-title--center">FAQs</h2> <!--Section title 36px centered-->
-          <details class="faq__item" open>
-            <summary class="faq__question">What are the NFTs?</summary>
-            <p class="faq__answer">
-              Urna vitae erat et lacus, consectetur ac nulla vestibulum
-              lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
-            </p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">How do i get NFTs?</summary>
-            <p class="faq__answer">
-              Urna vitae erat et lacus, consectetur ac nulla vestibulum
-              lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
-            </p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">How can we buy your NFTs?</summary>
-            <p class="faq__answer">
-              Urna vitae erat et lacus, consectetur ac nulla vestibulum
-              lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
-            </p>
-          </details>
-          <details class="faq__item">
-            <summary class="faq__question">Who are the team behind the project?</summary>
-            <p class="faq__answer">
-              Urna vitae erat et lacus, consectetur ac nulla vestibulum
-              lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
-            </p>
-          </details>
+          <h2 class="section-title">FAQs</h2> <!--Section title 36px centered-->
+          <div class="faq__container">
+            <details class="faq__item" open>
+              <summary class="faq__question">What are the NFTs?</summary>
+              <p class="faq__answer">
+                Urna vitae erat et lacus, consectetur ac nulla vestibulum
+                lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">How do i get NFTs?</summary>
+              <p class="faq__answer">
+                Urna vitae erat et lacus, consectetur ac nulla vestibulum
+                lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">How can we buy your NFTs?</summary>
+              <p class="faq__answer">
+                Urna vitae erat et lacus, consectetur ac nulla vestibulum
+                lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question">Who are the team behind the project?</summary>
+              <p class="faq__answer">
+                Urna vitae erat et lacus, consectetur ac nulla vestibulum
+                lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+              </p>
+            </details>
+          </div>
         </div>
       </section>
     </main>
