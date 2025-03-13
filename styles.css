@@ -238,12 +238,12 @@ h1 {
 .faq__container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
 
 .faq__item {
   background-color: #1D1C28;
   padding: 24px;
+  margin-bottom: 24px;
 }
 
 .faq__question {
@@ -251,7 +251,6 @@ h1 {
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
-  gap: 16px;
 }
 
 .faq__answer {
@@ -263,9 +262,6 @@ h1 {
 
 .footer {
   background-color: #1A1925;
-}
-
-.footer__text {
   color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
@@ -287,12 +283,6 @@ h1 {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-}
-
-.copyright {
-  color: #F5F8FB;
-  font-size: 14px;
-  line-height: 20px;
 }
 
 /* Blog page styling */
