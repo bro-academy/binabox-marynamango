@@ -13,12 +13,46 @@ h1 {
     line-height: 62px;
     letter-spacing: -0.5px;
     font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+    margin-top: 0;
+}
+
+.header {
+  padding: 32px 16px;
+}
+
+.promo,
+.catalog,
+.blog,
+.about-us,
+.team,
+.faq,
+.footer {
+  padding: 64px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq {
+  padding-bottom: 104px;
+}
+
+.footer {
+  padding-bottom: 32px;
+}
+
+.header__wrapper {
+  max-width: 1664px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav__list {
   list-style: none;
   display: flex;
   padding: 0;
+  margin: 0 264px;
 }
 
 .nav__link {
@@ -28,10 +62,35 @@ h1 {
   line-height: 24px;
   padding: 8px 20px;
   text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .nav__link--active {
   border-bottom: 2px solid #0265DC;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+
+.header__actions a:last-child {
+  margin-left: 16px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search::after {
+  content: "";
+  display: flex;
+  width: 2px;
+  height: 24px;
+  background-color: #D0D7FB2B;
+  margin: 0 16px; /* Will be removed once I can add gaps */
 }
 
 .search__input {
@@ -59,20 +118,35 @@ h1 {
   background-color: transparent;
 }
 
+.promo__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 .promo__highlight {
   color: #0265DC;
+}
+
+.promo__title {
+  margin-bottom: 8px;
 }
 
 .promo__desc {
   color: #F5F8FB;
   font-weight: 500;
   font-size: 20px;
+  margin-block: 0;
 }
 
-.promo__stat-term {
-  color: #EFF5FAD1;
-  font-size: 16px;
-  line-height: 24px;
+.promo__stats {
+  display: flex;
+  margin-block: 32px;
+}
+
+.promo__stat-item {
+  margin: 32px 64px 32px 0;
 }
 
 .promo__stat-value {
@@ -81,6 +155,33 @@ h1 {
   line-height: 62px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  margin: 4px;
+}
+
+.promo__stat-term {
+  color: #EFF5FAD1;
+  font-size: 16px;
+  line-height: 24px;
+  margin-block: 0;
+}
+
+.button-layout a:last-child {
+  margin-left: 16px;
+}
+
+.catalog__wrapper,
+.blog__wrapper,
+.about-us__wrapper,
+.team__wrapper,
+.faq__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.catalog__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .catalog__title {
@@ -88,18 +189,63 @@ h1 {
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  display: flex;
+}
+
+.catalog__title::after {
+  content: "";
+  display: flex;
+  width: 1167px;
+  height: 2px;
+  background-color: #D0D7FB2B;
+  margin: 23px 32px;
+}
+
+.catalog__controls {
+  white-space: nowrap;
+  display: flex;
+}
+
+.catalog__controls a:first-child::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  width: 2px;
+  height: 24px;
+  background-color: #D0D7FB2B;
 }
 
 .button--only-icon {
   padding: 12px; /* Will add it as an icon later */
 }
 
+.catalog__list {
+  display: flex;
+  justify-content: center;
+}
+
 .product {
   text-decoration: none;
+  margin-inline: 12px;
 }
+
+.product:first-child {
+  margin-left: 0;
+}
+
+.product:last-child {
+  margin-right: 0;
+}
+
+/* If the amount of cards is always odd, can be this way
+.product:nth-child(even) {
+  margin-inline: 24px;
+} */
 
 .product__card {
   background-color: #1D1C28;
+  padding: 24px;
+  margin-top: 40px;
 }
 
 .label {
@@ -122,12 +268,15 @@ h1 {
   line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 8px;
+  margin-top: 24px;
 }
 
 .product__name {
   color: #EFF5FAD1;
   font-weight: 500;
   font-size: 20px;
+  margin-block: 0;
 }
 
 .section-title {
@@ -137,14 +286,33 @@ h1 {
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
   text-align: center;
+  margin: 0;
+}
+
+.blog__list {
+  margin-block: 40px;
 }
 
 .post {
   background-color: #1D1C28;
+  padding: 24px;
+}
+
+/* Will be changed to gap 16px after we learn grid */
+.post:nth-child(even) {
+  margin-block: 32px;
+}
+
+.post:last-child {
+  margin-bottom: 0;
 }
 
 .post__link {
   text-decoration: none;
+}
+
+.post__img {
+  padding: 16px;
 }
 
 /* If it will be the icon from the font and not an image, will have to put it for info__profile and info__date separatelly */
@@ -153,6 +321,18 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 24px;
+  display: flex;
+}
+
+.info__profile::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  width: 2px;
+  height: 16px;
+  background-color: #D0D7FB2B;
+  margin: 0 8px;
 }
 
 .post__title {
@@ -161,12 +341,19 @@ h1 {
   line-height: 48px;
   letter-spacing: -0.5px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .post__desc {
   color: #EFF5FAD1;
   font-size: 16px;
   line-height: 24px;
+  margin-block: 0;
+}
+
+.button-holder {
+  margin-top: 16px; /* For some reason, the distance doesn't count from the border, but from line height */
 }
 
 .button--small {
@@ -184,10 +371,23 @@ h1 {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.about-us__list {
+  margin-block: 40px;
+  display: flex;
+  padding: 0;
 }
 
 .about-us__item {
   background-color: #1A1925;
+  padding: 32px;
+}
+
+.about-us__item:not(:last-of-type) {
+  margin-right: 32px;
 }
 
 .about-us__link {
@@ -200,15 +400,35 @@ h1 {
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  margin: 0;
 }
 
 .about-us__info {
   color: #EFF5FAD1;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .member {
   background-color: #1D1C28;
   text-align: center;
+  padding: 32px;
+  margin-inline: 20px;
+  margin-top: 40px;
+}
+
+.member:first-child {
+  margin-left: 0;
+}
+
+.member:last-child {
+  margin-right: 0;
 }
 
 .member__photo {
@@ -221,10 +441,14 @@ h1 {
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .member__position {
   color: #EFF5FAD1;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .social__link {
@@ -233,6 +457,21 @@ h1 {
 
 .social {
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin-block: 0; /*I don't know from where it takes the margin 18px*/
+}
+
+.social__item {
+  margin-inline: 4px;
+}
+
+.social__item:first-child {
+  margin-left: 0;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .faq__container {
@@ -286,9 +525,25 @@ h1 {
 }
 
 /* Blog page styling */
+.hero {
+  padding-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__wrapper {
+  padding: 0 64px;
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 .breadcrumb__list {
   list-style: none;
+  padding: 0;
+  display: flex;
 }
 
 .breadcrumb__item {
@@ -296,11 +551,16 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  padding: 6px 12px;
 }
 
 .breadcrumb__link {
   color: #F5F8FB;
   text-decoration: none;
+}
+
+.page-layout {
+  padding: 0 16px 64px 16px;
 }
 
 .aside__box {
