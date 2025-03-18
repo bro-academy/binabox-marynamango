@@ -20,27 +20,8 @@ h1 {
   padding: 32px 16px;
 }
 
-.promo,
-.catalog,
-.blog,
-.about-us,
-.team,
-.faq {
-  padding: 64px 16px;
-  display: flex;
-  justify-content: center;
-}
-
-.faq {
-  padding-bottom: 104px;
-}
-
-.footer {
-  padding: 64px 16px 32px 16px;
-}
-
 .header__wrapper {
-  max-width: 1664px;
+  max-width: 1696px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -74,6 +55,25 @@ h1 {
   display: inline-block;
 }
 
+.nav__link:hover,
+.article__highlight:hover {
+  color: #3892F3;
+  cursor: pointer;
+}
+
+.nav__link:active,
+.article__highlight:active {
+  color: #0054B6;
+  cursor: pointer;
+  border: none;
+}
+
+.nav__link:focus,
+.article__highlight:focus {
+  outline: 4px solid #3892F3;
+  cursor: pointer;
+}
+
 .nav__link--active {
   border-bottom: 2px solid #0265DC;
 }
@@ -90,15 +90,16 @@ h1 {
 .search {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .search::after {
   content: "";
-  display: flex;
+  display: block;
   width: 2px;
   height: 24px;
   background-color: #D0D7FB2B;
-  margin: 0 16px; /* Will be removed once I can add gaps */
+  margin: 0 16px;
 }
 
 .search__input {
@@ -107,7 +108,21 @@ h1 {
   line-height: 20px;
   border: 2px solid #D0D7FB2B;
   background-color: transparent;
+  padding: 8px 12px;
 }
+
+.search__input:hover {
+  outline: 2px solid #3892F3;
+}
+
+.search__input:focus {
+  outline: 3px solid #3892F3;
+}
+
+.search__input:invalid {
+  outline: 2px solid #EA3829;
+}
+
 
 .button {
   color: #f5f8fb;
@@ -122,9 +137,46 @@ h1 {
   background-color: #0265DC;
 }
 
+.button--primary:hover {
+  background-color: #3892F3;
+  border: 2px solid #3892F3;
+}
+
+.button--primary:focus {
+  outline: 4px solid #3892F3;
+}
+
+.button--primary:active {
+  background-color:  #0054B6;
+  border: 2px solid #0054B6;
+}
+
 .button--secondary {
   border: 2px solid #D0D7FB2B;
   background-color: transparent;
+}
+
+.button--secondary:hover,
+.button--secondary:active {
+  background-color: #BFC5EE1F;
+  border: 2px solid #BFC5EE1F;
+}
+
+.button--secondary:focus {
+  background-color: #BFC5EE1F;
+  outline: 4px solid #3892F3;
+}
+
+.promo,
+.catalog,
+.blog,
+.about-us,
+.team,
+.faq {
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .promo__wrapper {
@@ -183,11 +235,10 @@ h1 {
 .about-us__wrapper,
 .team__wrapper,
 .faq__wrapper,
-.footer__wrapper,
-.hero__wrapper,
-.page-layout {
-  max-width: 1600px;
+.footer__wrapper {
+  max-width: 1632px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .catalog__header-wrapper {
@@ -504,7 +555,7 @@ h1 {
   list-style: none;
   display: flex;
   padding: 0;
-  margin-block: 0; /*I don't know from where it takes the margin 18px*/
+  margin-block: 0;
 }
 
 .social__item {
@@ -517,6 +568,10 @@ h1 {
 
 .social__item:last-child {
   margin-right: 0;
+}
+
+.faq {
+  padding-bottom: 104px;
 }
 
 .faq__container {
@@ -550,16 +605,14 @@ h1 {
   color: #F5F8FB;
   font-size: 14px;
   line-height: 20px;
+  padding-block: 64px 32px;
+  padding-inline: 16px;
 }
 
 .footer__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.footer__wrapper:last-child {
-  align-items: center;
 }
 
 .footer__col {
@@ -596,6 +649,20 @@ h1 {
   line-height: 16px;
 }
 
+.footer-nav__link:hover {
+  color: #3892F3;
+  cursor: pointer;
+}
+.footer-nav__link:active {
+  color: #0054B6;
+  cursor: pointer;
+  border: none;
+}
+.footer-nav__link:focus {
+  outline: 4px solid #3892F3;
+  cursor: pointer;
+}
+
 .footer-nav__item {
   margin-top: 8px;
   padding: 4px 8px;
@@ -616,13 +683,16 @@ h1 {
 /* Blog page styling */
 .hero {
   padding-top: 64px;
-  margin-bottom: 197px; /* Doesn't have any padding on figma, should I do this space with margin? */
+  min-height: 376px;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .hero__wrapper {
   padding: 0 64px;
+  max-width: 1728px;
+  margin: 0 auto;
 }
 
 .hero__title {
@@ -635,7 +705,7 @@ h1 {
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 0; /*check later*/
+  margin: 0;
 }
 
 .breadcrumb__item {
@@ -671,6 +741,9 @@ h1 {
 .page-layout {
   padding: 0 16px 64px 16px;
   display: flex;
+  justify-content: center;
+  max-width: 1416px;
+  margin: 0 auto;
 }
 
 .aside__box {
