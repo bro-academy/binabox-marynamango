@@ -25,8 +25,7 @@ h1 {
 .blog,
 .about-us,
 .team,
-.faq,
-.footer {
+.faq {
   padding: 64px 16px;
   display: flex;
   justify-content: center;
@@ -37,7 +36,7 @@ h1 {
 }
 
 .footer {
-  padding-bottom: 32px;
+  padding: 64px 16px 32px 16px;
 }
 
 .header__wrapper {
@@ -46,6 +45,15 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img + img {
+  margin-left: 18px;
 }
 
 .nav__list {
@@ -106,6 +114,7 @@ h1 {
   font-weight: 600;
   text-decoration: none;
   padding: 10px 24px;
+  display: inline-block;
 }
 
 .button--primary {
@@ -173,7 +182,10 @@ h1 {
 .blog__wrapper,
 .about-us__wrapper,
 .team__wrapper,
-.faq__wrapper {
+.faq__wrapper,
+.footer__wrapper,
+.hero__wrapper,
+.page-layout {
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -204,6 +216,18 @@ h1 {
 .catalog__controls {
   white-space: nowrap;
   display: flex;
+  align-items: center;
+}
+
+.catalog__controls > .button:not(:first-child) {
+  margin-left: 16px;
+}
+
+.catalog__controls a:first-child {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
 }
 
 .catalog__controls a:first-child::after {
@@ -213,6 +237,10 @@ h1 {
   width: 2px;
   height: 24px;
   background-color: #D0D7FB2B;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .button--only-icon {
@@ -313,6 +341,7 @@ h1 {
 
 .post__img {
   padding: 16px;
+  margin-bottom: 24px;
 }
 
 /* If it will be the icon from the font and not an image, will have to put it for info__profile and info__date separatelly */
@@ -321,18 +350,31 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  margin-top: 24px;
   display: flex;
+  align-items: center;
+}
+
+.info > * {
+  margin-right: 8px;
+}
+
+.info > *:last-child {
+  margin-right: 0;
+}
+
+.info__profile {
+  display: flex;
+  align-items: center;
 }
 
 .info__profile::after {
   content: "";
-  display: flex;
+  display: block;
   justify-content: center;
   width: 2px;
   height: 16px;
   background-color: #D0D7FB2B;
-  margin: 0 8px;
+  margin-left: 8px;
 }
 
 .post__title {
@@ -359,6 +401,9 @@ h1 {
 .button--small {
   font-size: 16px;
   line-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-wrapper {
@@ -477,6 +522,7 @@ h1 {
 .faq__container {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .faq__item {
@@ -506,14 +552,40 @@ h1 {
   line-height: 20px;
 }
 
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__wrapper:last-child {
+  align-items: center;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__wrapper > .footer__col:last-child {
+  flex-direction: row;
+}
+
+.footer__text {
+  margin: 12px 0 0;
+}
+
 .footer-nav__title {
   color: #F5F8FB;
   font-weight: 500;
   font-size: 20px;
+  padding-left: 8px;
 }
 
 .footer-nav__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-nav__link {
@@ -524,9 +596,27 @@ h1 {
   line-height: 16px;
 }
 
+.footer-nav__item {
+  margin-top: 8px;
+  padding: 4px 8px;
+}
+
+.footer-nav:last-child {
+  margin-left: 24px;
+}
+
+.footer__wrapper:first-child {
+  margin-bottom: 64px;
+}
+
+.copyright {
+  margin-block: 0;
+}
+
 /* Blog page styling */
 .hero {
   padding-top: 64px;
+  margin-bottom: 197px; /* Doesn't have any padding on figma, should I do this space with margin? */
   display: flex;
   justify-content: center;
 }
@@ -542,8 +632,10 @@ h1 {
 
 .breadcrumb__list {
   list-style: none;
-  padding: 0;
   display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0; /*check later*/
 }
 
 .breadcrumb__item {
@@ -552,19 +644,40 @@ h1 {
   font-size: 14px;
   line-height: 20px;
   padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: "";
+  width: 2px;
+  height: 24px;
+  background-color: #D0D7FB2B;
+  margin-left: 8px;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .breadcrumb__link {
   color: #F5F8FB;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .page-layout {
   padding: 0 16px 64px 16px;
+  display: flex;
 }
 
 .aside__box {
   background-color: #1D1C28;
+  padding: 24px;
+  margin-bottom: 21px;
+  width: 328px;
 }
 
 .aside__title {
@@ -573,10 +686,26 @@ h1 {
   font-size: 24px;
   line-height: 32px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #BFC5EE1F;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside__list {
   list-style: none;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.aside__item {
+  padding: 6px 12px;
+}
+
+.aside__item:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .aside__link {
@@ -589,6 +718,11 @@ h1 {
 
 .action-tag {
   list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
 .action-tag__link {
@@ -599,6 +733,19 @@ h1 {
   line-height: 20px;
   border: 2px solid #D0D7FB2B;
   padding: 6px 12px;
+  display: inline-block;
+}
+
+.action-tag__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.article {
+  margin-left: 32px;
+}
+
+.figure {
+  margin: 0;
 }
 
 .figure__caption {
@@ -609,6 +756,21 @@ h1 {
 
 .section-title--left {
   text-align: left;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.section-title--left + .button {
+  margin-bottom: 32px;
+}
+
+.article__text {
+  margin: 0;
+}
+
+.info + .article__text {
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 
 .article__spotlight {
@@ -621,16 +783,28 @@ h1 {
   font-weight: 600;
 }
 
+.article__list {
+  margin-block: 32px;
+}
+
 .quote-wrapper{
   background-color: #002754;
   padding: 16px;
   border-radius: 16px;
+  margin-block: 32px;
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
 }
 
 .quote__text {
   font-size: 28px;
   line-height: 36px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .quote__footer {
@@ -641,10 +815,19 @@ h1 {
 
 .quote__rating {
   color: #EFF5FAD1;
+  margin-inline: 8px;
 }
 
 .quote__author {
   font-style: normal;
+}
+
+.figure-wrapper {
+  display: flex;
+}
+
+.figure:last-child {
+  margin-left: 24px;
 }
 
 .article__subtitle {
@@ -652,4 +835,19 @@ h1 {
   font-size: 28px;
   line-height: 36px;
   font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.article__subtitle + .article__text {
+  margin-bottom: 16px;
+}
+
+.article__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__footer .action-tag__item:not(:last-child) {
+  margin-right: 12px;
 }
