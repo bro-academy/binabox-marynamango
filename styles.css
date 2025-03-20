@@ -58,20 +58,17 @@ h1 {
 .nav__link:hover,
 .article__highlight:hover {
   color: #3892F3;
-  cursor: pointer;
 }
 
 .nav__link:active,
 .article__highlight:active {
   color: #0054B6;
-  cursor: pointer;
   border: none;
 }
 
 .nav__link:focus,
 .article__highlight:focus {
   outline: 4px solid #3892F3;
-  cursor: pointer;
 }
 
 .nav__link--active {
@@ -651,16 +648,13 @@ h1 {
 
 .footer-nav__link:hover {
   color: #3892F3;
-  cursor: pointer;
 }
 .footer-nav__link:active {
   color: #0054B6;
-  cursor: pointer;
   border: none;
 }
 .footer-nav__link:focus {
   outline: 4px solid #3892F3;
-  cursor: pointer;
 }
 
 .footer-nav__item {
