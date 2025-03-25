@@ -125,7 +125,6 @@ h1 {
 }
   
 .search__button:hover {
-  border-color: #3892F3;
   opacity: 0.7;
 }
 
@@ -159,7 +158,6 @@ h1 {
 .search__input:invalid {
   border-color: #EA3829;
 }
-
 
 .button {
   color: #f5f8fb;
@@ -214,11 +212,22 @@ h1 {
   padding-bottom: 40px;
 }
 
+.promo {
+  background: radial-gradient(
+  42.5% 42.5% at 22.28% -4.22%,
+  rgba(2, 101, 220, 0.5) 0%,
+  rgba(2, 101, 220, 0) 100%)
+}
+
 .promo__wrapper {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  padding: 139px 16px; /* padding 139px or 0? Picture goes above the paddings */
+  padding: 0 16px;
+}
+
+.promo__content-wrapper {
+  padding: 139px 0;
 }
 
 .promo__highlight {
@@ -400,6 +409,7 @@ h1 {
 
 .product__img {
   margin-bottom: 24px;
+  object-fit: cover;
 }
 
 .product__price {
@@ -469,6 +479,11 @@ h1 {
 
 .post__img {
   margin-bottom: 24px;
+  object-fit: cover;
+}
+
+.post__img--top {
+  object-position: 50% 15%;
 }
 
 /* If it will be the icon from the font and not an image, will have to put it for info__profile and info__date separatelly */
@@ -795,6 +810,11 @@ border-image: linear-gradient(137.5deg,
 .hero {
   padding-top: 64px;
   min-height: 376px;
+  background-image: url(/img/hero-background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0D0D15;
 }
 
 .hero__wrapper {
