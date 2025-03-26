@@ -810,7 +810,7 @@ border-image: linear-gradient(137.5deg,
 .hero {
   padding-top: 64px;
   min-height: 376px;
-  background-image: url(/img/hero-background.webp);
+  background-image: url(img/hero-background.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
