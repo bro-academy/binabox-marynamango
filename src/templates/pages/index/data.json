@@ -1,3 +1,50 @@
 {
-  "title": "Home"
+  "title": "Home",
+  "path": "index.html",
+    "nav": [
+      {
+        "url": "index.html",
+        "text": "Home"
+      },
+      {
+        "url": "blog.html",
+        "text": "Blog"
+      },
+      {
+        "url": "catalog.html",
+        "text": "Catalog"
+      },
+      {
+        "url": "contact-us.html",
+        "text": "Contact us"
+      }
+    ],
+    "socials": [
+      { "name": "Twitter", "url":"#", "icon": "#" },
+      { "name": "Facebook", "url":"#", "icon": "#" },
+      { "name": "Telegram", "url":"#", "icon": "#" },
+      { "name": "Youtube", "url":"#", "icon": "#" },
+      { "name": "TikTok", "url":"#", "icon": "#" },
+      { "name": "Discoord", "url":"#", "icon": "#" }
+    ],
+    "footerNav": [
+      {
+        "title": "Subscribe",
+        "links": [
+          { "text": "Home", "url": "#" },
+          { "text": "Blog", "url": "#" },
+          { "text": "Catalog", "url": "#" },
+          { "text": "Contact us", "url": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "text": "Terms Conditions", "url": "#" },
+          { "text": "Privacy Policy", "url": "#" },
+          { "text": "Whitepaper", "url": "#" },
+          { "text": "Help Center", "url": "#" }
+        ]
+      }
+    ]
 }
