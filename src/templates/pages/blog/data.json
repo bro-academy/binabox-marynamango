@@ -1,24 +1,55 @@
 {
   "title": "Blog",
-  "path": "blog.html",
-    "nav": [
-      {
-        "url": "index.html",
-        "text": "Home"
-      },
-      {
-        "url": "blog.html",
-        "text": "Blog"
-      },
-      {
-        "url": "catalog.html",
-        "text": "Catalog"
-      },
-      {
-        "url": "contact-us.html",
-        "text": "Contact us"
+  "header": {
+    "logo": {
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 35,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21
+    },
+    "search": {
+        "placeholder": "search"
       }
-    ],
+  },
+    "path": "blog.html",
+      "nav": [
+        {
+          "url": "index.html",
+          "text": "Home"
+        },
+        {
+          "url": "blog.html",
+          "text": "Blog"
+        },
+        {
+          "url": "catalog.html",
+          "text": "Catalog"
+        },
+        {
+          "url": "contact-us.html",
+          "text": "Contact us"
+        }
+      ],
+      "headerButtons": [
+        {
+          "text": "Discord",
+          "alt": "Discord logo",
+          "url": "#",
+          "icon": "#",
+          "type": "secondary"
+        },
+        {
+          "text": "Connect",
+          "alt": "Connect icon",
+          "url": "#",
+          "icon": "#",
+          "type": "primary"
+        }
+      ],
     "socials": [
       { "name": "Twitter", "url":"#", "icon": "#" },
       { "name": "Facebook", "url":"#", "icon": "#" },
