@@ -58,12 +58,24 @@
       { "name": "TikTok", "url":"#", "icon": "#" },
       { "name": "Discoord", "url":"#", "icon": "#" }
     ],
+  "footer": {
+    "logo":{
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 36,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21
+    },
+    "description": "We are the best way to check the rarity of NFT collection.",
     "footerNav": [
       {
         "title": "Subscribe",
         "links": [
-          { "text": "Home", "url": "#" },
-          { "text": "Blog", "url": "#" },
+          { "text": "Home", "url": "index.html" },
+          { "text": "Blog", "url": "blog.html" },
           { "text": "Catalog", "url": "#" },
           { "text": "Contact us", "url": "#" }
         ]
@@ -77,5 +89,7 @@
           { "text": "Help Center", "url": "#" }
         ]
       }
-    ]
+    ],
+    "copyright": "BINABOX 2022 - All rights reserved"
+  }
 }
