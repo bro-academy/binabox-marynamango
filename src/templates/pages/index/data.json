@@ -50,6 +50,25 @@
           "type": "primary"
         }
       ],
+  "promo": {
+    "title": "WITH {{ promo.brand }} EXPLORE NFT COLLECTION",
+    "brand": "<span class=\"promo__highlight\">BINABOX</span>",
+    "description": "We are the best way to check the rarity of NFT collection",
+    "stats": [
+      { "value": "2240+", "term": "Total Items" },
+      { "value": "1000+", "term": "Profiles whitelisted" }
+    ],
+    "buttons": [
+      { "text": "Connect Wallet", "url": "#", "type": "primary" },
+      { "text": "Whitelist now", "url": "#", "type": "secondary" }
+    ],
+    "image": {
+      "src": "src/images/static/binabox-cube.webp",
+      "alt": "Binabox cube",
+      "width": 533,
+      "height": 641
+    }
+  },
     "socials": [
       { "name": "Twitter", "url":"#", "icon": "#" },
       { "name": "Facebook", "url":"#", "icon": "#" },
