@@ -1,0 +1,24 @@
+<article class="post">
+              <a class="post__link" href="{{ post.link }}">
+                <span class="label">{{ post.category }}</span>
+                <img
+                  class="post__img"
+                  src="{{ post.image.src }}"
+                  alt="{{ post.image.alt }}"
+                  width="{{ post.image.width }}"
+                  height="{{ post.image.height }}"
+                />
+              </a>
+              {%- set author = post.author -%}
+              {%- set date = post.date -%}
+              {%- include "partials/info.njk" %}
+              <h3 class="post__title">{{ post.title }}</h3>
+              <p class="post__desc">{{ post.description }}</p>
+              <div class="button-holder">
+                <a
+                  class="button button--secondary button--icon-right button--small"
+                  href="{{ post.link }}"
+                  >Read more ></a
+                >
+              </div>
+            </article>

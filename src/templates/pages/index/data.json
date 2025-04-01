@@ -150,6 +150,97 @@
       }
     ]
   },
+  "blog": {
+    "title": "Our Blog",
+    "link": "#",
+    "linkText": "Read more",
+    "posts": [
+      {
+        "category": "NFT",
+        "image": {
+          "src": "src/images/static/face.webp",
+          "alt": "Face",
+          "width": 736,
+          "height": 664
+        },
+        "author": "Tony Nguyen",
+        "date": "20 June 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#"
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "src/images/static/skeleton.webp",
+          "alt": "Skeleton",
+          "width": 736,
+          "height": 198
+        },
+        "author": "Tony Nguyen",
+        "date": "20 June 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#"
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "src/images/static/cat.webp",
+          "alt": "Cat",
+          "width": 736,
+          "height": 198
+        },
+        "author": "Tony Nguyen",
+        "date": "20 June 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#"
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "src/images/static/chimpanzee.webp",
+          "alt": "Chimpanzee",
+          "width": 736,
+          "height": 198
+        },
+        "author": "Tony Nguyen",
+        "date": "20 June 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#"
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "src/images/static/duck.webp",
+          "alt": "Duck",
+          "width": 736,
+          "height": 198
+        },
+        "author": "Tony Nguyen",
+        "date": "20 June 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#"
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "src/images/static/gamebox.webp",
+          "alt": "Gamebox",
+          "width": 736,
+          "height": 664
+        },
+        "author": "Tony Nguyen",
+        "date": "20 June 2022",
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#"
+      }
+    ]
+  },
     "socials": [
       { "name": "Twitter", "url":"#", "icon": "#" },
       { "name": "Facebook", "url":"#", "icon": "#" },
