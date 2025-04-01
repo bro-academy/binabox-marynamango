@@ -270,15 +270,137 @@
       }
     ]
   },
-  
-    "socials": [
-      { "name": "Twitter", "url":"#", "icon": "#" },
-      { "name": "Facebook", "url":"#", "icon": "#" },
-      { "name": "Telegram", "url":"#", "icon": "#" },
-      { "name": "Youtube", "url":"#", "icon": "#" },
-      { "name": "TikTok", "url":"#", "icon": "#" },
-      { "name": "Discoord", "url":"#", "icon": "#" }
-    ],
+  "team": {
+    "title": "Our team",
+    "members": [
+      {
+        "photo": {
+          "src": "src/images/static/jason-smith-photo.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
+      },
+      {
+        "photo": {
+          "src": "src/images/static/jason-smith-photo.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
+      },
+      {
+        "photo": {
+          "src": "src/images/static/jason-smith-photo.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
+      },
+      {
+        "photo": {
+          "src": "src/images/static/jason-smith-photo.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
+      },
+      {
+        "photo": {
+          "src": "src/images/static/jason-smith-photo.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
+      },
+      {
+        "photo": {
+          "src": "src/images/static/jason-smith-photo.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
+      },
+      {
+        "photo": {
+          "src": "src/images/static/jason-smith-photo.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
+      }
+    ]
+  },
   "footer": {
     "logo":{
       "img": "#",
@@ -311,6 +433,14 @@
         ]
       }
     ],
-    "copyright": "BINABOX 2022 - All rights reserved"
+    "copyright": "BINABOX 2022 - All rights reserved",
+    "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#" },
+          { "name": "Facebook", "url":"#", "icon": "#" },
+          { "name": "Telegram", "url":"#", "icon": "#" },
+          { "name": "Youtube", "url":"#", "icon": "#" },
+          { "name": "TikTok", "url":"#", "icon": "#" },
+          { "name": "Discoord", "url":"#", "icon": "#" }
+        ]
   }
 }
