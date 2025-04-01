@@ -241,6 +241,36 @@
       }
     ]
   },
+  "about": {
+    "title": "About us",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
+    "link": "#",
+    "linkText":"Read more",
+    "items": [
+      {
+        "heading": "High quality",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#"
+      },
+      {
+        "heading": "Big collection",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#",
+        "highlighted": true
+      },
+      {
+        "heading": "Top resourse",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#"
+      },
+      {
+        "heading": "Big community",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#"
+      }
+    ]
+  },
+  
     "socials": [
       { "name": "Twitter", "url":"#", "icon": "#" },
       { "name": "Facebook", "url":"#", "icon": "#" },
