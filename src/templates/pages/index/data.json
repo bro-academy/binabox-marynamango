@@ -69,6 +69,87 @@
       "height": 641
     }
   },
+  "catalog": {
+    "title": "Catalog",
+    "icon": {
+      "src": "#",
+      "alt": "Folder icon",
+      "width": 24,
+      "height": 24
+    },
+    "controls": [
+      { "type": "secondary", "text": "See all", "url": "#" },
+      { "type": "secondary", "icon": "#", "alt": "Chevron left" },
+      { "type": "primary", "icon": "#", "alt": "Chevron right" }
+    ],
+    "products": [
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "src/images/static/skeleton.webp",
+          "alt": "Skeleton",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "src/images/static/cat.webp",
+          "alt": "Cat",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "Sold out",
+        "state": "Sold out",
+        "image": {
+          "src": "src/images/static/scissors.webp",
+          "alt": "Scissors",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "src/images/static/device.webp",
+          "alt": "Device",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "src/images/static/gamebox.webp",
+          "alt": "Gamebox",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      }
+    ]
+  },
     "socials": [
       { "name": "Twitter", "url":"#", "icon": "#" },
       { "name": "Facebook", "url":"#", "icon": "#" },

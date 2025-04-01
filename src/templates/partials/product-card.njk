@@ -1,0 +1,16 @@
+<a class="product" href="{{ product.url }}">
+              <article class="product__card">
+                {%- if product.label %}
+                <span class="label {%- if product.label == 'Sold out' %} label--updated {%- endif %}">{{ product.label }}</span>
+                {%- endif %}
+                <img
+                  class="product__img"
+                  src="{{ product.image.src }}"
+                  alt="{{ product.image.alt }}"
+                  width="{{ product.image.width }}"
+                  height="{{ product.image.height }}"
+                />
+                <p class="product__price">{{ product.price }}</p>
+                <h3 class="product__name">{{ product.name }}</h3>
+              </article>
+            </a>
