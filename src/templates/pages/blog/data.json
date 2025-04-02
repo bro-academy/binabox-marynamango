@@ -50,14 +50,43 @@
           "type": "primary"
         }
       ],
-    "socials": [
-      { "name": "Twitter", "url":"#", "icon": "#" },
-      { "name": "Facebook", "url":"#", "icon": "#" },
-      { "name": "Telegram", "url":"#", "icon": "#" },
-      { "name": "Youtube", "url":"#", "icon": "#" },
-      { "name": "TikTok", "url":"#", "icon": "#" },
-      { "name": "Discoord", "url":"#", "icon": "#" }
-    ],
+  "hero": {
+    "title": "Our blog",
+    "breadcrumbs": [
+      { "name": "Home", "url": "/" },
+      { "name": "Our blog", "url": "/blog" },
+      { "name": "The Basilisks NFT" }
+    ]
+  },
+  "aside": {
+    "boxes": [
+      {
+        "title": "Categories",
+        "type": "list",
+        "items": [
+          { "text": "Our blog", "url": "/blog", "count": 12 },
+          { "text": "Metaverse", "url": "#", "count": 24 },
+          { "text": "Gaming", "url": "#", "count": 24 },
+          { "text": "Art", "url": "#", "count": 24 },
+          { "text": "Robot", "url": "#", "count": 24 },
+          { "text": "Lauchpad", "url": "#", "count": 24 },
+          { "text": "Crypto", "url": "#", "count": 430 }
+        ]
+      },
+      {
+        "title": "Tag",
+        "type": "tags",
+        "items": [
+          { "text": "NFT", "url": "#" },
+          { "text": "ICO", "url": "#" },
+          { "text": "Robot", "url": "#" },
+          { "text": "Crypto", "url": "#" },
+          { "text": "Lauchpad", "url": "#" },
+          { "text": "Metaverse", "url": "#" }
+        ]
+      }
+    ]
+  },
   "footer": {
     "logo":{
       "img": "#",
@@ -90,6 +119,14 @@
         ]
       }
     ],
-    "copyright": "BINABOX 2022 - All rights reserved"
+    "copyright": "BINABOX 2022 - All rights reserved",
+    "socials": [
+      { "name": "Twitter", "url":"#", "icon": "#" },
+      { "name": "Facebook", "url":"#", "icon": "#" },
+      { "name": "Telegram", "url":"#", "icon": "#" },
+      { "name": "Youtube", "url":"#", "icon": "#" },
+      { "name": "TikTok", "url":"#", "icon": "#" },
+      { "name": "Discord", "url":"#", "icon": "#" }
+    ]
   }
 }

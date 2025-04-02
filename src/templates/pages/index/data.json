@@ -288,7 +288,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
       },
       {
@@ -306,7 +306,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
       },
       {
@@ -324,7 +324,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
       },
       {
@@ -342,7 +342,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
       },
       {
@@ -360,7 +360,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
       },
       {
@@ -378,7 +378,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
       },
       {
@@ -396,7 +396,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
       }
     ]
@@ -461,7 +461,7 @@
           { "name": "Telegram", "url":"#", "icon": "#" },
           { "name": "Youtube", "url":"#", "icon": "#" },
           { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discoord", "url":"#", "icon": "#" }
+          { "name": "Discord", "url":"#", "icon": "#" }
         ]
   }
 }
