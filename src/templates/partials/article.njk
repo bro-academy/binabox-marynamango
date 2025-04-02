@@ -1,0 +1,72 @@
+<section class="article">
+          {% set image = article.mainImage %}
+          {% include "partials/figure.njk" %}
+
+          <h2 class="section-title section-title--left">{{ article.title }}</h2>
+          <a class="button button--{{ article.button.type }}" href="{{ article.button.url }}">{{ article.button.text }}</a>
+
+          {% set author = article.author %}
+          {% set date = article.date %}
+          {% include "partials/info.njk"%}
+
+          {%- for paragraph in article.paragraphs %}
+          <p class="article__text">{{ paragraph | safe }}</p>
+          {%- endfor %}
+
+          <ul class="article__list">
+          {%- for item in article.listItems%}
+            <li class="article__item">{{ item | safe }}</li>
+          {%- endfor %}
+          </ul>
+          
+          <ul class="article__custom-list">
+            {%- for name in article.customList %}
+            <li class="article__custom-item">{{ name }}</li>
+            {%- endfor %}
+          </ul>
+
+          {% include "partials/quote.njk" %}
+
+          <div class="figure-wrapper">
+            {%- for images in article.images %}
+            {% set image = images %}
+              {% include "partials/figure.njk" %}
+            {%- endfor %}
+          </div>
+
+          {%- for section in article.subsections %}
+          <h3 class="article__subtitle">{{ article.subtitle }}</h3>
+          {%- for paragraph in section.paragraphs %}
+          <p class="article__text">{{ paragraph }}</p>
+          {%- endfor %}
+          {%- endfor %}
+
+          <footer class="article__footer">
+            <ul class="action-tag">
+              <li class="action-tag__item">
+                <span class="article__footer-label">Tags:</span>
+              </li>
+              {% set tags = article.tags %}
+              {% include "partials/tag-list.njk" %}
+            </ul>
+
+            <ul class="action-tag">
+              <li class="action-tag__item">
+                <span class="article__footer-label">Share:</span>
+              </li>
+              {%- for social in article.share %}
+              <li class="action-tag__item">
+                <a class="action-tag__link" href="{{ social.url }}">
+                  <img
+                    class="action-tag__img"
+                    src="{{ social.icon }}"
+                    alt="{{ social.alt }}"
+                    width="16"
+                    height="16"
+                  />
+                </a>
+              </li>
+              {%- endfor %}
+            </ul>
+          </footer>
+        </section>

@@ -1,0 +1,16 @@
+<div class="quote-wrapper">
+            <blockquote class="quote">
+              <p class="quote__text">{{ article.quote.text }}</p>
+            </blockquote>
+            <div class="quote__footer">
+              <img
+                class="quote__rating-icon"
+                src="{{ article.quote.icon }}"
+                alt="Rating icon"
+                width="15"
+                height="15"
+              />
+              <span class="quote__rating">{{ article.quote.rating }}/{{ article.quote.ratingMax }}</span>
+              <cite class="quote__author">{{ article.quote.author }}</cite>
+            </div>
+          </div>

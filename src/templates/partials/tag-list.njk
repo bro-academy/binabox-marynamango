@@ -1,0 +1,7 @@
+<ul class="action-tag">
+            {%- for tag in tags %}
+              <li class="action-tag__item">
+                <a class="action-tag__link" href="{{ tag.url }}">{{ tag.text }}</a>
+              </li>
+            {%- endfor %}
+            </ul>

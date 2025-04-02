@@ -1,0 +1,22 @@
+<aside class="aside">
+          {%- for box in aside.boxes %}
+          <div class="aside__box">
+            <strong class="aside__title">{{ box.title }}</strong>
+            {# Render list of links #}
+            {% if box.type == "list" %}
+            <ul class="aside__list">
+              {%- for item in box.items %}
+              <li class="aside__item">
+                <a class="aside__link" href="{{ item.url }}">{{ item.text }} ({{ item.count }})</a>
+              </li>
+              {%- endfor %}
+            </ul>
+            {%- endif %}
+            {# Render list of tags #}
+            {%- if box.type == "tags" %}
+              {% set tags = box.items %}
+              {% include "partials/tag-list.njk" %}
+            {%- endif %}
+          </div>
+          {%- endfor %}
+        </aside>

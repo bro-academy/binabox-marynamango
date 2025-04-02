@@ -1,0 +1,32 @@
+<section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__content-wrapper">
+            <h1 class="promo__title">
+              {{ promo.title | replace("{{ promo.brand }}", promo.brand) | safe }}
+            </h1>
+            <p class="promo__desc">
+              {{ promo.description }}
+            </p>
+            <div class="promo__stats">
+              {% for stat in promo.stats %}
+              <div class="promo__stat-item">
+                <p class="promo__stat-value">{{ stat.value }}</p>
+                <p class="promo__stat-term">{{ stat.term}}</p>
+              </div>
+              {% endfor %}
+            </div>
+            <div class="button-layout">
+              {% for button in promo.buttons %}
+              <a class="button button--{{ button.type }}" href="{{ button.url }}}">{{ button.text }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          <img
+            class="promo__img"
+            src="{{ promo.image.src }}"
+            alt="{{ promo.image.alt }}"
+            width="{{ promo.image.width }}"
+            height="{{ promo.image.height }}"
+          />
+        </div>
+      </section>
