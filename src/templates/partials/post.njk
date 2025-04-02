@@ -2,7 +2,7 @@
               <a class="post__link" href="{{ post.link }}">
                 <span class="label">{{ post.category }}</span>
                 <img
-                  class="post__img"
+                  class="post__img{% if post.image.alt == 'Skeleton' or post.image.alt == 'Duck' %} post__img--top{% endif %}"
                   src="{{ post.image.src }}"
                   alt="{{ post.image.alt }}"
                   width="{{ post.image.width }}"
