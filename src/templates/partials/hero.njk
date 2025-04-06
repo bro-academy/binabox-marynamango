@@ -3,15 +3,15 @@
           <h1 class="hero__title">{{ hero.title }}</h1>
           <nav class="breadcrumb">
             <ul class="breadcrumb__list">
-            {%- for item in hero.breadcrumbs %}
+            {% for item in hero.breadcrumbs %}
               <li class="breadcrumb__item">
-              {%- if item.url %}
+              {% if item.url %}
                 <a class="breadcrumb__link" href="{{ item.url }}">{{ item.name }}</a>
-              {%- else %}
+              {% else %}
                 {{ item.name }}
-              {%- endif %}
+              {% endif %}
               </li>
-            {%- endfor %}
+            {% endfor %}
             </ul>
           </nav>
         </div>

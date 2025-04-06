@@ -17,7 +17,7 @@
             </div>
             <div class="button-layout">
               {% for button in promo.buttons %}
-              <a class="button button--{{ button.type }}" href="{{ button.url }}}">{{ button.text }}</a>
+                {% include "partials/button.njk" %}
               {% endfor %}
             </div>
           </div>

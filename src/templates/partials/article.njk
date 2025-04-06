@@ -3,43 +3,43 @@
           {% include "partials/figure.njk" %}
 
           <h2 class="section-title section-title--left">{{ article.title }}</h2>
-          <a class="button button--{{ article.button.type }}" href="{{ article.button.url }}">{{ article.button.text }}</a>
+          {% set button = article.button %}
+          {% include "partials/button.njk" %}
 
-          {% set author = article.author %}
-          {% set date = article.date %}
+          {% set info = article.info %}
           {% include "partials/info.njk"%}
 
-          {%- for paragraph in article.paragraphs %}
+          {% for paragraph in article.paragraphs %}
           <p class="article__text">{{ paragraph | safe }}</p>
-          {%- endfor %}
+          {% endfor %}
 
           <ul class="article__list">
-          {%- for item in article.listItems%}
+          {% for item in article.listItems%}
             <li class="article__item">{{ item | safe }}</li>
-          {%- endfor %}
+          {% endfor %}
           </ul>
           
           <ul class="article__custom-list">
-            {%- for name in article.customList %}
+            {% for name in article.customList %}
             <li class="article__custom-item">{{ name }}</li>
-            {%- endfor %}
+            {% endfor %}
           </ul>
 
           {% include "partials/quote.njk" %}
 
           <div class="figure-wrapper">
-            {%- for images in article.images %}
+            {% for images in article.images %}
             {% set image = images %}
               {% include "partials/figure.njk" %}
-            {%- endfor %}
+            {% endfor %}
           </div>
 
-          {%- for section in article.subsections %}
-          <h3 class="article__subtitle">{{ article.subtitle }}</h3>
-          {%- for paragraph in section.paragraphs %}
+          {% for section in article.subsections %}
+          <h3 class="article__subtitle">{{ section.subtitle }}</h3>
+          {% for paragraph in section.paragraphs %}
           <p class="article__text">{{ paragraph }}</p>
-          {%- endfor %}
-          {%- endfor %}
+          {% endfor %}
+          {% endfor %}
 
           <footer class="article__footer">
             <ul class="action-tag">
@@ -54,19 +54,19 @@
               <li class="action-tag__item">
                 <span class="article__footer-label">Share:</span>
               </li>
-              {%- for social in article.share %}
+              {% for social in article.share %}
               <li class="action-tag__item">
                 <a class="action-tag__link" href="{{ social.url }}">
                   <img
                     class="action-tag__img"
                     src="{{ social.icon }}"
                     alt="{{ social.alt }}"
-                    width="16"
-                    height="16"
+                    width="{{ social.width }}"
+                    height="{{ social.height }}"
                   />
                 </a>
               </li>
-              {%- endfor %}
+              {% endfor %}
             </ul>
           </footer>
         </section>

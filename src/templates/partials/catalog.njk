@@ -5,25 +5,16 @@
               <img src="{{ catalog.icon.src }}" alt="{{ catalog.icon.alt }}" width="{{ catalog.icon.width }}" height="{{ catalog.icon.height }}" />{{ catalog.title }}
             </h2>
             <div class="catalog__controls">
-            {%- for control in catalog.controls %}
-              {%- if control.text %}
-              <a class="button button--{{ control.type }}" href="{{ control.url }}">{{ control.text }}</a>
-              {%- else %}
-              <button
-                class="button button--{{ control.type }} button--only-icon"
-                type="button"
-              >
-                <img src="{{ control.icon }}" alt="{{ control.alt }}" width="24" height="24" />
-              </button>
-              {%- endif %}
-            {%- endfor %}
+            {% for button in catalog.buttons %}
+              {% include "partials/button.njk" %}
+            {% endfor %}
             </div>
           </div>
           <!-- Catalog Products -->
           <div class="catalog__list">
-            {%- for product in catalog.products %}
-              {%- include "partials/product-card.njk" %}
-            {%- endfor %}
+            {% for product in catalog.products %}
+              {% include "partials/product-card.njk" %}
+            {% endfor %}
           </div>
         </div>
       </section>

@@ -1,25 +1,22 @@
 <header class="header">
       <div class="header__wrapper">
+      {% if header.logo.url %}
+        <a class="logo" href="{{ header.logo.url }}">
+      {% else %}
         <a class="logo">
+      {% endif %}
           <img src="{{ header.logo.img }}" alt="{{ header.logo.alt }}" width="{{ header.logo.width }}" height="{{ header.logo.height }}" />
           <img src="{{ header.logo.textImg}}" alt="{{ header.logo.textAlt}}" width="{{ header.logo.textWidth }}" height="{{ header.logo.textHeight }}" />
         </a>
-        {% include "partials/nav.njk" %} {# nclude navigation #}
+        {% include "partials/nav.njk" %}
         <div class="header__actions">
           <form class="search">
             <button class="search__button" type="submit">&#128269;</button>
             <input class="search__input" type="search" placeholder="{{ header.search.placeholder }}" />
           </form>
-          {%- for button in headerButtons %}
-          <a
-            class="button button--{{ button.type }} button--icon-left"
-            href="{{ button.url }}"
-            target="_blank"
-          >
-            <img src="{{ button.icon }}" alt="{{ button.alt }}" width="24" height="24" />
-            {{ button.text }}
-          </a>
-          {%- endfor %}
+          {% for button in header.buttons %}
+            {% include "partials/button.njk" %}
+          {% endfor %}
         </div>
       </div>
     </header>

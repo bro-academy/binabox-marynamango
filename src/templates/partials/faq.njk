@@ -2,14 +2,14 @@
         <div class="faq__wrapper">
           <h2 class="section-title">{{ faq.title }}</h2>
           <div class="faq__container">
-            {%- for item in faq.items%}
+            {% for item in faq.items%}
             <details class="faq__item" {% if loop.first %}open{% endif %}>
               <summary class="faq__question">{{ item.question }}</summary>
               <div class="faq__content">
                 <p class="faq__answer">{{ item.answer }}</p>
               </div>
             </details>
-            {%- endfor %}
+            {% endfor %}
           </div>
         </div>
       </section>

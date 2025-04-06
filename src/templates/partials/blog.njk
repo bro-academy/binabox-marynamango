@@ -2,13 +2,14 @@
         <div class="blog__wrapper">
           <h2 class="section-title">{{ blog.title }}</h2>
           <div class="blog__list">
-          {%- for post in blog.posts %}
+          {% for post in blog.posts %}
             {% include "partials/post.njk" %}
           {% endfor %}  
           </div>
           <!-- Read more button after all the blocks -->
           <div class="button-wrapper">
-            <a class="button button--secondary" href="{{ blog.link }}">{{blog.linkText}}</a>
+            {% set button = blog.sectionButton %}
+            {% include "partials/button.njk" %}
           </div>
         </div>
       </section>

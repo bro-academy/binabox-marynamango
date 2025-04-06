@@ -13,7 +13,33 @@
     },
     "search": {
         "placeholder": "search"
+      },
+    "buttons": [
+      {
+        "tag": "a",
+        "text": "Discord",
+        "icon": "#",
+        "iconAlt": "Discord logo",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "modFirst": "secondary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      },
+      {
+        "tag": "a",
+        "text": "Connect",
+        "icon": "#",
+        "iconAlt": "Connect icon",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "modFirst": "primary",
+        "modSecond": "icon-left",
+        "target": "_blank"
       }
+    ]
   },
     "path": "index.html",
       "nav": [
@@ -34,22 +60,6 @@
           "text": "Contact us"
         }
       ],
-      "headerButtons": [
-        {
-          "text": "Discord",
-          "alt": "Discord logo",
-          "url": "#",
-          "icon": "#",
-          "type": "secondary"
-        },
-        {
-          "text": "Connect",
-          "alt": "Connect icon",
-          "url": "#",
-          "icon": "#",
-          "type": "primary"
-        }
-      ],
   "promo": {
     "title": "WITH {{ promo.brand }} EXPLORE NFT COLLECTION",
     "brand": "<span class=\"promo__highlight\">BINABOX</span>",
@@ -59,8 +69,8 @@
       { "value": "1000+", "term": "Profiles whitelisted" }
     ],
     "buttons": [
-      { "text": "Connect Wallet", "url": "#", "type": "primary" },
-      { "text": "Whitelist now", "url": "#", "type": "secondary" }
+      { "tag": "a", "text": "Connect Wallet", "url": "#", "modFirst": "primary", "target": "_blank" },
+      { "tag": "a", "text": "Whitelist now", "url": "#", "modFirst": "secondary" }
     ],
     "image": {
       "src": "img/binabox-cube-1x.webp",
@@ -77,10 +87,31 @@
       "width": 24,
       "height": 24
     },
-    "controls": [
-      { "type": "secondary", "text": "See all", "url": "#" },
-      { "type": "secondary", "icon": "#", "alt": "Chevron left" },
-      { "type": "primary", "icon": "#", "alt": "Chevron right" }
+    "buttons": [
+      { 
+        "tag": "a",
+        "modFirst": "secondary",
+        "text": "See all",
+        "url": "#" 
+      },
+      {
+        "tag": "button",
+        "modFirst": "secondary",
+        "modSecond": "only-icon",
+        "icon": "#",
+        "iconAlt": "Chevron left",
+        "iconWidth": 24,
+        "iconHeight": 24
+      },
+      {
+        "tag": "button",
+        "modFirst": "primary",
+        "modSecond": "only-icon",
+        "icon": "#",
+        "iconAlt": "Chevron right",
+        "iconWidth": 24,
+        "iconHeight": 24
+      }
     ],
     "products": [
       {
@@ -152,8 +183,13 @@
   },
   "blog": {
     "title": "Our Blog",
-    "link": "#",
-    "linkText": "Read more",
+    "sectionButton": {
+      "tag": "a",
+      "url": "#",
+      "text": "Read more",
+      "modFirst": "secondary",
+      "modSecond": "icon-right"
+    },
     "posts": [
       {
         "category": "NFT",
@@ -163,11 +199,33 @@
           "width": 736,
           "height": 664
         },
-        "author": "Tony Nguyen",
-        "date": "20 June 2022",
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
-        "link": "#"
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
       },
       {
         "category": "NFT",
@@ -177,11 +235,33 @@
           "width": 736,
           "height": 198
         },
-        "author": "Tony Nguyen",
-        "date": "20 June 2022",
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
-        "link": "#"
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
       },
       {
         "category": "NFT",
@@ -191,11 +271,33 @@
           "width": 736,
           "height": 198
         },
-        "author": "Tony Nguyen",
-        "date": "20 June 2022",
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
-        "link": "#"
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
       },
       {
         "category": "NFT",
@@ -205,11 +307,33 @@
           "width": 736,
           "height": 198
         },
-        "author": "Tony Nguyen",
-        "date": "20 June 2022",
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
-        "link": "#"
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
       },
       {
         "category": "NFT",
@@ -219,11 +343,33 @@
           "width": 736,
           "height": 198
         },
-        "author": "Tony Nguyen",
-        "date": "20 June 2022",
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
-        "link": "#"
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
       },
       {
         "category": "NFT",
@@ -233,19 +379,46 @@
           "width": 736,
           "height": 664
         },
-        "author": "Tony Nguyen",
-        "date": "20 June 2022",
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
-        "link": "#"
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
       }
     ]
   },
   "about": {
     "title": "About us",
     "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
-    "link": "#",
-    "linkText":"Read more",
+    "sectionButton": {
+      "tag": "a",
+      "url": "#",
+      "text": "Read more",
+      "modFirst": "secondary",
+      "modSecond": "icon-right"
+    },
     "items": [
       {
         "heading": "High quality",
@@ -283,12 +456,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
       },
       {
@@ -301,12 +473,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
       },
       {
@@ -319,12 +490,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
       },
       {
@@ -337,12 +507,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
       },
       {
@@ -355,12 +524,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
       },
       {
@@ -373,12 +541,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
       },
       {
@@ -391,12 +558,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
       }
     ]
@@ -456,12 +622,12 @@
     ],
     "copyright": "BINABOX 2022 - All rights reserved",
     "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#" },
-          { "name": "Facebook", "url":"#", "icon": "#" },
-          { "name": "Telegram", "url":"#", "icon": "#" },
-          { "name": "Youtube", "url":"#", "icon": "#" },
-          { "name": "TikTok", "url":"#", "icon": "#" },
-          { "name": "Discord", "url":"#", "icon": "#" }
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
         ]
   }
 }

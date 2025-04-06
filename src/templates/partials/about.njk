@@ -3,13 +3,14 @@
           <h2 class="section-title section-title--alt">{{ about.title }}</h2>
           <p class="about-us__desc">{{ about.description }}</p>
           <ol class="about-us__list">
-          {%- for item in about.items %}
+          {% for item in about.items %}
             {% include "partials/about-item.njk" %}
-          {%- endfor %}
+          {% endfor %}
           </ol>
           <!-- Read more after "About us" -->
           <div class="button-wrapper">
-            <a class="button button--secondary" href="{{ about.link }}">{{ about.linkText}}</a>
+            {% set button = blog.sectionButton %}
+            {% include "partials/button.njk" %}
           </div>
         </div>
       </section>

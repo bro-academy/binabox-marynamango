@@ -2,9 +2,9 @@
         <div class="team__wrapper">
           <h2 class="section-title">{{ team.title}}</h2>
           <div class="team__list">
-          {%- for member in team.members %}
+          {% for member in team.members %}
             {% include "partials/team-member.njk" %}
-          {%- endfor %}
+          {% endfor %}
           </div>
         </div>
       </section>

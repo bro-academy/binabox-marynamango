@@ -1,8 +1,8 @@
 <a class="product" href="{{ product.url }}">
               <article class="product__card">
-                {%- if product.label %}
-                <span class="label {%- if product.label == 'Sold out' %} label--updated {%- endif %}">{{ product.label }}</span>
-                {%- endif %}
+                {% if product.label %}
+                <span class="label{% if product.label == 'Sold out' %} label--updated{% endif %}">{{ product.label }}</span>
+                {% endif %}
                 <img
                   class="product__img"
                   src="{{ product.image.src }}"

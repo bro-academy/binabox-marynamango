@@ -9,16 +9,12 @@
                   height="{{ post.image.height }}"
                 />
               </a>
-              {%- set author = post.author -%}
-              {%- set date = post.date -%}
-              {%- include "partials/info.njk" %}
+              {% set info = post.info %}
+              {% include "partials/info.njk" %}
               <h3 class="post__title">{{ post.title }}</h3>
               <p class="post__desc">{{ post.description }}</p>
               <div class="button-holder">
-                <a
-                  class="button button--secondary button--icon-right button--small"
-                  href="{{ post.link }}"
-                  >Read more ></a
-                >
+               {% set button = post.button %}
+               {% include "partials/button.njk" %}
               </div>
             </article>

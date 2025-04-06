@@ -2,21 +2,21 @@
                 <span class="info__profile">
                   <img
                     class="info__profile-icon"
-                    src="#"
-                    alt="user-icon"
-                    width="16"
-                    height="16"
+                    src="{{ info.authorIcon.src }}"
+                    alt="{{ info.authorIcon.alt }}"
+                    width="{{ info.authorIcon.width }}"
+                    height="{{ info.authorIcon.height }}"
                   />
-                  {{ author }}
+                  {{ info.author }}
                 </span>
                 <time class="info__date" datetime="2022-06-20">
                   <img
                     class="info__calendar-icon"
-                    src="#"
-                    alt="calendar"
-                    width="16"
-                    height="16"
+                    src="{{ info.dateIcon.src }}"
+                    alt="{{ info.dateIcon.alt }}"
+                    width="{{ info.dateIcon.width }}"
+                    height="{{ info.dateIcon.height }}"
                   />
-                  {{ date }}
+                  {{ info.date }}
                 </time>
               </div>

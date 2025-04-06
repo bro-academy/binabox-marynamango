@@ -1,18 +1,20 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__col">
+        {% if footer.logo.url %}
+          <a class="logo" href="{{ footer.logo.url }}">
+        {% else %}
           <a class="logo">
-            <img src="#" alt="Binabox logo" width="36" height="40" />
-            <img src="#" alt="Binabox" width="133" height="21" />
+        {% endif %}
+            <img src="{{ footer.logo.img }}" alt="{{ footer.logo.alt }}" width="{{ footer.logo.width }}" height="{{ footer.logo.height }}" />
+            <img src="{{ footer.logo.textImg}}" alt="{{ footer.logo.textAlt }}" width="{{ footer.logo.textWidth}}" height="{{ footer.logo.textHeight }}" />
           </a>
-          <p class="footer__text">
-            We are the best way to check the rarity of NFT collection.
-          </p>
+          <p class="footer__text">{{ footer.description }}</p>
         </div>
         {% include "partials/footer-nav.njk" %}
       </div>
       <div class="footer__wrapper">
-        <p class="copyright">BINABOX 2022 - All rights reserved</p>
+        <p class="copyright">{{ footer.copyright }}</p>
         {% set socials = footer.socials %}
         {% include "partials/social-list.njk" %}
       </div>
