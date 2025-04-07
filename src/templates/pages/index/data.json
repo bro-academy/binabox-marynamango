@@ -1,4 +1,633 @@
 {
-  "title": "test",
-  "h1": ""
+  "title": "Home",
+  "header": {
+    "logo": {
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 35,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21
+    },
+    "search": {
+        "placeholder": "search"
+      },
+    "buttons": [
+      {
+        "tag": "a",
+        "text": "Discord",
+        "icon": "#",
+        "iconAlt": "Discord logo",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "modFirst": "secondary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      },
+      {
+        "tag": "a",
+        "text": "Connect",
+        "icon": "#",
+        "iconAlt": "Connect icon",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "modFirst": "primary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      }
+    ]
+  },
+    "path": "index.html",
+      "nav": [
+        {
+          "url": "index.html",
+          "text": "Home"
+        },
+        {
+          "url": "blog.html",
+          "text": "Blog"
+        },
+        {
+          "url": "catalog.html",
+          "text": "Catalog"
+        },
+        {
+          "url": "contact-us.html",
+          "text": "Contact us"
+        }
+      ],
+  "promo": {
+    "title": "WITH {{ promo.brand }} EXPLORE NFT COLLECTION",
+    "brand": "<span class=\"promo__highlight\">BINABOX</span>",
+    "description": "We are the best way to check the rarity of NFT collection",
+    "stats": [
+      { "value": "2240+", "term": "Total Items" },
+      { "value": "1000+", "term": "Profiles whitelisted" }
+    ],
+    "buttons": [
+      { "tag": "a", "text": "Connect Wallet", "url": "#", "modFirst": "primary", "target": "_blank" },
+      { "tag": "a", "text": "Whitelist now", "url": "#", "modFirst": "secondary" }
+    ],
+    "image": {
+      "src": "img/binabox-cube-1x.webp",
+      "alt": "Binabox cube",
+      "width": 533,
+      "height": 641
+    }
+  },
+  "catalog": {
+    "title": "Catalog",
+    "icon": {
+      "src": "#",
+      "alt": "Folder icon",
+      "width": 24,
+      "height": 24
+    },
+    "buttons": [
+      { 
+        "tag": "a",
+        "modFirst": "secondary",
+        "text": "See all",
+        "url": "#" 
+      },
+      {
+        "tag": "button",
+        "modFirst": "secondary",
+        "modSecond": "only-icon",
+        "icon": "#",
+        "iconAlt": "Chevron left",
+        "iconWidth": 24,
+        "iconHeight": 24
+      },
+      {
+        "tag": "button",
+        "modFirst": "primary",
+        "modSecond": "only-icon",
+        "icon": "#",
+        "iconAlt": "Chevron right",
+        "iconWidth": 24,
+        "iconHeight": 24
+      }
+    ],
+    "products": [
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/skeleton-1x.webp",
+          "alt": "Skeleton",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/cat-1x.webp",
+          "alt": "Cat",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "Sold out",
+        "state": "Sold out",
+        "image": {
+          "src": "img/scissors-1x.webp",
+          "alt": "Scissors",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/device-1x.webp",
+          "alt": "Device",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/gamebox-1x.webp",
+          "alt": "Gamebox",
+          "width": 253,
+          "height": 324
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Our Blog",
+    "sectionButton": {
+      "tag": "a",
+      "url": "#",
+      "text": "Read more",
+      "modFirst": "secondary",
+      "modSecond": "icon-right"
+    },
+    "posts": [
+      {
+        "category": "NFT",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 736,
+          "height": 664
+        },
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "img/skeleton-1x.webp",
+          "alt": "Skeleton",
+          "width": 736,
+          "height": 198
+        },
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "img/cat-1x.webp",
+          "alt": "Cat",
+          "width": 736,
+          "height": 198
+        },
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "img/chimpanzee-1x.webp",
+          "alt": "Chimpanzee",
+          "width": 736,
+          "height": 198
+        },
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "img/duck-1x.webp",
+          "alt": "Duck",
+          "width": 736,
+          "height": 198
+        },
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
+      },
+      {
+        "category": "NFT",
+        "image": {
+          "src": "img/gamebox-1x.webp",
+          "alt": "Gamebox",
+          "width": 736,
+          "height": 664
+        },
+        "title": "Sonic Live",
+        "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
+        "link": "#",
+        "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+        "button": {
+          "tag": "a",
+          "url": "#",
+          "text": "Read more >",
+          "modFirst": "secondary",
+          "modSecond": "icon-right",
+          "modThird": "small"
+        }
+      }
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
+    "sectionButton": {
+      "tag": "a",
+      "url": "#",
+      "text": "Read more",
+      "modFirst": "secondary",
+      "modSecond": "icon-right"
+    },
+    "items": [
+      {
+        "heading": "High quality",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#"
+      },
+      {
+        "heading": "Big collection",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#",
+        "highlighted": true
+      },
+      {
+        "heading": "Top resourse",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#"
+      },
+      {
+        "heading": "Big community",
+        "info": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.",
+        "link": "#"
+      }
+    ]
+  },
+  "team": {
+    "title": "Our team",
+    "members": [
+      {
+        "photo": {
+          "src": "img/jason-smith-photo-1x.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+      },
+      {
+        "photo": {
+          "src": "img/jason-smith-photo-1x.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+      },
+      {
+        "photo": {
+          "src": "img/jason-smith-photo-1x.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+      },
+      {
+        "photo": {
+          "src": "img/jason-smith-photo-1x.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+      },
+      {
+        "photo": {
+          "src": "img/jason-smith-photo-1x.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+      },
+      {
+        "photo": {
+          "src": "img/jason-smith-photo-1x.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+      },
+      {
+        "photo": {
+          "src": "img/jason-smith-photo-1x.webp",
+          "alt": "Jason Smith photo",
+          "width": 127,
+          "height": 127
+        },
+        "name": "Jason Smith",
+        "position": "Co - Founder",
+        "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQs",
+    "items": [
+      {
+        "question": "What are the NFTs?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      },
+      {
+        "question": "How do i get NFTs?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      },
+      {
+        "question": "How can we buy your NFTs?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      },
+      {
+        "question": "Who are the team behind the project?",
+        "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+      }
+    ]
+  },
+  "footer": {
+    "logo":{
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 36,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21
+    },
+    "description": "We are the best way to check the rarity of NFT collection.",
+    "footerNav": [
+      {
+        "title": "Subscribe",
+        "links": [
+          { "text": "Home", "url": "index.html" },
+          { "text": "Blog", "url": "blog.html" },
+          { "text": "Catalog", "url": "#" },
+          { "text": "Contact us", "url": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "text": "Terms Conditions", "url": "#" },
+          { "text": "Privacy Policy", "url": "#" },
+          { "text": "Whitepaper", "url": "#" },
+          { "text": "Help Center", "url": "#" }
+        ]
+      }
+    ],
+    "copyright": "BINABOX 2022 - All rights reserved",
+    "socials": [
+          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
+          { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
+        ]
+  }
 }

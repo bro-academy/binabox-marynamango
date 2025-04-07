@@ -1,0 +1,236 @@
+{
+  "title": "Blog",
+  "header": {
+    "logo": {
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 35,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21,
+      "url": "/"
+    },
+    "search": {
+        "placeholder": "search"
+    },
+    "buttons": [
+      {
+        "tag": "a",
+        "text": "Discord",
+        "iconAlt": "Discord logo",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "icon": "#",
+        "modFirst": "secondary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      },
+      {
+        "tag": "a",
+        "text": "Connect",
+        "iconAlt": "Connect icon",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "icon": "#",
+        "modFirst": "primary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      }
+    ]
+  },
+    "path": "blog.html",
+      "nav": [
+        {
+          "url": "index.html",
+          "text": "Home"
+        },
+        {
+          "url": "blog.html",
+          "text": "Blog"
+        },
+        {
+          "url": "catalog.html",
+          "text": "Catalog"
+        },
+        {
+          "url": "contact-us.html",
+          "text": "Contact us"
+        }
+      ],
+  "hero": {
+    "title": "Our blog",
+    "breadcrumbs": [
+      { "name": "Home", "url": "/" },
+      { "name": "Our blog", "url": "/blog" },
+      { "name": "The Basilisks NFT" }
+    ]
+  },
+  "aside": {
+    "boxes": [
+      {
+        "title": "Categories",
+        "type": "list",
+        "items": [
+          { "text": "Our blog", "url": "/blog", "count": 12 },
+          { "text": "Metaverse", "url": "#", "count": 24 },
+          { "text": "Gaming", "url": "#", "count": 24 },
+          { "text": "Art", "url": "#", "count": 24 },
+          { "text": "Robot", "url": "#", "count": 24 },
+          { "text": "Lauchpad", "url": "#", "count": 24 },
+          { "text": "Crypto", "url": "#", "count": 430 }
+        ]
+      },
+      {
+        "title": "Tag",
+        "type": "tags",
+        "items": [
+          { "text": "NFT", "url": "#" },
+          { "text": "ICO", "url": "#" },
+          { "text": "Robot", "url": "#" },
+          { "text": "Crypto", "url": "#" },
+          { "text": "Lauchpad", "url": "#" },
+          { "text": "Metaverse", "url": "#" }
+        ]
+      }
+    ]
+  },
+  "article": {
+    "title": "The Basilisks NFT",
+    "button": {
+      "tag": "a",
+      "text": "Gaming",
+      "url": "#",
+      "modFirst": "primary"
+    },
+    "info": {
+          "author": "Tony Nguyen",
+          "date": "20 June 2022",
+          "authorIcon": {
+            "src": "img/user.svg",
+            "alt": "user-icon",
+            "width": 16,
+            "height": 16
+          },
+          "dateIcon": {
+            "src": "img/calendar.svg",
+            "alt": "calendar",
+            "width": 16,
+            "height": 16
+          }
+        },
+    "mainImage": {
+      "src": "img/dragon-main-1x.webp",
+      "alt": "Human and two-headed basilisk",
+      "width": 1024,
+      "height": 557,
+      "caption": "Photo caption"
+    },
+    "paragraphs": [
+      "The Basilisks that<span class=\"article__spotlight\"> players</span> collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use the <a class=\"article__highlight\" href=\"#\">Basilisks they have</a> gathered to battle other players to win ether (ETH).",
+      "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
+    ],
+    "listItems": [
+      "The Basilisks that players collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
+      "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing <a class=\"article__highlight\" href=\"#\">game developed</a> on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
+    ],
+    "customList": [ "List name 1", "List name 2", "List name 3", "List name 4" ],
+    "quote": {
+      "text": "\"The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers\"",
+      "rating": "8.5",
+      "ratingMax": "10",
+      "author": "Markout Corporation",
+      "icon": "#",
+      "alt": "Rating icon",
+      "width": 15,
+      "height": 15
+    },
+    "images": [
+      {
+        "src": "img/dragon-head-1x.webp",
+        "alt": "Dragon head",
+        "width": 500,
+        "height": 394,
+        "caption":"Photo caption"
+      },
+      {
+        "src": "img/dragon-and-human-1x.webp",
+        "alt": "Dragon and human",
+        "width": 500,
+        "height": 394,
+        "caption":"Photo caption"
+      }
+    ],
+    "subsections": [
+      {
+        "subtitle": "NFTs are digital assets that represent real-world objects",
+        "paragraphs":[
+          "Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.",
+          "Alternatively, if you're on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you'll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem."
+        ]
+      },
+      {
+        "subtitle": "NFT Avatar Generators",
+        "paragraphs":[
+          "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale."
+        ]
+      }
+    ],
+    "tags": [ 
+      { "text": "NFT", "url": "#" },
+      { "text": "ICO", "url": "#" },
+      { "text": "Crypto", "url": "#" }
+    ],
+    "share": [
+      { "icon": "#", "alt": "Twitter logo", "width": 16, "height": 16 },
+      { "icon": "#", "alt": "Facebook logo", "width": 16, "height": 16 },
+      { "icon": "#", "alt": "Instagram logo", "width": 16, "height": 16 }
+    ]
+  },
+  "footer": {
+    "logo":{
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 36,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21,
+      "url": "/"
+    },
+    "description": "We are the best way to check the rarity of NFT collection.",
+    "footerNav": [
+      {
+        "title": "Subscribe",
+        "links": [
+          { "text": "Home", "url": "index.html" },
+          { "text": "Blog", "url": "blog.html" },
+          { "text": "Catalog", "url": "#" },
+          { "text": "Contact us", "url": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "text": "Terms Conditions", "url": "#" },
+          { "text": "Privacy Policy", "url": "#" },
+          { "text": "Whitepaper", "url": "#" },
+          { "text": "Help Center", "url": "#" }
+        ]
+      }
+    ],
+    "copyright": "BINABOX 2022 - All rights reserved",
+    "socials": [
+      { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
+    ]
+  }
+}

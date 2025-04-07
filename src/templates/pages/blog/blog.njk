@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<main class="main-container">
+      {% include "partials/hero.njk" %}
+      <div class="page-layout">
+        {% include "partials/aside.njk" %}
+        {% include "partials/article.njk" %}
+      </div>
+    </main>
+{% endblock %}

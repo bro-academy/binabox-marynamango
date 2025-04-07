@@ -1,0 +1,20 @@
+<section class="catalog">
+        <div class="catalog__wrapper">
+          <div class="catalog__header-wrapper">
+            <h2 class="catalog__title">
+              <img src="{{ catalog.icon.src }}" alt="{{ catalog.icon.alt }}" width="{{ catalog.icon.width }}" height="{{ catalog.icon.height }}" />{{ catalog.title }}
+            </h2>
+            <div class="catalog__controls">
+            {% for button in catalog.buttons %}
+              {% include "partials/button.njk" %}
+            {% endfor %}
+            </div>
+          </div>
+          <!-- Catalog Products -->
+          <div class="catalog__list">
+            {% for product in catalog.products %}
+              {% include "partials/product-card.njk" %}
+            {% endfor %}
+          </div>
+        </div>
+      </section>

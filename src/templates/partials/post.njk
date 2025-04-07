@@ -1,0 +1,20 @@
+<article class="post">
+              <a class="post__link" href="{{ post.link }}">
+                <span class="label">{{ post.category }}</span>
+                <img
+                  class="post__img{% if post.image.alt == 'Skeleton' or post.image.alt == 'Duck' %} post__img--top{% endif %}"
+                  src="{{ post.image.src }}"
+                  alt="{{ post.image.alt }}"
+                  width="{{ post.image.width }}"
+                  height="{{ post.image.height }}"
+                />
+              </a>
+              {% set info = post.info %}
+              {% include "partials/info.njk" %}
+              <h3 class="post__title">{{ post.title }}</h3>
+              <p class="post__desc">{{ post.description }}</p>
+              <div class="button-holder">
+               {% set button = post.button %}
+               {% include "partials/button.njk" %}
+              </div>
+            </article>
