@@ -1,10 +1,6 @@
 <header class="header">
       <div class="header__wrapper">
-      {% if header.logo.url %}
-        <a class="logo" href="{{ header.logo.url }}">
-      {% else %}
-        <a class="logo">
-      {% endif %}
+      <a class="logo" {% if header.logo.url %}href="{{ header.logo.url }}"{% endif %}>
           <img src="{{ header.logo.img }}" alt="{{ header.logo.alt }}" width="{{ header.logo.width }}" height="{{ header.logo.height }}" />
           <img src="{{ header.logo.textImg}}" alt="{{ header.logo.textAlt}}" width="{{ header.logo.textWidth }}" height="{{ header.logo.textHeight }}" />
         </a>

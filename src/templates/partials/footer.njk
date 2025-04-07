@@ -1,11 +1,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__col">
-        {% if footer.logo.url %}
-          <a class="logo" href="{{ footer.logo.url }}">
-        {% else %}
-          <a class="logo">
-        {% endif %}
+          <a class="logo" {% if footer.logo.url %}href="{{ footer.logo.url }}"{% endif %}>
             <img src="{{ footer.logo.img }}" alt="{{ footer.logo.alt }}" width="{{ footer.logo.width }}" height="{{ footer.logo.height }}" />
             <img src="{{ footer.logo.textImg}}" alt="{{ footer.logo.textAlt }}" width="{{ footer.logo.textWidth}}" height="{{ footer.logo.textHeight }}" />
           </a>

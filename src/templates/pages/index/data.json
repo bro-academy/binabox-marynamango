@@ -16,7 +16,6 @@
       },
     "buttons": [
       {
-        "tag": "a",
         "text": "Discord",
         "icon": "#",
         "iconAlt": "Discord logo",
@@ -28,7 +27,6 @@
         "target": "_blank"
       },
       {
-        "tag": "a",
         "text": "Connect",
         "icon": "#",
         "iconAlt": "Connect icon",
@@ -69,8 +67,8 @@
       { "value": "1000+", "term": "Profiles whitelisted" }
     ],
     "buttons": [
-      { "tag": "a", "text": "Connect Wallet", "url": "#", "modFirst": "primary", "target": "_blank" },
-      { "tag": "a", "text": "Whitelist now", "url": "#", "modFirst": "secondary" }
+      { "text": "Connect Wallet", "url": "#", "modFirst": "primary", "target": "_blank" },
+      { "text": "Whitelist now", "url": "#", "modFirst": "secondary" }
     ],
     "image": {
       "src": "img/binabox-cube-1x.webp",
@@ -89,13 +87,11 @@
     },
     "buttons": [
       { 
-        "tag": "a",
         "modFirst": "secondary",
         "text": "See all",
         "url": "#" 
       },
       {
-        "tag": "button",
         "modFirst": "secondary",
         "modSecond": "only-icon",
         "icon": "#",
@@ -104,7 +100,6 @@
         "iconHeight": 24
       },
       {
-        "tag": "button",
         "modFirst": "primary",
         "modSecond": "only-icon",
         "icon": "#",
@@ -219,7 +214,6 @@
           }
         },
         "button": {
-          "tag": "a",
           "url": "#",
           "text": "Read more >",
           "modFirst": "secondary",
@@ -255,7 +249,6 @@
           }
         },
         "button": {
-          "tag": "a",
           "url": "#",
           "text": "Read more >",
           "modFirst": "secondary",
@@ -291,7 +284,6 @@
           }
         },
         "button": {
-          "tag": "a",
           "url": "#",
           "text": "Read more >",
           "modFirst": "secondary",
@@ -327,7 +319,6 @@
           }
         },
         "button": {
-          "tag": "a",
           "url": "#",
           "text": "Read more >",
           "modFirst": "secondary",
@@ -363,7 +354,6 @@
           }
         },
         "button": {
-          "tag": "a",
           "url": "#",
           "text": "Read more >",
           "modFirst": "secondary",
@@ -399,7 +389,6 @@
           }
         },
         "button": {
-          "tag": "a",
           "url": "#",
           "text": "Read more >",
           "modFirst": "secondary",

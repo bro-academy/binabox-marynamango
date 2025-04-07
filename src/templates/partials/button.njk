@@ -1,14 +1,4 @@
-{% if button.tag == "button" %}
-    <button
-      type="{{ button.typeAttr | default('button') }}"
-      class="{% raw %}button{% endraw %}{% if button.modFirst %} {% raw %}button--{% endraw %}{{ button.modFirst }}{% endif %}{% if button.modSecond %} {% raw %}button--{% endraw %}{{ button.modSecond}}{% endif %}{% if button.modThird %} {% raw %}button--{% endraw %}{{ button.modThird}}{% endif %}"
-    >
-      {% if button.icon %}
-        <img src="{{ button.icon }}" alt="{{ button.iconAlt }}" width="{{ button.iconWidth }}" height="{{ button.iconHeight }}" />
-      {% endif %}
-      {{ button.text }}
-    </button>
-{% else %}
+{% if button.url %}
     <a
       href="{{ button.url }}"
       class="{% raw %}button{% endraw %}{% if button.modFirst %} {% raw %}button--{% endraw %}{{ button.modFirst }}{% endif %}{% if button.modSecond %} {% raw %}button--{% endraw %}{{ button.modSecond}}{% endif %}{% if button.modThird %} {% raw %}button--{% endraw %}{{ button.modThird}}{% endif %}"
@@ -19,4 +9,14 @@
       {% endif %}
       {{ button.text }}
     </a>
+{% else %}
+    <button
+      type="{{ button.typeAttr | default('button') }}"
+      class="{% raw %}button{% endraw %}{% if button.modFirst %} {% raw %}button--{% endraw %}{{ button.modFirst }}{% endif %}{% if button.modSecond %} {% raw %}button--{% endraw %}{{ button.modSecond}}{% endif %}{% if button.modThird %} {% raw %}button--{% endraw %}{{ button.modThird}}{% endif %}"
+    >
+      {% if button.icon %}
+        <img src="{{ button.icon }}" alt="{{ button.iconAlt }}" width="{{ button.iconWidth }}" height="{{ button.iconHeight }}" />
+      {% endif %}
+      {{ button.text }}
+    </button>
 {% endif %}
