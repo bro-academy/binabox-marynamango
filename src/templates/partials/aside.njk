@@ -14,8 +14,10 @@
             {% endif %}
             {# Render list of tags #}
             {% if box.type == "tags" %}
+            <ul class="action-tag">
               {% set tags = box.items %}
               {% include "partials/tag-list.njk" %}
+            </ul>
             {% endif %}
           </div>
           {% endfor %}
