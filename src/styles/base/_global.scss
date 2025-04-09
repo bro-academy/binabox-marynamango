@@ -1,0 +1,71 @@
+:root {
+    --font-primary: "Poppins", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    --font-secondary: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
+   
+    --color-primary: rgb(248 247 255 / 1);
+    --color-secondary: rgb(245 248 251 / 1);
+    --color-muted: rgb(239 245 250 / 0.82);
+    --color-accent: rgb(2 101 220 / 1);
+
+    --background-color: rgb(13 13 21 / 1);
+    --background-color-cards: rgb(29 28 40 / 1); //cards, faq
+    --background-color-secondary: rgb(26 25 37 / 1); // about,footer
+   
+    --font-size-xs: 12px;
+    --line-height-xs:16px;
+
+    --font-size-sm: 14px;
+    --line-height-sm: 20px;
+
+    --font-size-md: 16px;
+    --line-height-md: 24px;
+
+    --font-size-base: 18px;
+    --line-height-base: 28px;
+
+    --font-size-lg: 20px;
+    --line-height-lg: 28px;
+
+    --font-size-xl: 24px;
+    --line-height-xl: 32px;
+
+    --font-size-subtitle: 28px;
+    --line-height-subtitle: 36px;
+
+    --font-size-title: 36px;
+    --line-height-title: 48px;
+
+    --font-size-title-main: 52px;
+    --line-height-title-main: 62px;
+
+    --font-weight-base: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-base);
+    background-color: var(--background-color);
+}
+
+a,
+a:link,
+a:visited,
+a.button,
+button {
+    text-decoration: none;
+}

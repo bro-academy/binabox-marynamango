@@ -1,0 +1,40 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mixins;
+
+.header__wrapper {
+    max-width: 1696px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+
+    &[href] {
+        &:hover {
+            opacity: .7; 
+        }
+        &:focus,
+        &:active {
+            outline: 4px solid vars.$color-focus;
+        }
+    }
+
+    img + img {
+        margin-left: 18px;
+    }
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+
+    .button + .button {
+        margin-left: 16px;
+    }
+}

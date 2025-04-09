@@ -1,0 +1,62 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mixins;
+
+.button {
+    display: inline-block;
+    color: vars.$color-secondary;
+    font-weight: #{var(--font-weight-bold)};
+    padding: vars.$button-padding;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline-offset: 0;
+    }
+}
+    
+.button--primary {
+    @include mixins.border-style(vars.$color-accent);
+    background-color: vars.$color-accent;
+
+    &:hover {
+        background-color: vars.$color-focus;
+        border-color: vars.$color-focus;
+    }
+
+    &:focus {
+        border-color: vars.$color-focus;
+        outline: 2px solid vars.$color-focus;
+    }
+
+    &:active {
+        background-color: vars.$color-active;
+        border-color: vars.$color-active;
+    }
+}
+    
+.button--secondary {
+    @include mixins.border-style(vars.$color-separator);
+    background-color: transparent;
+    
+    &:hover,
+    &:active {
+        background-color: vars.$color-secondary-hover;
+        border-color: vars.$color-secondary-hover;
+    }
+    
+    &:focus {
+        background-color: vars.$color-secondary-hover;
+        border-color: vars.$color-focus;
+        outline: 2px solid vars.$color-focus;
+    }
+}
+
+.button--small {
+    font-size: 16px;
+    line-height: 24px;
+    padding: vars.$button-padding-small;
+}
+
+.button--only-icon {
+    padding: 12px;
+}

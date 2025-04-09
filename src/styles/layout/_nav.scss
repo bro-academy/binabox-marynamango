@@ -1,0 +1,39 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mixins;
+
+.nav {
+    margin-right: 16px; /* Just to not stick to each other */
+    }
+    
+.nav__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+    
+.nav__link {
+    @include mixins.text-md;
+    color: #f5f8fb;
+    font-weight: var(--font-weight-bold);
+    padding: vars.$button-padding-small;
+    display: block;
+    border-bottom: 2px solid transparent;
+    
+    &:hover {
+    color: vars.$color-focus;
+    }
+    
+    &:active {
+    color: vars.$color-active;
+    }
+    
+    &:focus {
+    outline: 4px solid vars.$color-focus;
+    border-radius: 5px;
+    }
+    
+    &--active {
+    border-color: vars.$color-accent;
+    }
+}

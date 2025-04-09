@@ -1,0 +1,18 @@
+$font-primary: "Poppins", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+$font-secondary: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
+
+$color-primary: rgb(248 247 255 / 1);
+$color-secondary: rgb(245 248 251 / 1);
+$color-muted: rgb(239 245 250 / 0.82);
+
+$color-accent: rgb(2 101 220 / 1); //button color
+$color-focus: rgb(56 146 243 / 1); //hover,focus
+$color-active: rgb(0 84 182 / 1); //.button--primary:active
+$color-secondary-hover: rgb(191 197 238 / 0.12); //.button--secondary:hover/active/focus
+$color-invalid: rgb(234 56 41 / 1);
+$color-disabled: rgb(231 238 247 / 0.66); //placeholder,breadcrumbs
+$color-separator: rgb(208 215 251 / 0.17);
+$color-transparent: transparent;
+
+$button-padding: 10px 24px;
+$button-padding-small: 8px 20px;

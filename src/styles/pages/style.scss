@@ -1,211 +1,38 @@
-body {
-    color: #F8F7FF;
-    font-size: 18px;
-    line-height: 28px;
-    font-family: "Poppins", "Helvetica Neue", Arial, Helvetica, sans-serif;
-    background-color: #0D0D15;
-  }
+@use "../base/variables";
+@use "../base/global";
+@use "../components/button";
+@use "../components/label";
+@use "../layout/header";
+@use "../layout/nav";
   
   h1 {
-    color: #f5f8fb;
+    color: rgb(245 248 251 / 1);
     font-weight: 400;
     font-size: 52px;
     line-height: 62px;
     letter-spacing: -0.5px;
-    font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+    font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
     margin-block: 0;
   }
   
-  .header__wrapper {
-  max-width: 1696px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 32px 16px;
-  }
-  
-  .logo {
-  display: flex;
-  align-items: center;
-  margin-right: 16px; /* Just to not stick to each other */
-  }
-  
-  .logo[href]:hover {
-  opacity: .7;
-  }
-  
-  .logo[href]:focus {
-  outline: 4px solid #3892F3;
-  }
-  
-  .logo[href]:active {
-  outline: 4px solid #3892F3;
-  }
-  
-  .logo img + img {
-  margin-left: 18px;
-  }
-  
-  .nav {
-  margin-right: 16px; /* Just to not stick to each other */
-  }
-  
-  .nav__list {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  }
-  
-  .nav__link {
-  color: #f5f8fb;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  padding: 8px 20px;
-  text-decoration: none;
-  display: block;
-  border-bottom: 2px solid transparent;
-  }
-  
-  .nav__link:hover,
+  //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
   .breadcrumb__link:hover,
   .aside__link:hover {
   color: #3892F3;
   }
-  
-  .nav__link:active,
+
   .article__highlight:active,
   .breadcrumb__link:active,
   .aside__link:active {
   color: #0054B6;
   }
-  
-  .nav__link:focus,
+
   .article__highlight:focus,
   .breadcrumb__link:focus,
   .aside__link:focus {
   outline: 4px solid #3892F3;
   border-radius: 5px;
-  }
-  
-  .nav__link--active {
-  border-color: #0265DC;
-  }
-  
-  .header__actions {
-  display: flex;
-  align-items: center;
-  }
-  
-  .header__actions .button + .button {
-  margin-left: 16px;
-  }
-  
-  .search {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* If I remove it separator is not aligned */
-  }
-  
-  .search::after {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 24px;
-  background-color: #D0D7FB2B;
-  margin: 0 16px;
-  }
-  
-  .search__button {
-  border: 2px solid transparent;
-  cursor: pointer;
-  }
-  
-  .search__button:hover {
-  opacity: 0.7;
-  }
-  
-  .search__button:focus {
-  border-color: #3892F3;
-  outline: 1px solid #3892F3;
-  }
-  
-  .search__button:invalid {
-  border-color: #EA3829;
-  }
-  
-  .search__input {
-  color: #e7eef7a8;
-  font-size: 14px;
-  line-height: 20px;
-  border: 2px solid #D0D7FB2B;
-  background-color: transparent;
-  padding: 8px 12px;
-  }
-  
-  .search__input:hover {
-  border-color: #3892F3;
-  }
-  
-  .search__input:focus {
-  border-color: #3892F3;
-  outline: 1px solid #3892F3;
-  }
-  
-  .search__input:invalid {
-  border-color: #EA3829;
-  }
-  
-  .button {
-  color: #f5f8fb;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 10px 24px;
-  display: inline-block;
-  }
-  
-  .button:focus {
-  outline-offset: 0;
-  }
-  
-  .button--primary {
-  border: 2px solid #0265DC;
-  background-color: #0265DC;
-  }
-  
-  .button--primary:hover {
-  background-color: #3892F3;
-  border-color: #3892F3;
-  }
-  
-  .button--primary:focus {
-  border-color: #3892F3;
-  outline: 2px solid #3892F3;
-  }
-  
-  .button--primary:active {
-  background-color: #0054B6;
-  border-color: #0054B6;
-  }
-  
-  .button--secondary {
-  border: 2px solid #D0D7FB2B;
-  background-color: transparent;
-  }
-  
-  .button--secondary:hover,
-  .button--secondary:active {
-  background-color: #BFC5EE1F;
-  border-color: #BFC5EE1F;
-  }
-  
-  .button--secondary:focus {
-  background-color: #BFC5EE1F;
-  border-color: #3892F3;
-  outline: 2px solid #3892F3;
   }
   
   .main-container {
@@ -260,7 +87,7 @@ body {
   font-size: 52px;
   line-height: 62px;
   letter-spacing: -0.5px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   margin: 0;
   }
   
@@ -302,7 +129,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   display: flex; /* It flexes the line after */
   margin: 0;
   margin-right: 16px;
@@ -344,10 +171,6 @@ body {
   right: -20px;
   top: 50%;
   transform: translateY(-50%);
-  }
-  
-  .button--only-icon {
-  padding: 12px; /* Will add it as an icon later */
   }
   
   .catalog__list {
@@ -393,20 +216,6 @@ body {
   padding: 24px;
   }
   
-  .label {
-  color: #0265DC;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
-  background-color: #F5F8FB;
-  padding: 8px 10px;
-  }
-  
-  .label--updated {
-  color: #f5f8fb;
-  background-color: #EA3829;
-  }
-  
   .product__img {
   margin-bottom: 24px;
   object-fit: cover;
@@ -417,7 +226,7 @@ body {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   margin-bottom: 8px;
   margin-top: 0;
   }
@@ -434,7 +243,7 @@ body {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   text-align: center;
   margin-top: 0;
   margin-bottom: 40px;
@@ -521,7 +330,7 @@ body {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   margin-top: 0;
   margin-bottom: 0;
   }
@@ -532,11 +341,6 @@ body {
   line-height: 24px;
   margin-bottom: 16px;
   margin-top: 0;
-  }
-  
-  .button--small {
-  font-size: 16px;
-  line-height: 24px;
   }
   
   .button-wrapper {
@@ -605,7 +409,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   margin-bottom: 24px;
   }
   
@@ -640,7 +444,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   margin: 0;
   }
   
@@ -689,7 +493,7 @@ body {
   color: #F5F8FB;
   font-size: 24px;
   line-height: 32px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   padding: 24px;
   cursor: pointer;
   border: 3px solid transparent;
@@ -862,7 +666,7 @@ body {
   }
   
   .page-layout {
-  padding: 0 16px 24px 16px;
+  padding: 0 16px 24px;
   display: flex;
   max-width: 1416px;
   margin: 0 auto;
@@ -884,7 +688,7 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   padding-bottom: 16px;
   border-bottom: 1px solid #BFC5EE1F;
   display: block;
@@ -977,6 +781,11 @@ body {
   margin-bottom: 32px;
   }
   
+  .article__text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    }
+
   .info + .article__text {
   margin: 0;
   }
@@ -1024,7 +833,7 @@ body {
   .quote__text {
   font-size: 28px;
   line-height: 36px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   margin-top: 0;
   margin-bottom: 8px;
   }
@@ -1060,12 +869,7 @@ body {
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
-  font-family: "Bakbak One", Georgia, "Times New Roman", Times, serif;
-  margin-top: 0;
-  margin-bottom: 16px;
-  }
-  
-  .article__text {
+  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
   margin-top: 0;
   margin-bottom: 16px;
   }

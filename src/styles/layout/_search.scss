@@ -1,0 +1,57 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mixins;
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* If I remove it separator is not aligned */
+
+    &::after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 24px;
+        background-color: vars.$color-separator;
+        margin: 0 16px;
+    }
+}
+    
+.search__button {
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:focus {
+        border-color: $color-focus;
+        outline: 1px solid vars.$color-focus;
+    }
+
+    &:invalid {
+        border-color: vars.$color-invalid;
+    }
+}
+
+
+.search__input {
+    @include mixins.text-sm;
+    color: vars.$color-disabled;
+    background-color: transparent;
+    padding: 8px 12px;
+    border: 2px solid vars.$color-separator;
+    
+    &:hover {
+    border-color: vars.$color-focus;
+    }
+    
+    &:focus {
+    border-color: vars.$color-focus;
+    outline: 1px solid vars.$color-focus;
+    }
+    
+    &:invalid {
+    border-color: vars.$color-invalid;
+    }
+}
