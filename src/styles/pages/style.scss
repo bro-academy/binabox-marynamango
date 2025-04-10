@@ -4,16 +4,8 @@
 @use "../components/label";
 @use "../layout/header";
 @use "../layout/nav";
-  
-  h1 {
-    color: rgb(245 248 251 / 1);
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 62px;
-    letter-spacing: -0.5px;
-    font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-    margin-block: 0;
-  }
+@use "../layout/search";
+@use "../components/home-page/promo.scss";
   
   //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
@@ -37,74 +29,6 @@
   
   .main-container {
   padding-bottom: 40px;
-  }
-  
-  .promo {
-  background: radial-gradient(
-  42.5% 42.5% at 22.28% -4.22%,
-  rgba(2, 101, 220, 0.5) 0%,
-  rgba(2, 101, 220, 0) 100%)
-  }
-  
-  .promo__wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  padding: 0 16px;
-  }
-  
-  .promo__content-wrapper {
-  padding: 139px 0;
-  }
-  
-  .promo__highlight {
-  color: #0265DC;
-  }
-  
-  .promo__title {
-  margin-bottom: 8px;
-  }
-  
-  .promo__desc {
-  color: #F5F8FB;
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 32px;
-  margin-top: 0;
-  }
-  
-  .promo__stats {
-  display: flex;
-  margin-bottom: 32px;
-  }
-  
-  .promo__stat-item {
-  margin-right: 64px;
-  }
-  
-  .promo__stat-value {
-  color: #f5f8fb;
-  font-size: 52px;
-  line-height: 62px;
-  letter-spacing: -0.5px;
-  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-  margin: 0;
-  }
-  
-  .promo__stat-term {
-  color: #EFF5FAD1;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0;
-  padding-top: 4px;
-  }
-  
-  .button-layout {
-  display: flex;
-  }
-  
-  .button-layout .button + .button {
-  margin-left: 16px;
   }
   
   .catalog__wrapper,
