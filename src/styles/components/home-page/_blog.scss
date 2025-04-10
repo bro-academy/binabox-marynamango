@@ -1,0 +1,22 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mixins;
+
+.blog {
+    &__wrapper {
+    @extend %section-wrapper;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+.section-title {
+    @include mixins.heading-title;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin: 0 0 40px;
+}

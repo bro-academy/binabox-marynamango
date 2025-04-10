@@ -8,6 +8,9 @@
 @use "../components/home-page/promo";
 @use "../components/home-page/catalog";
 @use "../components/home-page/product-card";
+@use "../components/home-page/blog";
+@use "../components/home-page/post-card";
+@use "../components/home-page/info";
   
   //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
@@ -33,117 +36,11 @@
   padding-bottom: 40px;
   }
   
-  .blog__wrapper,
   .about-us__wrapper,
   .team__wrapper,
   .faq__wrapper,
   .footer__wrapper {
   @extend %section-wrapper;
-  }
-  
-  .section-title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 40px;
-  }
-  
-  .blog__list {
-  margin-bottom: 40px;
-  }
-  
-  .post {
-  background-color: #1D1C28;
-  padding: 24px;
-  }
-  
-  .post:not(:last-child) {
-  margin-bottom: 32px;
-  }
-  
-  .post:last-child {
-  margin-bottom: 0;
-  }
-  
-  .post__link {
-  text-decoration: none;
-  border: 3px solid transparent;
-  transition: border 0.3s ease-in-out;
-  outline: none;
-  }
-  
-  .post__link:hover {
-  opacity: 0.7;
-  }
-  
-  .post__link:active {
-  border: 3px solid #3892F3;
-  }
-  
-  .post__link:focus {
-  border: 3px solid #0265DC;
-  outline: 1px solid #3892F3;
-  }
-  
-  .post__img {
-  margin-bottom: 24px;
-  object-fit: cover;
-  }
-  
-  .post__img--top {
-  object-position: 50% 15%;
-  }
-  
-  /* If it will be the icon from the font and not an image, will have to put it for info__profile and info__date separatelly */
-  .info {
-  color: #EFF5FAD1;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-  }
-  
-  .info__profile {
-  display: flex;
-  align-items: center;
-  }
-  
-  .info__profile::after {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 16px;
-  background-color: #D0D7FB2B;
-  margin-left: 8px;
-  }
-  
-  .info__date {
-  margin-left: 8px;
-  }
-  
-  .post__title {
-  color: #F8F7FF;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-  margin-top: 0;
-  margin-bottom: 0;
-  }
-  
-  .post__desc {
-  color: #EFF5FAD1;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 16px;
-  margin-top: 0;
   }
   
   .button-wrapper {

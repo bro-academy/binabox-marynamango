@@ -1,0 +1,28 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mixins;
+
+.info {
+    @include mixins.text-sm;
+    color: var(--color-muted);
+    font-weight: var(--font-weight-bold);
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &__profile {
+        display: flex;
+        align-items: center;
+    }
+
+    &::before {
+        content: "";
+        width: 2px;
+        height: 16px;
+        background-color: #{vars.$color-separator};
+        margin-inline: 8px;
+    }
+}
+    
+.info-profile {
+    order: -1;
+}
