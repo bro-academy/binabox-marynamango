@@ -14,7 +14,7 @@
     
 .nav__link {
     @include mixins.text-md;
-    color: #f5f8fb;
+    color: var(--color-secondary);
     font-weight: var(--font-weight-bold);
     padding: vars.$button-padding-small;
     display: block;

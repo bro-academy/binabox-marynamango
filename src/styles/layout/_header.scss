@@ -1,13 +1,36 @@
 @use "../base/variables" as vars;
 @use "../base/mixins" as mixins;
 
-.header__wrapper {
-    max-width: 1696px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 32px 16px;
+.header {
+    &__wrapper {
+        max-width: 1696px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 16px;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            width: 2px;
+            height: 24px;
+            background-color: vars.$color-separator;
+            margin-inline: 16px
+        }
+
+        .button + .button {
+            margin-left: 16px;
+        }
+
+        &-search {
+            order: -1;
+        }
+    }
 }
 
 .logo {
@@ -27,14 +50,5 @@
 
     img + img {
         margin-left: 18px;
-    }
-}
-
-.header__actions {
-    display: flex;
-    align-items: center;
-
-    .button + .button {
-        margin-left: 16px;
     }
 }

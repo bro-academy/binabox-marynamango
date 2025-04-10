@@ -7,9 +7,9 @@
     color: var(--color-accent);
     background-color: var(--color-secondary);
     padding: 8px 10px;
-}
-    
-.label--updated {
-    color: var(--color-secondary);
-    background-color: vars.$color-invalid;
+
+    &--updated {
+        color: var(--color-secondary);
+        background-color: vars.$color-invalid;
+    }
 }

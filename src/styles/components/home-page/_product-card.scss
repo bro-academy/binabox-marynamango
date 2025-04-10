@@ -1,0 +1,58 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mixins;
+
+.product {
+    border: 3px solid transparent;
+    transition: border 0.3s ease-in-out;
+    outline: none;
+
+    &:hover {
+        border-image: linear-gradient(137.5deg,
+        var(--color-accent) 0%,
+        var(--background-color-cards) 20%,
+        var(--background-color-cards) 80%,
+        var(--color-accent) 100%
+        ) 1;
+    }
+
+    &:active {
+        border-color: #{vars.$color-focus};
+    }
+
+    &:focus {
+        border-color: #{vars.$color-focus};
+        outline: 1px solid #{vars.$color-focus};
+    }
+
+    & + & {
+        margin-left: 24px;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &__card {
+        background-color: var(--background-color-cards);
+        padding: 24px;
+    }
+
+    &__img {
+        margin-bottom: 24px;
+        object-fit: cover;
+    }
+
+    &__price {
+        @include mixins.heading-title;
+        color: var(--color-secondary);
+        letter-spacing: -0.5px;
+        margin: 0 0 8px;
+    }
+
+    &__name {
+        @include mixins.text-lg;
+        color: var(--color-muted);
+        font-weight: var(--font-weight-medium);
+        margin-block: 0;
+    }
+}

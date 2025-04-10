@@ -3,9 +3,11 @@
 @use "../components/button";
 @use "../components/label";
 @use "../layout/header";
-@use "../layout/nav";
-@use "../layout/search";
-@use "../components/home-page/promo.scss";
+@use "../components/nav";
+@use "../components/search";
+@use "../components/home-page/promo";
+@use "../components/home-page/catalog";
+@use "../components/home-page/product-card";
   
   //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
@@ -31,135 +33,12 @@
   padding-bottom: 40px;
   }
   
-  .catalog__wrapper,
   .blog__wrapper,
   .about-us__wrapper,
   .team__wrapper,
   .faq__wrapper,
   .footer__wrapper {
-  max-width: 1632px;
-  margin: 0 auto;
-  padding: 64px 16px;
-  }
-  
-  .catalog__header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-  }
-  
-  .catalog__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-  display: flex; /* It flexes the line after */
-  margin: 0;
-  margin-right: 16px;
-  align-items: center; /* Vertical alignment with the line after */
-  }
-  
-  .catalog__title::after {
-  content: "";
-  display: flex;
-  width: 1167px;
-  height: 2px;
-  background-color: #D0D7FB2B;
-  margin: 23px 32px;
-  }
-  
-  .catalog__controls {
-  display: flex;
-  align-items: center;
-  margin-left: 16px;
-  }
-  
-  .catalog__controls > .button:not(:first-child) {
-  margin-left: 16px;
-  }
-  
-  .catalog__controls .button:first-child {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-right: 16px;
-  }
-  
-  .catalog__controls .button:first-child::after {
-  content: "";
-  width: 2px;
-  height: 24px;
-  background-color: #D0D7FB2B;
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  }
-  
-  .catalog__list {
-  display: flex;
-  }
-  
-  .product {
-  text-decoration: none;
-  border: 3px solid transparent;
-  transition: border 0.3s ease-in-out;
-  outline: none;
-  display: flex;
-  }
-  
-  .product:hover {
-  border-image: linear-gradient(137.5deg,
-  #0265DC 0%,
-  #1D1C28 20%,
-  #1D1C28 80%,
-  #0265DC 100%
-  ) 1;
-  }
-  
-  .product:active {
-  border: 3px solid #3892F3;
-  }
-  
-  .product:focus {
-  border: 3px solid #0265DC;
-  outline: 1px solid #3892F3;
-  }
-  
-  .product + .product {
-  margin-left: 24px;
-  }
-  
-  .product:first-child {
-  margin-left: 0;
-  }
-  
-  .product__card {
-  background-color: #1D1C28;
-  padding: 24px;
-  }
-  
-  .product__img {
-  margin-bottom: 24px;
-  object-fit: cover;
-  }
-  
-  .product__price {
-  color: #f5f8fb;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-  margin-bottom: 8px;
-  margin-top: 0;
-  }
-  
-  .product__name {
-  color: #EFF5FAD1;
-  font-weight: 500;
-  font-size: 20px;
-  margin-block: 0;
+  @extend %section-wrapper;
   }
   
   .section-title {

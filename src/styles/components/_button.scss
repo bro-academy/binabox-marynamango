@@ -12,51 +12,50 @@
     &:focus {
         outline-offset: 0;
     }
-}
+
+    &--primary {
+        @include mixins.border-style(vars.$color-accent);
+        background-color: vars.$color-accent;
     
-.button--primary {
-    @include mixins.border-style(vars.$color-accent);
-    background-color: vars.$color-accent;
-
-    &:hover {
-        background-color: vars.$color-focus;
-        border-color: vars.$color-focus;
-    }
-
-    &:focus {
-        border-color: vars.$color-focus;
-        outline: 2px solid vars.$color-focus;
-    }
-
-    &:active {
-        background-color: vars.$color-active;
-        border-color: vars.$color-active;
-    }
-}
+        &:hover {
+            background-color: vars.$color-focus;
+            border-color: vars.$color-focus;
+        }
     
-.button--secondary {
-    @include mixins.border-style(vars.$color-separator);
-    background-color: transparent;
+        &:focus {
+            border-color: vars.$color-focus;
+            outline: 2px solid vars.$color-focus;
+        }
     
-    &:hover,
-    &:active {
-        background-color: vars.$color-secondary-hover;
-        border-color: vars.$color-secondary-hover;
+        &:active {
+            background-color: vars.$color-active;
+            border-color: vars.$color-active;
+        }
     }
-    
-    &:focus {
-        background-color: vars.$color-secondary-hover;
-        border-color: vars.$color-focus;
-        outline: 2px solid vars.$color-focus;
+
+    &--secondary {
+        @include mixins.border-style(vars.$color-separator);
+        background-color: transparent;
+        
+        &:hover,
+        &:active {
+            background-color: vars.$color-secondary-hover;
+            border-color: vars.$color-secondary-hover;
+        }
+        
+        &:focus {
+            background-color: vars.$color-secondary-hover;
+            border-color: vars.$color-focus;
+            outline: 2px solid vars.$color-focus;
+        }
     }
-}
 
-.button--small {
-    font-size: 16px;
-    line-height: 24px;
-    padding: vars.$button-padding-small;
-}
+    &--small {
+        @include mixins.button-text-small;
+        padding: vars.$button-padding-small;
+    }
 
-.button--only-icon {
-    padding: 12px;
+    &--only-icon {
+        padding: 12px;
+    }
 }

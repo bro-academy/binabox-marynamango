@@ -14,6 +14,13 @@
     font-family: #{$ff};
 }
 
+@mixin button-text-small {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-primary);
+}
+
 @mixin heading-main {
     font-size: var(--font-size-title-main);
     line-height: var(--line-height-title-main);
@@ -52,7 +59,7 @@
 @mixin text-base {
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
-    font-weight: var(--font-weight-base); //buttons need 600
+    font-weight: var(--font-weight-base);
     font-family: var(--font-primary);
 }
 
@@ -75,4 +82,10 @@
     line-height: var(--line-height-xs);
     font-weight: var(--font-weight-bold);
     font-family: var(--font-primary);
+}
+
+%section-wrapper {
+    max-width: 1632px;
+    margin: 0 auto;
+    padding: 64px 16px;
 }
