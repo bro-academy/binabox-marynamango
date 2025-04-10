@@ -1,5 +1,4 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .promo {
     background: radial-gradient(
@@ -28,7 +27,7 @@
     }
 
     &__desc {
-        @include mixins.text-lg;
+        @include base.text-lg;
         color: var(--color-secondary);
         font-weight: var(--font-weight-medium);
         margin-bottom: 32px;
@@ -45,14 +44,14 @@
     }
 
     &__stat-value {
-        @include mixins.heading-main;
+        @include base.heading-main;
         color: var(--color-secondary);
         letter-spacing: -0.5px;
         margin: 0;
     }
 
     &__stat-term {
-        @include mixins.text-md;
+        @include base.text-md;
         color: var(--color-muted);
         margin: 0;
         padding-top: 4px;

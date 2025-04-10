@@ -1,5 +1,4 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .nav {
     margin-right: 16px; /* Just to not stick to each other */
@@ -13,27 +12,27 @@
 }
     
 .nav__link {
-    @include mixins.text-md;
+    @include base.text-md;
     color: var(--color-secondary);
     font-weight: var(--font-weight-bold);
-    padding: vars.$button-padding-small;
+    padding: base.$button-padding-small;
     display: block;
     border-bottom: 2px solid transparent;
     
     &:hover {
-    color: vars.$color-focus;
+    color: base.$color-focus;
     }
     
     &:active {
-    color: vars.$color-active;
+    color: base.$color-active;
     }
     
     &:focus {
-    outline: 4px solid vars.$color-focus;
+    outline: 4px solid base.$color-focus;
     border-radius: 5px;
     }
     
     &--active {
-    border-color: vars.$color-accent;
+    border-color: base.$color-accent;
     }
 }

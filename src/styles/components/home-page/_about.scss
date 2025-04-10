@@ -1,0 +1,9 @@
+@use "../base/base";
+
+.about-us__wrapper {
+    @extend %section-wrapper;
+}
+
+.button-wrapper {
+    @extend %button-wrapper;
+}

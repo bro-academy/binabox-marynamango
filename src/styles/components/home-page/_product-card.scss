@@ -1,5 +1,4 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .product {
     border: 3px solid transparent;
@@ -16,12 +15,12 @@
     }
 
     &:active {
-        border-color: #{vars.$color-focus};
+        border-color: #{base.$color-focus};
     }
 
     &:focus {
-        border-color: #{vars.$color-focus};
-        outline: 1px solid #{vars.$color-focus};
+        border-color: #{base.$color-focus};
+        outline: 1px solid #{base.$color-focus};
     }
 
     & + & {
@@ -43,14 +42,14 @@
     }
 
     &__price {
-        @include mixins.heading-title;
+        @include base.heading-title;
         color: var(--color-secondary);
         letter-spacing: -0.5px;
         margin: 0 0 8px;
     }
 
     &__name {
-        @include mixins.text-lg;
+        @include base.text-lg;
         color: var(--color-muted);
         font-weight: var(--font-weight-medium);
         margin-block: 0;

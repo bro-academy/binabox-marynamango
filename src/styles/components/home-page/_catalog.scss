@@ -1,5 +1,4 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .catalog {
     &__wrapper {
@@ -16,7 +15,7 @@
             content: "";
             width: 300px;
             height: 2px;
-            background-color: #{vars.$color-separator};
+            background-color: #{base.$color-separator};
             margin: 23px 16px;
             flex-grow: 1;
         }
@@ -27,7 +26,7 @@
     }
     
     &__title {
-        @include mixins.text-xl;
+        @include base.text-xl;
         margin: 0 16px 0 0;
     }
     
@@ -50,7 +49,7 @@
                 content: "";
                 width: 2px;
                 height: 24px;
-                background-color: #{vars.$color-separator};
+                background-color: #{base.$color-separator};
                 position: absolute;
                 right: -20px;
                 top: 50%;

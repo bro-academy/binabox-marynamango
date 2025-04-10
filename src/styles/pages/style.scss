@@ -1,4 +1,3 @@
-@use "../base/variables";
 @use "../base/global";
 @use "../components/button";
 @use "../components/label";
@@ -36,16 +35,10 @@
   padding-bottom: 40px;
   }
   
-  .about-us__wrapper,
   .team__wrapper,
   .faq__wrapper,
   .footer__wrapper {
   @extend %section-wrapper;
-  }
-  
-  .button-wrapper {
-  display: flex;
-  justify-content: center;
   }
   
   .section-title--alt {

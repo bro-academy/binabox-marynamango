@@ -1,8 +1,7 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .info {
-    @include mixins.text-sm;
+    @include base.text-sm;
     color: var(--color-muted);
     font-weight: var(--font-weight-bold);
     display: flex;
@@ -18,7 +17,7 @@
         content: "";
         width: 2px;
         height: 16px;
-        background-color: #{vars.$color-separator};
+        background-color: #{base.$color-separator};
         margin-inline: 8px;
     }
 }

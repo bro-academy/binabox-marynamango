@@ -1,5 +1,4 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .post {
     background-color: var(--background-color-cards);
@@ -18,12 +17,12 @@
         }
         
         &:active {
-            border: 3px solid #{vars.$color-focus};
+            border: 3px solid #{base.$color-focus};
         }
         
         &:focus {
-            border: 3px solid #{vars.$color-focus};
-            outline: 1px solid #{vars.$color-focus};
+            border: 3px solid #{base.$color-focus};
+            outline: 1px solid #{base.$color-focus};
         }
     }
 
@@ -36,7 +35,7 @@
     }
 
     &__title {
-        @include mixins.heading-title;
+        @include base.heading-title;
         color: var(--color-primary);
         font-weight: 400;
         letter-spacing: -0.5px;
@@ -44,7 +43,7 @@
     }
         
     &__desc {
-        @include mixins.text-md;
+        @include base.text-md;
         color: var(--color-muted);
         margin: 0 0 16px;
     }

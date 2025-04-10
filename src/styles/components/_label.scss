@@ -1,8 +1,7 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .label {
-    @include mixins.text-sm;
+    @include base.text-sm;
     font-weight: var(--font-weight-bold);
     color: var(--color-accent);
     background-color: var(--color-secondary);
@@ -10,6 +9,6 @@
 
     &--updated {
         color: var(--color-secondary);
-        background-color: vars.$color-invalid;
+        background-color: base.$color-invalid;
     }
 }

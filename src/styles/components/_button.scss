@@ -1,11 +1,10 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .button {
     display: inline-block;
-    color: vars.$color-secondary;
+    color: base.$color-secondary;
     font-weight: #{var(--font-weight-bold)};
-    padding: vars.$button-padding;
+    padding: base.$button-padding;
     border: 2px solid transparent;
     cursor: pointer;
 
@@ -14,45 +13,45 @@
     }
 
     &--primary {
-        @include mixins.border-style(vars.$color-accent);
-        background-color: vars.$color-accent;
+        @include base.border-style(base.$color-accent);
+        background-color: base.$color-accent;
     
         &:hover {
-            background-color: vars.$color-focus;
-            border-color: vars.$color-focus;
+            background-color: base.$color-focus;
+            border-color: base.$color-focus;
         }
     
         &:focus {
-            border-color: vars.$color-focus;
-            outline: 2px solid vars.$color-focus;
+            border-color: base.$color-focus;
+            outline: 2px solid base.$color-focus;
         }
     
         &:active {
-            background-color: vars.$color-active;
-            border-color: vars.$color-active;
+            background-color: base.$color-active;
+            border-color: base.$color-active;
         }
     }
 
     &--secondary {
-        @include mixins.border-style(vars.$color-separator);
+        @include base.border-style(base.$color-separator);
         background-color: transparent;
         
         &:hover,
         &:active {
-            background-color: vars.$color-secondary-hover;
-            border-color: vars.$color-secondary-hover;
+            background-color: base.$color-secondary-hover;
+            border-color: base.$color-secondary-hover;
         }
         
         &:focus {
-            background-color: vars.$color-secondary-hover;
-            border-color: vars.$color-focus;
-            outline: 2px solid vars.$color-focus;
+            background-color: base.$color-secondary-hover;
+            border-color: base.$color-focus;
+            outline: 2px solid base.$color-focus;
         }
     }
 
     &--small {
-        @include mixins.button-text-small;
-        padding: vars.$button-padding-small;
+        @include base.button-text-small;
+        padding: base.$button-padding-small;
     }
 
     &--only-icon {

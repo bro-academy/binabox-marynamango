@@ -1,5 +1,4 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base";
 
 .search {
     display: flex;
@@ -15,33 +14,33 @@
         }
     
         &:focus {
-            border-color: vars.$color-focus;
-            outline: 1px solid vars.$color-focus;
+            border-color: base.$color-focus;
+            outline: 1px solid base.$color-focus;
         }
     
         &:invalid {
-            border-color: vars.$color-invalid;
+            border-color: base.$color-invalid;
         }
     }
 
     &__input {
-        @include mixins.text-sm;
-        color: vars.$color-disabled;
+        @include base.text-sm;
+        color: base.$color-disabled;
         background-color: transparent;
         padding: 8px 12px;
-        border: 2px solid vars.$color-separator;
+        border: 2px solid base.$color-separator;
         
         &:hover {
-        border-color: vars.$color-focus;
+        border-color: base.$color-focus;
         }
         
         &:focus {
-        border-color: vars.$color-focus;
-        outline: 1px solid vars.$color-focus;
+        border-color: base.$color-focus;
+        outline: 1px solid base.$color-focus;
         }
         
         &:invalid {
-        border-color: vars.$color-invalid;
+        border-color: base.$color-invalid;
         }
     }
 }
