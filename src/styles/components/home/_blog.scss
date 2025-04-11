@@ -14,10 +14,7 @@
 }
 
 .section-title {
-    @include heading-title;
-    letter-spacing: -0.5px;
-    text-align: center;
-    margin: 0 0 40px;
+    @extend %section-title;
 }
 
 .button-wrapper {

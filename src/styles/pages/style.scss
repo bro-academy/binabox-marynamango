@@ -4,16 +4,18 @@
 @use "../layout/header";
 @use "../components/nav";
 @use "../components/search";
-@use "../components/home-page/promo";
-@use "../components/home-page/catalog";
-@use "../components/home-page/product-card";
-@use "../components/home-page/blog";
-@use "../components/home-page/post-card";
-@use "../components/home-page/info";
-@use "../components/home-page/about";
-@use "../components/home-page/about-card";
+@use "../components/home/promo";
+@use "../components/home/catalog";
+@use "../components/home/product-card";
+@use "../components/home/blog";
+@use "../components/home/post-card";
+@use "../components/home/info";
+@use "../components/home/about";
+@use "../components/home/about-card";
+@use "../components/home/team";
+@use "../components/home/team-card";
+@use "../components/social";
 
-  
   //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
   .breadcrumb__link:hover,
@@ -38,73 +40,9 @@
   padding-bottom: 40px;
   }
   
-  .team__wrapper,
   .faq__wrapper,
   .footer__wrapper {
   @extend %section-wrapper;
-  }
-  
-  .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: -40px;
-  }
-  
-  .member {
-  background-color: #1D1C28;
-  text-align: center;
-  padding: 32px;
-  width: 293px;
-  margin-inline: 20px;
-  margin-bottom: 40px;
-  }
-  
-  .member__photo {
-  border-radius: 50%;
-  margin-bottom: 16px;
-  }
-  
-  .member__name {
-  color: #F5F8FB;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-  margin: 0;
-  }
-  
-  .member__position {
-  color: #EFF5FAD1;
-  margin-bottom: 16px;
-  margin-top: 0;
-  }
-  
-  .social__link {
-  text-decoration: none;
-  }
-  
-  .social__link:hover {
-  opacity: 0.9;
-  }
-  
-  .social__link:focus {
-  outline: 4px solid #3892F3;
-  }
-  
-  .social__link:active {
-  opacity: 0.9;
-  }
-  
-  .social {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin-block: 0;
-  }
-  
-  .social__item:not(:first-child) {
-  margin-left: 8px;
   }
   
   .faq__item {

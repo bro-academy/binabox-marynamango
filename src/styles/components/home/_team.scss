@@ -1,0 +1,18 @@
+@use "../base/base" as *;
+
+.team {
+    &__wrapper {
+        @extend %section-wrapper;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: -40px;
+    }
+}
+
+.section-title {
+    @extend %section-title;
+}

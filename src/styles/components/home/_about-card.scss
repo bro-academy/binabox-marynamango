@@ -12,7 +12,6 @@
 
     &__link {
         @extend %card-link-base;
-        @extend %focus-active-border;
         padding: 32px;
         display: block;
     
@@ -23,6 +22,16 @@
             var(--background-color-cards) 80%,
             var(--color-accent) 100%
             ) 1;
+        }
+
+        &:active,
+        &:focus {
+            border-image: none;
+            border-color: $color-focus;
+        }
+                
+        &:focus {
+            outline: 1px solid $color-focus;
         }
     }
 }

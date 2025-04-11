@@ -2,7 +2,6 @@
 
 .product {
     @extend %card-link-base;
-    @extend %focus-active-border;
 
     &:hover {
         border-image: linear-gradient(137.5deg,
@@ -11,6 +10,16 @@
         var(--background-color-cards) 80%,
         var(--color-accent) 100%
         ) 1;
+    }
+
+    &:active,
+    &:focus {
+        border-image: none;
+        border-color: $color-focus;
+    }
+                
+    &:focus {
+        outline: 1px solid $color-focus;
     }
 
     & + & {
@@ -41,7 +50,6 @@
     &__name {
         @include text-lg;
         color: var(--color-muted);
-        font-weight: var(--font-weight-medium);
         margin-block: 0;
     }
 }

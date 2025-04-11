@@ -29,7 +29,6 @@
     &__desc {
         @include text-lg;
         color: var(--color-secondary);
-        font-weight: var(--font-weight-medium);
         margin-bottom: 32px;
         margin-top: 0;
     }

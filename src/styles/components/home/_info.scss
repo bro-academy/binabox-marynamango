@@ -1,9 +1,8 @@
 @use "../base/base" as *;
 
 .info {
-    @include text-sm;
+    @include text-sm($fw: var(--font-weight-bold));
     color: var(--color-muted);
-    font-weight: var(--font-weight-bold);
     display: flex;
     align-items: center;
     margin-bottom: 16px;
