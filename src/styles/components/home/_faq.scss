@@ -1,0 +1,53 @@
+@use "../base/base" as *;
+
+.faq {
+    &__wrapper {
+        @extend %section-wrapper;
+    }
+
+    &__item {
+        @include card-background;
+        
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__question {
+        @include text-xl;
+        @extend %card-link-base;
+        color: var(--color-secondary);
+        padding: 24px;
+        cursor: pointer;
+
+        &:hover {
+            border-image: linear-gradient(137.5deg,
+            var(--color-accent) 0%,
+            var(--background-color-cards) 10%,
+            var(--background-color-cards) 90%,
+            var(--color-accent) 100%
+            ) 1;
+        }
+
+        &:active,
+        &:focus {
+            border-image: none;
+            border-color: $color-focus;
+        }
+            
+        &:focus {
+            outline: 1px solid $color-focus;
+        }
+    }
+
+    &__content {
+        padding: 16px 24px 32px;
+        border-top: 1px solid $color-secondary-hover;
+    }
+
+    &__answer {
+        @include text-md;
+        color: var(--color-secondary);
+        margin: 0;
+    }
+}
