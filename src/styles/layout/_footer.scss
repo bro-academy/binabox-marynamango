@@ -1,0 +1,77 @@
+@use "../base/base" as *;
+
+.footer {
+    @include card-background(var(--background-color-secondary));
+    @include text-sm;
+    color: var(--color-secondary);
+
+    &__wrapper {
+        @extend %section-wrapper;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &:last-child {
+            padding-block: 32px;
+        }
+    
+        & > .footer__col:last-child {
+            display: flex;
+            margin-left: 16px;
+        }
+    }
+
+    .logo {
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}
+    
+.footer-nav {
+    @include text-xs;
+
+    &__title {
+        @include text-lg;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    &:last-child {
+        margin-left: 24px;
+    }
+
+    &__link {
+        color: var(--color-secondary);
+
+        :hover {
+            color: $color-focus;
+        }
+
+        &:active {
+            color: $color-active;
+            border: none;
+        }
+
+        &:focus {
+            outline: 4px solid $color-focus;
+            border-radius: 5px;
+        }
+    }
+}
+
+.copyright {
+    margin-block: 0;
+}

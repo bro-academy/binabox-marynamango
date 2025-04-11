@@ -5,6 +5,7 @@
 @use "../components/nav";
 @use "../components/search";
 @use "../components/home/promo";
+@use "../layout/layout";
 @use "../components/home/catalog";
 @use "../components/home/product-card";
 @use "../components/home/blog";
@@ -16,6 +17,7 @@
 @use "../components/home/team-card";
 @use "../components/social";
 @use "../components/home/faq";
+@use "../layout/footer";
 
   //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
@@ -35,93 +37,6 @@
   .aside__link:focus {
   outline: 4px solid #3892F3;
   border-radius: 5px;
-  }
-  
-  .main-container {
-  padding-bottom: 40px;
-  }
-  
-  .footer__wrapper {
-  @extend %section-wrapper;
-  }
-  
-  .footer {
-  background-color: #1A1925;
-  color: #F5F8FB;
-  font-size: 14px;
-  line-height: 20px;
-  }
-  
-  .footer__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  }
-  
-  .footer__wrapper > .footer__col:last-child {
-  display: flex;
-  margin-left: 16px;
-  }
-  
-  .footer .logo {
-  margin-bottom: 12px;
-  }
-  
-  .footer__text {
-  margin: 0;
-  }
-  
-  .footer-nav {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  }
-  
-  .footer-nav__title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  display: block;
-  margin-bottom: 8px;
-  }
-  
-  .footer-nav__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  }
-  
-  .footer-nav__link {
-  text-decoration: none;
-  color: #F5F8FB;
-  }
-  
-  .footer-nav__link:hover {
-  color: #3892F3;
-  }
-  .footer-nav__link:active {
-  color: #0054B6;
-  border: none;
-  }
-  .footer-nav__link:focus {
-  outline: 4px solid #3892F3;
-  border-radius: 5px;
-  }
-  
-  .footer-nav__item:not(:last-child) {
-  margin-bottom: 12px;
-  }
-  
-  .footer-nav:last-child {
-  margin-left: 24px;
-  }
-  
-  .footer__wrapper:last-child {
-  padding-block: 32px;
-  }
-  
-  .copyright {
-  margin-block: 0;
   }
   
   /* Blog page styling */
