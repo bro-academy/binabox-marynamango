@@ -1,4 +1,4 @@
-@use "../base/base";
+@use "../base/base" as *;
 
 .nav {
     margin-right: 16px; /* Just to not stick to each other */
@@ -12,27 +12,27 @@
 }
     
 .nav__link {
-    @include base.text-md;
+    @include text-md;
     color: var(--color-secondary);
     font-weight: var(--font-weight-bold);
-    padding: base.$button-padding-small;
+    padding: $button-padding-small;
     display: block;
     border-bottom: 2px solid transparent;
     
     &:hover {
-    color: base.$color-focus;
+    color: $color-focus;
     }
     
     &:active {
-    color: base.$color-active;
+    color: $color-active;
     }
     
     &:focus {
-    outline: 4px solid base.$color-focus;
+    outline: 4px solid $color-focus;
     border-radius: 5px;
     }
     
     &--active {
-    border-color: base.$color-accent;
+    border-color: $color-accent;
     }
 }

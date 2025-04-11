@@ -1,9 +1,8 @@
-@use "../base/base";
+@use "../base/base" as *;
 
 .product {
-    border: 3px solid transparent;
-    transition: border 0.3s ease-in-out;
-    outline: none;
+    @extend %card-link-base;
+    @extend %focus-active-border;
 
     &:hover {
         border-image: linear-gradient(137.5deg,
@@ -12,15 +11,6 @@
         var(--background-color-cards) 80%,
         var(--color-accent) 100%
         ) 1;
-    }
-
-    &:active {
-        border-color: #{base.$color-focus};
-    }
-
-    &:focus {
-        border-color: #{base.$color-focus};
-        outline: 1px solid #{base.$color-focus};
     }
 
     & + & {
@@ -32,7 +22,7 @@
     }
 
     &__card {
-        background-color: var(--background-color-cards);
+        @include card-background;
         padding: 24px;
     }
 
@@ -42,14 +32,14 @@
     }
 
     &__price {
-        @include base.heading-title;
+        @include heading-title;
         color: var(--color-secondary);
         letter-spacing: -0.5px;
         margin: 0 0 8px;
     }
 
     &__name {
-        @include base.text-lg;
+        @include text-lg;
         color: var(--color-muted);
         font-weight: var(--font-weight-medium);
         margin-block: 0;

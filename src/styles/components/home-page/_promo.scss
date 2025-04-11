@@ -1,4 +1,4 @@
-@use "../base/base";
+@use "../base/base" as *;
 
 .promo {
     background: radial-gradient(
@@ -27,7 +27,7 @@
     }
 
     &__desc {
-        @include base.text-lg;
+        @include text-lg;
         color: var(--color-secondary);
         font-weight: var(--font-weight-medium);
         margin-bottom: 32px;
@@ -44,14 +44,14 @@
     }
 
     &__stat-value {
-        @include base.heading-main;
+        @include heading-main;
         color: var(--color-secondary);
         letter-spacing: -0.5px;
         margin: 0;
     }
 
     &__stat-term {
-        @include base.text-md;
+        @include text-md;
         color: var(--color-muted);
         margin: 0;
         padding-top: 4px;
@@ -61,7 +61,7 @@
 .button-layout {
     display: flex;
 }
-    
+
 .button-layout .button + .button {
     margin-left: 16px;
 }

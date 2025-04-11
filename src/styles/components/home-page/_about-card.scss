@@ -1,0 +1,28 @@
+@use "../base/base" as *;
+
+.about-us {
+    &__item {
+        @include card-background(var(--background-color-secondary));
+        display: flex;
+
+        &:not(:last-of-type) {
+            margin-right: 32px;
+        }
+    }
+
+    &__link {
+        @extend %card-link-base;
+        @extend %focus-active-border;
+        padding: 32px;
+        display: block;
+    
+        &:hover {
+            border-image: linear-gradient(137.5deg,
+            var(--color-accent) 0%,
+            var(--background-color-cards) 20%,
+            var(--background-color-cards) 80%,
+            var(--color-accent) 100%
+            ) 1;
+        }
+    }
+}

@@ -1,10 +1,10 @@
-@use "../base/base";
+@use "../base/base" as *;
 
 .button {
     display: inline-block;
-    color: base.$color-secondary;
+    color: $color-secondary;
     font-weight: #{var(--font-weight-bold)};
-    padding: base.$button-padding;
+    padding: $button-padding;
     border: 2px solid transparent;
     cursor: pointer;
 
@@ -13,45 +13,45 @@
     }
 
     &--primary {
-        @include base.border-style(base.$color-accent);
-        background-color: base.$color-accent;
+        @include border-style($color-accent);
+        background-color: $color-accent;
     
         &:hover {
-            background-color: base.$color-focus;
-            border-color: base.$color-focus;
+            background-color: $color-focus;
+            border-color: $color-focus;
         }
     
         &:focus {
-            border-color: base.$color-focus;
-            outline: 2px solid base.$color-focus;
+            border-color: $color-focus;
+            outline: 2px solid $color-focus;
         }
     
         &:active {
-            background-color: base.$color-active;
-            border-color: base.$color-active;
+            background-color: $color-active;
+            border-color: $color-active;
         }
     }
 
     &--secondary {
-        @include base.border-style(base.$color-separator);
+        @include border-style($color-separator);
         background-color: transparent;
         
         &:hover,
         &:active {
-            background-color: base.$color-secondary-hover;
-            border-color: base.$color-secondary-hover;
+            background-color: $color-secondary-hover;
+            border-color: $color-secondary-hover;
         }
         
         &:focus {
-            background-color: base.$color-secondary-hover;
-            border-color: base.$color-focus;
-            outline: 2px solid base.$color-focus;
+            background-color: $color-secondary-hover;
+            border-color: $color-focus;
+            outline: 2px solid $color-focus;
         }
     }
 
     &--small {
-        @include base.button-text-small;
-        padding: base.$button-padding-small;
+        @include button-text-small;
+        padding: $button-padding-small;
     }
 
     &--only-icon {

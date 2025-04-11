@@ -10,6 +10,9 @@
 @use "../components/home-page/blog";
 @use "../components/home-page/post-card";
 @use "../components/home-page/info";
+@use "../components/home-page/about";
+@use "../components/home-page/about-card";
+
   
   //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
@@ -39,76 +42,6 @@
   .faq__wrapper,
   .footer__wrapper {
   @extend %section-wrapper;
-  }
-  
-  .section-title--alt {
-  margin-bottom: 16px;
-  }
-  
-  .about-us__desc {
-  color: #EFF5FAD1;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 40px;
-  }
-  
-  .about-us__list {
-  margin-top: 0;
-  margin-bottom: 40px;
-  display: flex;
-  padding: 0;
-  }
-  
-  .about-us__item {
-  background-color: #1A1925;
-  display: flex;
-  }
-  
-  .about-us__item:not(:last-of-type) {
-  margin-right: 32px;
-  }
-  
-  .about-us__link {
-  text-decoration: none;
-  padding: 32px;
-  display: block;
-  border: 3px solid transparent;
-  transition: border 0.3s ease-in-out;
-  outline: none;
-  }
-  
-  .about-us__link:hover {
-  border-image: linear-gradient(137.5deg,
-  #0265DC 0%,
-  #1D1C28 20%,
-  #1D1C28 80%,
-  #0265DC 100%
-  ) 1;
-  }
-  
-  .about-us__link:active {
-  border: 3px solid #3892F3;
-  }
-  
-  .about-us__link:focus {
-  border: 3px solid #0265DC;
-  outline: 1px solid #3892F3;
-  }
-  
-  .about-us__heading {
-  color: #F5F8FB;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  font-family: "Bakbak One", "Georgia", "Times New Roman", "Times", serif;
-  margin-bottom: 24px;
-  }
-  
-  .about-us__info {
-  color: #EFF5FAD1;
-  margin-block: 0;
   }
   
   .team__list {

@@ -2,6 +2,10 @@
     border-color: $color;
 }
 
+@mixin card-background($bg: var(--background-color-cards)) {
+    background-color: $bg;
+}
+
 @mixin text-style(
     $fz: var(--font-size-base),
     $lh: var(--line-height-base),

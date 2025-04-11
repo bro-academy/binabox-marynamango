@@ -1,7 +1,7 @@
-@use "../base/base";
+@use "../base/base" as *;
 
 .info {
-    @include base.text-sm;
+    @include text-sm;
     color: var(--color-muted);
     font-weight: var(--font-weight-bold);
     display: flex;
@@ -17,11 +17,11 @@
         content: "";
         width: 2px;
         height: 16px;
-        background-color: #{base.$color-separator};
+        background-color: #{$color-separator};
         margin-inline: 8px;
     }
 }
-    
+
 .info-profile {
     order: -1;
 }

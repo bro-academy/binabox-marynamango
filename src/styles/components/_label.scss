@@ -1,7 +1,7 @@
-@use "../base/base";
+@use "../base/base" as *;
 
 .label {
-    @include base.text-sm;
+    @include text-sm;
     font-weight: var(--font-weight-bold);
     color: var(--color-accent);
     background-color: var(--color-secondary);
@@ -9,6 +9,6 @@
 
     &--updated {
         color: var(--color-secondary);
-        background-color: base.$color-invalid;
+        background-color: $color-invalid;
     }
 }
