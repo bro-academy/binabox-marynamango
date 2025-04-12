@@ -19,86 +19,23 @@
 @use "../components/home/faq";
 @use "../layout/footer";
 
+@use "../layout/hero";
+
   //if i use these grouped, can i make a mixin for them?
   .article__highlight:hover,
-  .breadcrumb__link:hover,
   .aside__link:hover {
   color: #3892F3;
   }
 
   .article__highlight:active,
-  .breadcrumb__link:active,
   .aside__link:active {
   color: #0054B6;
   }
 
   .article__highlight:focus,
-  .breadcrumb__link:focus,
   .aside__link:focus {
   outline: 4px solid #3892F3;
   border-radius: 5px;
-  }
-  
-  /* Blog page styling */
-  .hero {
-  padding-top: 64px;
-  min-height: 376px;
-  background-image: url(../img/hero-background-1x.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #0D0D15;
-  }
-  
-  .hero__wrapper {
-  padding: 0 16px;
-  max-width: 1728px;
-  margin: 0 auto;
-  }
-  
-  .hero__title {
-  margin-bottom: 20px;
-  text-align: center;
-  }
-  
-  .breadcrumb__list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  }
-  
-  .breadcrumb__item {
-  color: #E7EEF7A8;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 6px 12px;
-  position: relative;
-  }
-  
-  .breadcrumb__item:not(:last-child)::after {
-  content: "";
-  width: 2px;
-  height: 24px;
-  background-color: #D0D7FB2B;
-  position: absolute;
-  right: -1px;
-  top: 50%;
-  transform: translateY(-50%);
-  }
-  
-  .breadcrumb__link {
-  color: #F5F8FB;
-  text-decoration: none;
-  }
-  
-  .page-layout {
-  padding: 0 16px 24px;
-  display: flex;
-  max-width: 1416px;
-  margin: 0 auto;
   }
   
   .aside {

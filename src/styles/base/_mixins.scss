@@ -77,7 +77,7 @@
 @mixin text-sm($fw: var(--font-weight-base)) {
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
-    font-weight: $fw; //labels need 600
+    font-weight: $fw; //labels and breadcrumbs need 600
     font-family: var(--font-primary);
 }
 
