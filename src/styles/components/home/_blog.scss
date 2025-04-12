@@ -1,22 +1,10 @@
 @use "../base/base" as *;
 
 .blog {
-    &__wrapper {
-    @extend %section-wrapper;
-    }
-
     &__list {
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
         margin-bottom: 40px;
     }
-}
-
-.section-title {
-    @extend %section-title;
-}
-
-.button-wrapper {
-    @extend %button-wrapper;
 }

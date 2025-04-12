@@ -1,25 +1,8 @@
 @use "variables" as *;
 @use "mixins" as *;
 
-%section-wrapper {
-    max-width: 1632px;
-    margin: 0 auto;
-    padding: 64px 16px;
-}
-
-%button-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 %card-link-base {
     border: 3px solid transparent;
     transition: border 0.3s ease-in-out;
     outline: none;
-}
-
-%section-title {
-    @include heading-title;
-    text-align: center;
-    margin: 0 0 40px;
 }

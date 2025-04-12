@@ -79,3 +79,9 @@ a.button,
 button {
     text-decoration: none;
 }
+
+.section-title {
+    @include mixins.heading-title;
+    text-align: center;
+    margin: 0 0 40px;
+}

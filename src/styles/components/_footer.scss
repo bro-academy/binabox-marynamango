@@ -6,7 +6,6 @@
     color: var(--color-secondary);
 
     &__wrapper {
-        @extend %section-wrapper;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

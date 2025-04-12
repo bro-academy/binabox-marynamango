@@ -6,18 +6,6 @@
     background-color: $bg;
 }
 
-@mixin text-style(
-    $fz: var(--font-size-base),
-    $lh: var(--line-height-base),
-    $fw: var(--font-weight-base),
-    $ff: var(--font-primary)
-    ) {
-    font-size: #{$fz};
-    line-height: #{$lh};
-    font-weight: #{$fw};
-    font-family: #{$ff};
-}
-
 @mixin button-text-small {
     font-size: var(--font-size-md);
     line-height: var(--line-height-md);

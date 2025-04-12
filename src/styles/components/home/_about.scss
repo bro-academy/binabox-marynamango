@@ -1,10 +1,6 @@
 @use "../base/base" as *;
 
 .about-us {
-    &__wrapper {
-    @extend %section-wrapper;
-    }
-
     &__desc {
         @include text-lg;
         color: var(--color-muted);
@@ -33,8 +29,4 @@
 
 .section-title--alt {
     margin-bottom: 16px;
-}
-
-.button-wrapper {
-    @extend %button-wrapper;
 }

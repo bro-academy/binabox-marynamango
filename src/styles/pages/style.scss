@@ -2,7 +2,7 @@
 @use "../components/logo";
 @use "../components/button";
 @use "../components/label";
-@use "../layout/header";
+@use "../components/header";
 @use "../components/nav";
 @use "../components/search";
 @use "../components/home/promo";
@@ -18,9 +18,9 @@
 @use "../components/home/team-card";
 @use "../components/social";
 @use "../components/home/faq";
-@use "../layout/footer";
+@use "../components/footer";
 
-@use "../layout/hero";
+@use "../components/hero";
 @use "../components/blog/aside";
 @use "../components/tag";
 @use "../components/blog/article";

@@ -1,10 +1,6 @@
 @use "../base/base" as *;
 
 .faq {
-    &__wrapper {
-        @extend %section-wrapper;
-    }
-
     &__item {
         @include card-background;
         

@@ -1,18 +1,10 @@
 @use "../base/base" as *;
 
 .team {
-    &__wrapper {
-        @extend %section-wrapper;
-    }
-
     &__list {
         display: flex;
         gap: 40px;
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-
-.section-title {
-    @extend %section-title;
 }
