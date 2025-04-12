@@ -3,7 +3,7 @@
 .post {
     @include card-background;
     padding: 24px;
-    flex: 0 0 calc(50% - 16px);
+    flex: 0 0 50%;
 
     &__link {
         @extend %card-link-base;
@@ -36,7 +36,6 @@
     &__title {
         @include heading-title;
         color: var(--color-primary);
-        letter-spacing: -0.5px;
         margin: 0;
     }
         

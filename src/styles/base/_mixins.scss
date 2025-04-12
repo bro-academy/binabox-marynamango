@@ -37,6 +37,7 @@
     line-height: var(--line-height-title);
     font-weight: var(--font-weight-base);
     font-family: var(--font-secondary);
+    letter-spacing: -0.5px;
 }
 
 @mixin heading-subtitle {
@@ -70,7 +71,7 @@
 @mixin text-md($fw: var(--font-weight-base)) {
     font-size: var(--font-size-md);
     line-height: var(--line-height-md);
-    font-weight: $fw; //links need 600
+    font-weight: $fw; //links need 600, caption 500
     font-family: var(--font-primary);
 }
 

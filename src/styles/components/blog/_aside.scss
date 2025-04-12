@@ -1,0 +1,53 @@
+@use "../base/base" as *;
+
+.aside {
+    width: 328px;
+    flex-shrink: 0;
+
+    &__box {
+        @include card-background;
+        padding: 24px;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        @include text-xl;
+        color: var(--color-secondary);
+        display: block;
+        padding-bottom: 16px;
+        border-bottom: 1px solid $color-secondary-hover;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 6px 0 0;
+        margin: 0;
+    }
+
+    &__item {
+        padding-left: 12px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        @include text-sm(var(--font-weight-bold));
+        color: var(--color-secondary);
+
+        &:hover {
+            color: $color-focus;
+        }
+
+        &:active {
+            color: $color-active;
+        }
+
+        &:focus {
+            outline: 4px solid $color-focus;
+            border-radius: 5px;
+        }
+    }
+}

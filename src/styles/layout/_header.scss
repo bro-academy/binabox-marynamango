@@ -1,5 +1,4 @@
-@use "../base/variables" as vars;
-@use "../base/mixins" as mixins;
+@use "../base/base" as *;
 
 .header {
     &__wrapper {
@@ -14,41 +13,17 @@
     &__actions {
         display: flex;
         align-items: center;
+        gap: 16px;
 
         &::before {
             content: "";
             width: 2px;
             height: 24px;
-            background-color: vars.$color-separator;
-            margin-inline: 16px
-        }
-
-        .button + .button {
-            margin-left: 16px;
+            background-color: $color-separator;
         }
 
         &-search {
             order: -1;
         }
-    }
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
-
-    &[href] {
-        &:hover {
-            opacity: .7; 
-        }
-        &:focus,
-        &:active {
-            outline: 4px solid vars.$color-focus;
-        }
-    }
-
-    img + img {
-        margin-left: 18px;
     }
 }

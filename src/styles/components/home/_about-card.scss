@@ -3,11 +3,6 @@
 .about-us {
     &__item {
         @include card-background(var(--background-color-secondary));
-        display: flex;
-
-        &:not(:last-of-type) {
-            margin-right: 32px;
-        }
     }
 
     &__link {

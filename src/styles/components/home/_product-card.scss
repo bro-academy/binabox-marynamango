@@ -22,14 +22,6 @@
         outline: 1px solid $color-focus;
     }
 
-    & + & {
-        margin-left: 24px;
-    }
-
-    &:first-child {
-        margin-left: 0;
-    }
-
     &__card {
         @include card-background;
         padding: 24px;
@@ -43,7 +35,6 @@
     &__price {
         @include heading-title;
         color: var(--color-secondary);
-        letter-spacing: -0.5px;
         margin: 0 0 8px;
     }
 

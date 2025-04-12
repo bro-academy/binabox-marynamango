@@ -1,0 +1,18 @@
+@use "../base/base" as *;
+
+.figure {
+    margin: 0 0 32px;
+
+    &__caption {
+        @include text-md(var(--font-weight-medium));
+    }
+}
+
+.figure-wrapper {
+    display: flex;
+    gap: 24px;
+
+    .figure {
+        width: 50%;
+    }
+}

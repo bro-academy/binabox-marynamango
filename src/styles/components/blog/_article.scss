@@ -1,0 +1,92 @@
+@use "../base/base" as *;
+@use "../components/blog/figure" as *;
+@use "../components/blog/quote" as *;
+
+.article {
+    margin-left: 32px;
+
+    .info {
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 16px;
+
+        + .article__text {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__text:last-of-type {
+        margin-bottom: 32px;
+    }
+
+    .info + &__text {
+        margin: 0;
+    }
+
+    &__spotlight {
+        background-color: var(--color-accent);
+    }
+
+    &__highlight {
+        color: var(--color-highlight);
+        font-weight: var(--font-weight-bold);
+
+        &:hover {
+            color: $color-focus;
+        }
+
+        &:active {
+            color: $color-active;
+        }
+
+        &:focus {
+            outline: 4px solid $color-focus;
+            border-radius: 5px;
+        }
+    }
+
+    &__list,
+    &__custom-list {
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        padding-left: 32px;
+    }
+
+    &__custom-list {
+        gap: 8px
+    }
+
+    &__subtitle {
+        @include heading-subtitle;
+        margin: 0 0 16px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+
+        .action-tag:not(:last-child) {
+            margin-right: 16px;
+        }
+        
+        .action-tag__item:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+}
+    
+.section-title--left {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    + .button {
+        margin-bottom: 32px;
+    }
+}

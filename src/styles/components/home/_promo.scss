@@ -36,16 +36,12 @@
     &__stats {
         display: flex;
         margin-bottom: 32px;
-    }
-
-    &__stat-item {
-        margin-right: 64px;
+        gap: 64px;
     }
 
     &__stat-value {
         @include heading-main;
         color: var(--color-secondary);
-        letter-spacing: -0.5px;
         margin: 0;
     }
 
@@ -59,8 +55,5 @@
 
 .button-layout {
     display: flex;
-}
-
-.button-layout .button + .button {
-    margin-left: 16px;
+    gap: 16px;
 }
