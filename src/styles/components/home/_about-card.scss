@@ -1,32 +1,25 @@
 @use "../base/base" as *;
 
 .about-us {
-    &__item {
-        @include card-background(var(--background-color-secondary));
-    }
-
     &__link {
-        @extend %card-link-base;
+        @include card-background(var(--background-color-secondary));
         padding: 32px;
-        display: block;
+        display: inline-block;
+        border-image-slice: 50;
+        border-image-width: 50px;
+        object-fit: cover;
+        outline: none;
+        outline-color: transparent;
+        transition: outline 0.3s ease-in-out;
     
         &:hover {
-            border-image: linear-gradient(137.5deg,
-            var(--color-accent) 0%,
-            var(--background-color-cards) 20%,
-            var(--background-color-cards) 80%,
-            var(--color-accent) 100%
-            ) 1;
+            border-image-source: url("../img/hover-1x.webp");
         }
 
         &:active,
         &:focus {
             border-image: none;
-            border-color: $color-focus;
-        }
-                
-        &:focus {
-            outline: 1px solid $color-focus;
+            outline: 4px solid $color-focus;
         }
     }
 }

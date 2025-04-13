@@ -11,28 +11,20 @@
 
     &__question {
         @include text-xl;
-        @extend %card-link-base;
         color: var(--color-secondary);
         padding: 24px;
         cursor: pointer;
+        outline: none;
+        outline-color: transparent;
+        transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 
         &:hover {
-            border-image: linear-gradient(137.5deg,
-            var(--color-accent) 0%,
-            var(--background-color-cards) 10%,
-            var(--background-color-cards) 90%,
-            var(--color-accent) 100%
-            ) 1;
+            background-color: rgb(35, 35, 49);
         }
 
         &:active,
         &:focus {
-            border-image: none;
-            border-color: $color-focus;
-        }
-            
-        &:focus {
-            outline: 1px solid $color-focus;
+            outline: 4px solid $color-focus;
         }
     }
 

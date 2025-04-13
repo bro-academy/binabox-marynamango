@@ -7,9 +7,12 @@
     border-image-slice: 50;
     border-image-width: 50px;
     object-fit: cover;
+    outline: none;
+    outline-color: transparent;
+    transition: outline 0.3s ease-in-out;
 
     &:hover {
-        border-image-source: url("../img/hover-1x.webp")
+        border-image-source: url("../img/hover-1x.webp");
     }
 
     &:active,
