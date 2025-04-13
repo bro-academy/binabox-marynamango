@@ -9,7 +9,7 @@
     margin: 0;
 
     &__link {
-        @include text-sm(var(--font-weight-bold));
+        @include text-sm($fw: $font-weight-bold);
         color: var(--color-secondary);
         border: 2px solid $color-separator;
         display: inline-block;

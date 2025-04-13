@@ -18,7 +18,7 @@
         }
 
         &__footer {
-            @include text-sm(var(--font-weight-bold));
+            @include text-sm($fw: $font-weight-bold);
         }
 
         &__rating {

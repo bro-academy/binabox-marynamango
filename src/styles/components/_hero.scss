@@ -20,7 +20,7 @@
         text-align: center;
     }
 }
-    
+
 .breadcrumb {
     &__list {
         list-style: none;
@@ -31,7 +31,7 @@
     }
 
     &__item {
-        @include text-sm(var(--font-weight-bold));
+        @include text-sm($fw: $font-weight-bold);
         color: $color-disabled;
         padding: 6px 12px;
         position: relative;

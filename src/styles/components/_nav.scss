@@ -12,7 +12,7 @@
 }
     
 .nav__link {
-    @include text-md($fw: var(--font-weight-bold));
+    @include text-md($fw: $font-weight-bold);
     color: var(--color-secondary);
     padding: $button-padding-small;
     display: block;

@@ -3,7 +3,7 @@
 .button {
     display: inline-block;
     color: $color-secondary;
-    font-weight: #{var(--font-weight-bold)};
+    font-weight: $font-weight-bold;
     padding: $button-padding;
     border: 2px solid transparent;
     cursor: pointer;
@@ -50,7 +50,7 @@
     }
 
     &--small {
-        @include button-text-small;
+        @include text-sm($font-weight-bold);
         padding: $button-padding-small;
     }
 

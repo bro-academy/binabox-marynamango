@@ -1,7 +1,7 @@
 @use "../base/base" as *;
 
 .label {
-    @include text-sm($fw: var(--font-weight-bold));
+    @include text-sm($fw: $font-weight-bold);
     color: var(--color-accent);
     background-color: var(--color-secondary);
     padding: 8px 10px;
