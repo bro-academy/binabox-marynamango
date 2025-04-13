@@ -1,0 +1,18 @@
+@use "../base/base" as *;
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    gap: 18px;
+
+    &[href] {
+        &:hover {
+            opacity: .7; 
+        }
+        &:focus,
+        &:active {
+            outline: 4px solid $color-focus;
+        }
+    }
+}
