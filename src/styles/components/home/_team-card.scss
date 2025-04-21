@@ -1,6 +1,6 @@
 @use "../base/base" as *;
 
-.member {
+.team-card {
     @include card-background;
     text-align: center;
     padding: 32px;

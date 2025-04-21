@@ -19,7 +19,7 @@
             content: "";
             width: 2px;
             height: 24px;
-            background-color: $color-separator;
+            background-color: var(--color-separator);
         }
 
         &-search {

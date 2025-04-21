@@ -18,7 +18,7 @@
     &:active,
     &:focus {
         border-image: none;
-        outline: 4px solid $color-focus;
+        outline: 4px solid var(--color-focus);
     }
 
     &__img {

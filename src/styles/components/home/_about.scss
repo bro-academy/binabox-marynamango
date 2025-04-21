@@ -16,19 +16,4 @@
         display: flex;
         gap: 32px;
     }
-    
-    &__heading {
-        @include text-xl;
-        color: var(--color-secondary);
-        margin-bottom: 24px;
-    }
-    
-    &__info {
-        color: var(--color-muted);
-        margin: 0;
-    }
-}
-
-.section-title--alt {
-    margin-bottom: 16px;
 }

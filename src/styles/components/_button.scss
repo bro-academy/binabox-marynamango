@@ -2,9 +2,9 @@
 
 .button {
     display: inline-block;
-    color: $color-secondary;
-    font-weight: $font-weight-bold;
-    padding: $button-padding;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-bold);
+    padding: var(--button-padding);
     border: 2px solid transparent;
     cursor: pointer;
 
@@ -13,45 +13,45 @@
     }
 
     &--primary {
-        @include border-style($color-accent);
-        background-color: $color-accent;
+        @include border-style(var(--color-accent));
+        background-color: var(--color-accent);
     
         &:hover {
-            background-color: $color-focus;
-            border-color: $color-focus;
+            background-color: var(--color-focus);
+            border-color: var(--color-focus);
         }
     
         &:focus {
-            border-color: $color-focus;
-            outline: 2px solid $color-focus;
+            border-color: var(--color-focus);
+            outline: 2px solid var(--color-focus);
         }
     
         &:active {
-            background-color: $color-active;
-            border-color: $color-active;
+            background-color: var(--color-active);
+            border-color: var(--color-active);
         }
     }
 
     &--secondary {
-        @include border-style($color-separator);
+        @include border-style(var(--color-separator));
         background-color: transparent;
         
         &:hover,
         &:active {
-            background-color: $color-secondary-hover;
-            border-color: $color-secondary-hover;
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-secondary-hover);
         }
         
         &:focus {
-            background-color: $color-secondary-hover;
-            border-color: $color-focus;
-            outline: 2px solid $color-focus;
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-focus);
+            outline: 2px solid var(--color-focus);
         }
     }
 
     &--small {
-        @include text-sm($font-weight-bold);
-        padding: $button-padding-small;
+        @include text-sm(var(--font-weight-bold));
+        padding: var(--button-padding-small);
     }
 
     &--only-icon {
@@ -62,4 +62,9 @@
 .button-wrapper {
     display: flex;
     justify-content: center;
+}
+
+.button-layout {
+    display: flex;
+    gap: 16px;
 }

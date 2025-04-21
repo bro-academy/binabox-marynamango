@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 @mixin border-style($color) {
-    border-color: $color;
+    border-color: #{$color};
 }
 
 @mixin card-background($bg: var(--background-color-cards)) {
@@ -9,60 +9,60 @@
 }
 
 @mixin heading-main {
-    font-size: $font-size-title-main;
-    line-height: $line-height-title-main;
-    font-weight: $font-weight-base;
-    font-family: $font-secondary;
+    font-size: var(--font-size-title-main);
+    line-height: var(--line-height-title-main);
+    font-weight: var(--font-weight-base);
+    font-family: var(--font-secondary);
     letter-spacing: -0.5px;
 }
 
 @mixin heading-title {
-    font-size: $font-size-title;
-    line-height: $line-height-title;
-    font-weight: $font-weight-base;
-    font-family: $font-secondary;
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    font-weight: var(--font-weight-base);
+    font-family: var(--font-secondary);
     letter-spacing: -0.5px;
 }
 
 @mixin heading-subtitle {
-    font-size: $font-size-subtitle;
-    line-height: $line-height-subtitle;
-    font-weight: $font-weight-base;
-    font-family: $font-secondary;
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
+    font-weight: var(--font-weight-base);
+    font-family: var(--font-secondary);
 }
 
 @mixin text-xl {
-    font-size: $font-size-xl;
-    line-height: $line-height-xl;
-    font-weight: $font-weight-base;
-    font-family: $font-secondary;
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
+    font-weight: var(--font-weight-base);
+    font-family: var(--font-secondary);
 }
 
 @mixin text-lg {
-    font-size: $font-size-lg;
-    line-height: $line-height-lg;
-    font-weight: $font-weight-medium;
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-lg);
+    font-weight: var(--font-weight-medium);
 }
 
 @mixin text-base {
-    font-size: $font-size-base;
-    line-height: $line-height-base;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
 }
 
-@mixin text-md($fw: $font-weight-base) {
-    font-size: $font-size-md;
-    line-height: $line-height-md;
+@mixin text-md($fw: var(--font-weight-base)) {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
     font-weight: $fw; //links need 600, caption 500
 }
 
-@mixin text-sm($fw: $font-weight-base) {
-    font-size: $font-size-sm;
-    line-height: $line-height-sm;
+@mixin text-sm($fw: var(--font-weight-base)) {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
     font-weight: $fw; //labels and breadcrumbs need 600
 }
 
 @mixin text-xs {
-    font-size: $font-size-xs;
-    line-height: $line-height-xs;
-    font-weight: $font-weight-bold;
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-xs);
+    font-weight: var(--font-weight-bold);
 }

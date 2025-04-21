@@ -2,36 +2,36 @@
 
 .nav {
     margin-right: 16px; /* Just to not stick to each other */
+
+    &__list {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
     }
-    
-.nav__list {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-    
-.nav__link {
-    @include text-md($fw: $font-weight-bold);
-    color: var(--color-secondary);
-    padding: $button-padding-small;
-    display: block;
-    border-bottom: 2px solid transparent;
-    
-    &:hover {
-    color: $color-focus;
-    }
-    
-    &:active {
-    color: $color-active;
-    }
-    
-    &:focus {
-    outline: 4px solid $color-focus;
-    border-radius: 5px;
-    }
-    
-    &--active {
-    border-color: $color-accent;
+
+    &__link {
+        @include text-md($fw: var(--font-weight-bold));
+        color: var(--color-secondary);
+        padding: var(--button-padding-small);
+        display: block;
+        border-bottom: 2px solid transparent;
+        
+        &:hover {
+        color: var(--color-focus);
+        }
+        
+        &:active {
+        color: var(--color-active);
+        }
+        
+        &:focus {
+        outline: 4px solid var(--color-focus);
+        border-radius: 5px;
+        }
+        
+        &--active {
+        border-color: var(--color-accent);
+        }
     }
 }

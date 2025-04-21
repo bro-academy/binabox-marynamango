@@ -27,50 +27,8 @@
     &__text {
         margin: 0;
     }
-}
-    
-.footer-nav {
-    @include text-xs;
 
-    &__title {
-        @include text-lg;
-        display: block;
-        margin-bottom: 8px;
+    .copyright {
+        margin-block: 0;
     }
-
-    &__list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__item:not(:last-child) {
-        margin-bottom: 12px;
-    }
-
-    &:last-child {
-        margin-left: 24px;
-    }
-
-    &__link {
-        color: var(--color-secondary);
-
-        :hover {
-            color: $color-focus;
-        }
-
-        &:active {
-            color: $color-active;
-            border: none;
-        }
-
-        &:focus {
-            outline: 4px solid $color-focus;
-            border-radius: 5px;
-        }
-    }
-}
-
-.copyright {
-    margin-block: 0;
 }

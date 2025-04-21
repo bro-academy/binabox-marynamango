@@ -1,7 +1,7 @@
 @use "../base/base" as *;
 
 .info {
-    @include text-sm($fw: $font-weight-bold);
+    @include text-sm($fw: var(--font-weight-bold));
     color: var(--color-muted);
     display: flex;
     gap: 8px;
@@ -17,7 +17,7 @@
         content: "";
         width: 2px;
         height: 16px;
-        background-color: #{$color-separator};
+        background-color: var(--color-separator);
     }
 }
 

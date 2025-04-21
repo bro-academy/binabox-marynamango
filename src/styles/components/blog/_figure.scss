@@ -4,7 +4,7 @@
     margin: 0 0 32px;
 
     &__caption {
-        @include text-md($fw: $font-weight-medium);
+        @include text-md($fw: var(--font-weight-medium));
     }
 }
 

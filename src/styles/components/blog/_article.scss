@@ -32,18 +32,18 @@
 
     &__highlight {
         color: var(--color-highlight);
-        font-weight: $font-weight-bold;
+        font-weight: var(--font-weight-bold);
 
         &:hover {
-            color: $color-focus;
+            color: var(--color-focus);
         }
 
         &:active {
-            color: $color-active;
+            color: var(--color-active);
         }
 
         &:focus {
-            outline: 4px solid $color-focus;
+            outline: 4px solid var(--color-focus);
             border-radius: 5px;
         }
     }
@@ -81,12 +81,6 @@
     }
 }
     
-.section-title--left {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 16px;
-
-    + .button {
+.section-title--left + .button {
         margin-bottom: 32px;
     }
-}

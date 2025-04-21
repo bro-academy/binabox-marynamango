@@ -4,7 +4,7 @@
           <p class="about-us__desc">{{ about.description }}</p>
           <ol class="about-us__list">
           {% for item in about.items %}
-            {% include "partials/about-item.njk" %}
+            {% include "partials/about-card.njk" %}
           {% endfor %}
           </ol>
           <!-- Read more after "About us" -->

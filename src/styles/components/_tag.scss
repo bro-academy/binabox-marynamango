@@ -9,22 +9,22 @@
     margin: 0;
 
     &__link {
-        @include text-sm($fw: $font-weight-bold);
+        @include text-sm($fw: var(--font-weight-bold));
         color: var(--color-secondary);
-        border: 2px solid $color-separator;
+        border: 2px solid var(--color-separator);
         display: inline-block;
         padding: 6px 12px;
 
         &:hover,
         &:active {
-            background-color: $color-secondary-hover;
-            border-color: $color-secondary-hover;
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-secondary-hover);
         }
     
         &:focus {
-            background-color: $color-secondary-hover;
-            border-color: $color-focus;
-            outline: 2px solid $color-focus;
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-focus);
+            outline: 2px solid var(--color-focus);
         }
     }
 }
