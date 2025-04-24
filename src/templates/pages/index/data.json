@@ -596,7 +596,7 @@
           { "text": "Home", "url": "index.html" },
           { "text": "Blog", "url": "blog.html" },
           { "text": "Catalog", "url": "#" },
-          { "text": "Contact us", "url": "#" }
+          { "text": "Contact us", "url": "contact-us.html" }
         ]
       },
       {
