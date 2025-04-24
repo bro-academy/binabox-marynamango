@@ -1,0 +1,70 @@
+@use "../base/base" as *;
+
+.button {
+    display: inline-block;
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-bold);
+    padding: var(--button-padding);
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline-offset: 0;
+    }
+
+    &--primary {
+        @include border-style(var(--color-accent));
+        background-color: var(--color-accent);
+    
+        &:hover {
+            background-color: var(--color-focus);
+            border-color: var(--color-focus);
+        }
+    
+        &:focus {
+            border-color: var(--color-focus);
+            outline: 2px solid var(--color-focus);
+        }
+    
+        &:active {
+            background-color: var(--color-active);
+            border-color: var(--color-active);
+        }
+    }
+
+    &--secondary {
+        @include border-style(var(--color-separator));
+        background-color: transparent;
+        
+        &:hover,
+        &:active {
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-secondary-hover);
+        }
+        
+        &:focus {
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-focus);
+            outline: 2px solid var(--color-focus);
+        }
+    }
+
+    &--small {
+        @include text-sm(var(--font-weight-bold));
+        padding: var(--button-padding-small);
+    }
+
+    &--only-icon {
+        padding: 12px;
+    }
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button-layout {
+    display: flex;
+    gap: 16px;
+}

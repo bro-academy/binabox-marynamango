@@ -1,0 +1,30 @@
+@use "../base/base" as *;
+
+.action-tag {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    &__link {
+        @include text-sm($fw: var(--font-weight-bold));
+        color: var(--color-secondary);
+        border: 2px solid var(--color-separator);
+        display: inline-block;
+        padding: 6px 12px;
+
+        &:hover,
+        &:active {
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-secondary-hover);
+        }
+    
+        &:focus {
+            background-color: var(--color-secondary-hover);
+            border-color: var(--color-focus);
+            outline: 2px solid var(--color-focus);
+        }
+    }
+}

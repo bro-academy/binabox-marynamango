@@ -17,7 +17,6 @@
     },
     "buttons": [
       {
-        "tag": "a",
         "text": "Discord",
         "iconAlt": "Discord logo",
         "iconWidth": 24,
@@ -29,7 +28,6 @@
         "target": "_blank"
       },
       {
-        "tag": "a",
         "text": "Connect",
         "iconAlt": "Connect icon",
         "iconWidth": 24,
@@ -101,7 +99,6 @@
   "article": {
     "title": "The Basilisks NFT",
     "button": {
-      "tag": "a",
       "text": "Gaming",
       "url": "#",
       "modFirst": "primary"
@@ -179,6 +176,10 @@
         ]
       }
     ],
+    "footerLabels": {
+      "tags": "Tags:",
+      "share": "Share:"
+    },
     "tags": [ 
       { "text": "NFT", "url": "#" },
       { "text": "ICO", "url": "#" },

@@ -44,7 +44,7 @@
           <footer class="article__footer">
             <ul class="action-tag">
               <li class="action-tag__item">
-                <span class="article__footer-label">Tags:</span>
+                <span class="article__footer-label">{{ article.footerLabels.share }}</span>
               </li>
               {% set tags = article.tags %}
               {% include "partials/tag-list.njk" %}
@@ -52,7 +52,7 @@
 
             <ul class="action-tag">
               <li class="action-tag__item">
-                <span class="article__footer-label">Share:</span>
+                <span class="article__footer-label">{{ article.footerLabels.share }}</span>
               </li>
               {% for social in article.share %}
               <li class="action-tag__item">

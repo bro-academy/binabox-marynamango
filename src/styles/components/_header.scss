@@ -1,0 +1,29 @@
+@use "../base/base" as *;
+
+.header {
+    &__wrapper {
+        max-width: 1696px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 16px;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &::before {
+            content: "";
+            width: 2px;
+            height: 24px;
+            background-color: var(--color-separator);
+        }
+
+        &-search {
+            order: -1;
+        }
+    }
+}

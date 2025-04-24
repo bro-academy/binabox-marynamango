@@ -1,13 +1,13 @@
-<div class="member">
+<div class="team-card">
               <img
-                class="member__photo"
+                class="team-card__photo"
                 src="{{ member.photo.src }}"
                 alt="{{ member.photo.alt }}"
                 width="{{ member.photo.width }}"
                 height="{{ member.photo.height }}"
               />
-              <h3 class="member__name">{{ member.name }}</h3>
-              <p class="member__position">{{ member.position }}</p>
+              <h3 class="team-card__name">{{ member.name }}</h3>
+              <p class="team-card__position">{{ member.position }}</p>
               {% set socials = member.socials %}
               {% include "partials/social-list.njk" %}
             </div>

@@ -1,0 +1,55 @@
+@use "../base/mixins" as mixins;
+@use "../base/variables" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    line-height: var(--line-height-base);
+    color: var(--color-primary);
+    background-color: var(--background-color);
+}
+
+h1 {
+    @include mixins.heading-main;
+    color: var(--color-secondary);
+    margin-block: 0;
+}
+
+a,
+a:link,
+a:visited,
+a.button,
+button {
+    text-decoration: none;
+}
+
+.section-title {
+    @include mixins.heading-title;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.section-title--alt {
+    margin-bottom: 16px;
+}
+
+.section-title--left {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    & + .button {
+        margin-bottom: 32px;
+    }
+}

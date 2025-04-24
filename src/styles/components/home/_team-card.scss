@@ -1,0 +1,24 @@
+@use "../base/base" as *;
+
+.team-card {
+    @include card-background;
+    text-align: center;
+    padding: 32px;
+    width: 293px;
+
+    &__photo {
+        border-radius: 50%;
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        @include text-xl;
+        color: var(--color-secondary);
+        margin: 0;
+    }
+
+    &__position {
+        color: var(--color-muted);
+        margin: 0 0 16px;
+    }
+}

@@ -1,0 +1,33 @@
+@use "../base/base" as *;
+
+.quote-wrapper {
+    background-color: rgb(0, 39, 84);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    
+    blockquote {
+        margin: 0;
+    }
+    
+    .quote {
+        &__text {
+            @include heading-subtitle;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        &__footer {
+            @include text-sm($fw: var(--font-weight-bold));
+        }
+
+        &__rating {
+            color: var(--color-muted);
+            margin-inline: 8px;
+        }
+
+        &__author {
+            font-style: normal;
+        }
+    }
+}

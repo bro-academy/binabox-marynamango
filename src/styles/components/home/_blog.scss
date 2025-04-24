@@ -1,0 +1,10 @@
+@use "../base/base" as *;
+
+.blog {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+}

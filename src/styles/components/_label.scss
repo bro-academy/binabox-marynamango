@@ -1,0 +1,13 @@
+@use "../base/base" as *;
+
+.label {
+    @include text-sm($fw: var(--font-weight-bold));
+    color: var(--color-accent);
+    background-color: var(--color-secondary);
+    padding: 8px 10px;
+
+    &--updated {
+        color: var(--color-secondary);
+        background-color: var(--color-invalid);
+    }
+}

@@ -1,0 +1,47 @@
+@use "../base/base" as *;
+
+.post {
+    @include card-background;
+    padding: 24px;
+    flex: 0 0 50%;
+
+    &__link {
+        display: block;
+        margin-bottom: 24px;
+        outline: none;
+        outline-color: transparent;
+        transition: outline 0.3s ease-in-out;
+    
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            opacity: 0.9;
+        }
+                
+        &:focus {
+            outline: 4px solid var(--color-focus);
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+
+        &--top {
+            object-position: 50% 15%;
+        }
+    }
+
+    &__title {
+        @include heading-title;
+        color: var(--color-primary);
+        margin: 0;
+    }
+        
+    &__desc {
+        @include text-md;
+        color: var(--color-muted);
+        margin: 0 0 16px;
+    }
+}

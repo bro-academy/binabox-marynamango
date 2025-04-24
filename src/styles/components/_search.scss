@@ -1,0 +1,46 @@
+@use "../base/base" as *;
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* If I remove it separator is not aligned */
+
+    &__button {
+        border: 2px solid transparent;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:focus {
+            border-color: var(--color-focus);
+            outline: 1px solid var(--color-focus);
+        }
+
+        &:invalid {
+            border-color: var(--color-invalid);
+        }
+    }
+
+    &__input {
+        @include text-sm;
+        color: var(--color-disabled);
+        background-color: transparent;
+        padding: 8px 12px;
+        border: 2px solid var(--color-separator);
+
+        &:hover {
+        border-color: var(--color-focus);
+        }
+
+        &:focus {
+        border-color: var(--color-focus);
+        outline: 1px solid var(--color-focus);
+        }
+
+        &:invalid {
+        border-color: var(--color-invalid);
+        }
+    }
+}

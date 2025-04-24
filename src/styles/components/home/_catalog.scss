@@ -1,0 +1,61 @@
+@use "../base/base" as *;
+
+.catalog {
+    &__header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        &::before {
+            content: "";
+            width: 300px;
+            height: 2px;
+            background-color: var(--color-separator);
+            margin: 23px 16px;
+            flex-grow: 1;
+        }
+
+        &-title {
+            order: -1;
+        }
+    }
+    
+    &__title {
+        @include text-xl;
+        margin: 0 16px 0 0;
+    }
+    
+    &__controls {
+        display: flex;
+        align-items: center;
+        margin-left: 16px;
+    
+        > .button:not(:first-child) {
+            margin-left: 16px;
+        }
+    
+        .button:first-child {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-right: 16px;
+    
+            &::after {
+                content: "";
+                width: 2px;
+                height: 24px;
+                background-color: var(--color-separator);
+                position: absolute;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+    }
+}
