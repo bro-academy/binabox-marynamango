@@ -19,7 +19,21 @@
             {% for field in form.fields %}
               {% set input = field %}
               {% if input.type == "radio-group" %}
-                {% include "partials/radio-group.njk" %}
+                <div class="contact-form__item contact-form__item-radio">
+                  <span class="contact-form__label">{{ input.label }}</span>
+                  {% for option in input.options %}
+                    <input
+                      class="visually-hidden radio-input"
+                      type="radio"
+                      id="{{ option.id }}"
+                      name="{{ input.name }}"
+                      value="{{ option.value }}"
+                      {% if input.required and loop.first %}required{% endif %} />
+                    <label class="contact-form__label radio-label" for="{{ option.id }}">
+                      {{option.label }}
+                    </label>
+                  {% endfor %}
+                </div>
               {% elif input.type == "textarea" %}
                 <div class="contact-form__item">
                   <label class="contact-form__label" for="{{ input.id }}">{{ input.label }}</label>
@@ -32,15 +46,37 @@
                   <span class="contact-form__error" id="{{ input.id }}-error">{{ input.error }}</span>
                 </div>
               {% else %}
-                {% include "partials/input.njk" %}
+                <div class="contact-form__item">
+                  <label class="contact-form__label" for="{{ input.id }}">{{ input.label }}</label>
+                  <input
+                    class="contact-form__input"
+                    id="{{ input.id }}"
+                    type="{{ input.type }}"
+                    name="{{ input.id }}"
+                    {% if input.required %}required{% endif %}
+                    {% if input.minlength %}minlength="{{ input.minlength }}"{% endif %}
+                    {% if input.min %}min="{{ input.min }}"{% endif %}
+                    {% if input.max %}max="{{ input.max }}"{% endif %}
+                    {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %} />
+                  <span class="contact-form__error" id="{{ input.id }}-error">{{ input.error }}</span>
+                </div>
               {% endif %}
             {% endfor %}
 
-            {% set terms = form.terms %}
-            {% include "partials/checkbox.njk" %}
+            <div class="contact-form__item contact-form__item--checkbox">
+              <input
+                class="visually-hidden checkbox-input"
+                type="checkbox"
+                name="{{ terms.id }}"
+                value="agree"
+                id="{{ terms.id }}"
+                required />
+              <label class="checkbox-label" for="{{ terms.id }}">
+                {{ terms.label }}<a href="{{ terms.linkUrl}}">{{ terms.linkText }}</a>
+              </label>
+            </div>
             
-            <button class="button button--primary" type="submit">
-              {{ form.buttonText }}
-            </button>
+            {% set button = form.button %}
+            {% include "partials/button.njk" %}
           </form>
         </section>

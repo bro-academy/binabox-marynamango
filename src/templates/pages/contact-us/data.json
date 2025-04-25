@@ -171,7 +171,11 @@
       "linkText": "all the terms of the security policy",
       "linkUrl": "#"
     },
-    "buttonText": "Send Message"
+    "button": {
+      "text": "Send Message",
+      "typeAttr": "submit",
+      "modFirst": "primary"
+    }
   },
   "footer": {
     "logo":{

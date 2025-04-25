@@ -1,17 +1,17 @@
-<section class="contact">
+<section class="contact-info">
           {% for contact in contacts %}
-          <div class="contact__item">
+          <div class="contact-info__item">
             <img
-              class="contact__icon"
+              class="contact-info__icon"
               src="{{ contact.src }}"
               alt="{{ contact.alt }}"
               width="{{ contact.width }}"
               height="{{ contact.height }}" />
-            <h2 class="contact__title">{{ contact.title }}</h2>
+            <h2 class="contact-info__title">{{ contact.title }}</h2>
             {% if contact.isLink %}
-            <a class="contact__info" href="{{ contact.linkType }}:{{ contact.info }}">{{ contact.info }}</a>
+            <a class="contact-info__info" href="{{ contact.linkType }}:{{ contact.info }}">{{ contact.info }}</a>
             {% else %}
-            <p class="contact__info">{{ contact.info }}</p>
+            <p class="contact-info__info">{{ contact.info }}</p>
             {% endif %}
           </div>
           {% endfor %}
