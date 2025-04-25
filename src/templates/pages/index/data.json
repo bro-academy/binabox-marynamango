@@ -12,7 +12,11 @@
       "textHeight": 21
     },
     "search": {
-        "placeholder": "search"
+        "placeholder": "Search",
+        "icon": "/img/search.svg",
+        "alt": "Search icon",
+        "width": 20,
+        "height": 20
       },
     "buttons": [
       {
