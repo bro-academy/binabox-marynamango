@@ -1,0 +1,120 @@
+@use "../base/base" as *;
+
+.checkbox-label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+
+  /*CHECKBOX BOX*/
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 4px;
+    border-radius: 4px;
+    border: 2px solid var(--color-border-default);
+    background-color: var(--background-color);
+  }
+
+  /*CHECKMARK*/
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 4px;
+    left: 4px;
+    background-image: url("/img/mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    background-color: var(--background-color-cards);
+  }
+
+  &:active::before {
+    background-color: var(--color-active-background);
+  }
+}
+
+/*CHECKBOX INPUT*/
+.checkbox-input {
+  &:focus-visible + .checkbox-label::before {
+    background-color: var(--background-color-secondary);
+    border-color: var(--background-color-secondary);
+    outline: 2px solid var(--color-focus);
+  }
+
+  /*CHECKED*/
+  &:checked {
+    + .checkbox-label::before {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+    
+    + .checkbox-label::after {
+      opacity: 1;
+    }
+
+    &:hover + .checkbox-label::before {
+      background-color: var(--color-focus);
+      border-color: var(--color-focus);
+    }
+
+    /*ACTIVE + FILTER*/
+    &:active {
+      + .checkbox-label::before {
+        background-color: var(--color-active-background);
+        border-color: var(--color-active-background);
+      }
+
+      + .checkbox-label::after {
+        filter: invert(32%) sepia(86%) saturate(5779%) hue-rotate(204deg)
+          brightness(95%) contrast(98%);
+      }
+    }
+    
+    &:focus-visible + .checkbox-label::before {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+      outline: 2px solid var(--color-focus);
+    }
+
+    /*DISABLED CHECKED*/
+    &:disabled {
+      + .checkbox-label::before {
+        background-color: var(--color-separator);
+        border-color: transparent;
+      }
+
+      + .checkbox-label::after {
+        filter: brightness(0.4) contrast(0.8) grayscale(1);
+      }
+    }
+  }
+  
+  /*DISABLED UNCHECKED*/
+  &:disabled {
+    + .checkbox-label::before {
+      background-color: var(--color-separator);
+      border-color: transparent;
+    }
+  }
+
+  /*USER-INVALID*/
+  &:user-invalid {
+    + .checkbox-label::before {
+      border-color: var(--color-invalid);
+    }
+
+    &:hover + .checkbox-label::before {
+      border-color: var(--color-invalid);
+      background-color: var(--color-secondary-hover);
+    }
+  }
+}

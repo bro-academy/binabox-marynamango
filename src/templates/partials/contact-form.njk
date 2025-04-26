@@ -43,7 +43,7 @@
                     name="{{ input.id }}"
                     rows="{{ input.rows }}"
                     {% if input.required %}required{% endif%}></textarea>
-                  <span class="contact-form__error" id="{{ input.id }}-error">{{ input.error }}</span>
+                  <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
                 </div>
               {% else %}
                 <div class="contact-form__item">
@@ -58,11 +58,12 @@
                     {% if input.min %}min="{{ input.min }}"{% endif %}
                     {% if input.max %}max="{{ input.max }}"{% endif %}
                     {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %} />
-                  <span class="contact-form__error" id="{{ input.id }}-error">{{ input.error }}</span>
+                  <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
                 </div>
               {% endif %}
             {% endfor %}
 
+            {% set terms = form.terms %}
             <div class="contact-form__item contact-form__item--checkbox">
               <input
                 class="visually-hidden checkbox-input"
@@ -71,7 +72,7 @@
                 value="agree"
                 id="{{ terms.id }}"
                 required />
-              <label class="checkbox-label" for="{{ terms.id }}">
+              <label class="contact-form__label checkbox-label" for="{{ terms.id }}">
                 {{ terms.label }}<a href="{{ terms.linkUrl}}">{{ terms.linkText }}</a>
               </label>
             </div>

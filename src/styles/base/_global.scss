@@ -53,3 +53,10 @@ button {
         margin-bottom: 32px;
     }
 }
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
