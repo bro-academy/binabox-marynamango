@@ -64,7 +64,7 @@
             {% endfor %}
 
             {% set terms = form.terms %}
-            <div class="contact-form__item contact-form__item--checkbox">
+            <div class="contact-form__item">
               <input
                 class="visually-hidden checkbox-input"
                 type="checkbox"
@@ -73,7 +73,7 @@
                 id="{{ terms.id }}"
                 required />
               <label class="contact-form__label checkbox-label" for="{{ terms.id }}">
-                {{ terms.label }}<a href="{{ terms.linkUrl}}">{{ terms.linkText }}</a>
+                {{ terms.label }}<a class="link-highlight" href="{{ terms.linkUrl}}">{{ terms.linkText }}</a>
               </label>
             </div>
             

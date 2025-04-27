@@ -131,12 +131,12 @@
       "caption": "Photo caption"
     },
     "paragraphs": [
-      "The Basilisks that<span class=\"article__spotlight\"> players</span> collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use the <a class=\"article__highlight\" href=\"#\">Basilisks they have</a> gathered to battle other players to win ether (ETH).",
+      "The Basilisks that<span class=\"article__spotlight\"> players</span> collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use the <a class=\"link-highlight\" href=\"#\">Basilisks they have</a> gathered to battle other players to win ether (ETH).",
       "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
     ],
     "listItems": [
       "The Basilisks that players collect are represented with NFTs on Ethereum's blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
-      "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing <a class=\"article__highlight\" href=\"#\">game developed</a> on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
+      "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing <a class=\"link-highlight\" href=\"#\">game developed</a> on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
     ],
     "customList": [ "List name 1", "List name 2", "List name 3", "List name 4" ],
     "quote": {

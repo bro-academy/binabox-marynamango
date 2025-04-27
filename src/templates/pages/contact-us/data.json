@@ -172,7 +172,7 @@
     "terms": {
       "id": "terms",
       "label": "By clicking on the \"Send Message\" button I agree to",
-      "linkText": "all the terms of the security policy",
+      "linkText": " all the terms of the security policy",
       "linkUrl": "#"
     },
     "button": {

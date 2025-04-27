@@ -30,24 +30,6 @@
         background-color: var(--color-accent);
     }
 
-    &__highlight {
-        color: var(--color-highlight);
-        font-weight: var(--font-weight-bold);
-
-        &:hover {
-            color: var(--color-focus);
-        }
-
-        &:active {
-            color: var(--color-active);
-        }
-
-        &:focus {
-            outline: 4px solid var(--color-focus);
-            border-radius: 5px;
-        }
-    }
-
     &__list,
     &__custom-list {
         margin-top: 0;
