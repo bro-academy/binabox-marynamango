@@ -1,0 +1,23 @@
+<aside class="aside-form">
+          <form class="aside-form__form" action="url" method="get">
+            {% for filter in filters %}
+              {% set title = filter.title %}
+              {% set extraClass = "aside-form__details" %}
+              {% set isOpen = openIndexes.includes(loop.index) %}
+
+              {% set content %}
+                <div class="details__content">
+                  {% for option in filter.options %}
+                    {% set id = filter.name + "_" + option | lower %}
+                    <input class="visually-hidden {{ filter.type }}-input" type="{{ filter.type }}" name="{{ filter.name }}" value="{{ option | lower }}" id="{{ id }}">
+                    <label class="{{ filter.type }}-label form-label" for="{{ id }}">{{ option }}</label>
+                  {% endfor %}
+                </div>
+              {% endset %}
+
+              {% include "partials/details.njk" %}
+            {% endfor %}
+
+            <button class="button button--primary" type="submit">Apply</button>
+          </form>
+        </aside>

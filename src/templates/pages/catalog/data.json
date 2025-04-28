@@ -70,6 +70,45 @@
       { "name": "Catalog" }
     ]
   },
+  "filters": [
+    {
+      "title": "Clothing",
+      "name": "clothing",
+      "type": "checkbox",
+      "options": ["Combatant", "Ninja", "King", "Queen", "Robot"]
+    },
+    {
+      "title": "Eyes",
+      "name": "eyes",
+      "type": "radio",
+      "options": ["Yellow", "Green", "Mix", "Orange"]
+    },
+    {
+      "title": "Face",
+      "name": "face",
+      "type": "checkbox",
+      "options": ["Round", "Oval", "Square", "Mix"]
+    },
+    {
+      "title": "Skin",
+      "name": "skin",
+      "type": "radio",
+      "options": ["Yellow", "Blue", "Mix", "Beige"]
+    },
+    {
+      "title": "Background",
+      "name": "background",
+      "type": "radio",
+      "options": ["Yellow", "Green", "Mix", "Blue"]
+    },
+    {
+      "title": "Special",
+      "name": "special",
+      "type": "checkbox",
+      "options": ["Yellow", "Green", "Mix", "Orange"]
+    }
+  ],
+  "openIndexes": [1, 2, 6],
   "footer": {
     "logo":{
       "img": "#",
