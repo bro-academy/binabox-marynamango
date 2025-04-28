@@ -61,6 +61,11 @@ button {
   height: 0;
 }
 
+.form-label {
+  padding-block: 2px;
+  margin: 0;
+}
+
 .link-highlight {
   color: var(--color-highlight);
   font-weight: var(--font-weight-bold);

@@ -11,7 +11,7 @@
                 value="agree"
                 id="{{ form.consent.id }}" />
               <label
-                class="contact-form__label contact-form__toggle-label"
+                class="form-label contact-form__toggle-label"
                 for="{{ form.consent.id }}">{{ form.consent.label }}
               </label>
             </div>
@@ -20,7 +20,7 @@
               {% set input = field %}
               {% if input.type == "radio-group" %}
                 <div class="contact-form__item contact-form__item-radio">
-                  <span class="contact-form__label">{{ input.label }}</span>
+                  <span class="form-label">{{ input.label }}</span>
                   {% for option in input.options %}
                     <input
                       class="visually-hidden radio-input"
@@ -29,14 +29,14 @@
                       name="{{ input.name }}"
                       value="{{ option.value }}"
                       {% if input.required and loop.first %}required{% endif %} />
-                    <label class="contact-form__label radio-label" for="{{ option.id }}">
+                    <label class="form-label radio-label" for="{{ option.id }}">
                       {{option.label }}
                     </label>
                   {% endfor %}
                 </div>
               {% elif input.type == "textarea" %}
                 <div class="contact-form__item">
-                  <label class="contact-form__label" for="{{ input.id }}">{{ input.label }}</label>
+                  <label class="form-label" for="{{ input.id }}">{{ input.label }}</label>
                   <textarea
                     class="contact-form__input"
                     id="{{ input.id }}"
@@ -47,7 +47,7 @@
                 </div>
               {% else %}
                 <div class="contact-form__item">
-                  <label class="contact-form__label" for="{{ input.id }}">{{ input.label }}</label>
+                  <label class="form-label" for="{{ input.id }}">{{ input.label }}</label>
                   <input
                     class="contact-form__input"
                     id="{{ input.id }}"
@@ -72,7 +72,7 @@
                 value="agree"
                 id="{{ terms.id }}"
                 required />
-              <label class="contact-form__label checkbox-label" for="{{ terms.id }}">
+              <label class="form-label checkbox-label" for="{{ terms.id }}">
                 {{ terms.label }}<a class="link-highlight" href="{{ terms.linkUrl}}">{{ terms.linkText }}</a>
               </label>
             </div>
