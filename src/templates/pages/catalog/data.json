@@ -109,6 +109,13 @@
     }
   ],
   "openIndexes": [1, 2, 6],
+  "asideForm": {
+    "button": {
+      "text": "Apply",
+      "typeAttr": "submit",
+      "modFirst": "primary"
+    }
+  },
   "footer": {
     "logo":{
       "img": "#",

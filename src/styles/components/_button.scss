@@ -1,6 +1,7 @@
 @use "../base/base" as *;
 
 .button {
+    @include text-base;
     display: inline-block;
     color: var(--color-secondary);
     font-weight: var(--font-weight-bold);
