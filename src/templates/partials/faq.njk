@@ -1,15 +1,17 @@
 <section class="faq">
-        <div class="faq__wrapper section-wrapper">
-          <h2 class="section-title">{{ faq.title }}</h2>
-          <div class="faq__container">
-            {% for item in faq.items%}
-            <details class="faq__item" {% if loop.first %}open{% endif %}>
-              <summary class="faq__question">{{ item.question }}</summary>
-              <div class="faq__content">
-                <p class="faq__answer">{{ item.answer }}</p>
-              </div>
-            </details>
-            {% endfor %}
-          </div>
-        </div>
-      </section>
+  <div class="faq__wrapper section-wrapper">
+    <h2 class="section-title">{{ faq.title }}</h2>
+    <div class="faq__container">
+      {% for item in faq.items %}
+        
+        {% set title = item.question %}
+        {% set isOpen = loop.first %}
+        {% set extraClass = "faq__item" %}
+        {% set content = "<p class=\"faq__answer\">" + item.answer + "</p>" %}
+
+        {% include "partials/details.njk" %}
+
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,6 @@
+<details class="details {% if extraClass %}{{ extraClass }}{% endif %}" {% if isOpen %}open{% endif %}>
+  <summary class="details__summary">{{ title }}</summary>
+  <div class="details__content">
+    {{ content | safe }}
+  </div>
+</details>

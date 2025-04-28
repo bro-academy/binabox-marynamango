@@ -1,0 +1,54 @@
+@use "../base/base" as *;
+
+.details {
+  background-color: var(--background-color-cards);
+
+  summary {
+    @include text-xl;
+    color: var(--color-secondary);
+    padding: 24px;
+    cursor: pointer;
+    outline: none;
+    outline-color: transparent;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+    position: relative;
+    list-style: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: url("../img/plus.svg") no-repeat center;
+      background-size: contain;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .details[open] &::after {
+      background-image: url("../img/minus.svg");
+    }
+  
+    &:hover {
+      background-color: rgb(35 35 49 / 1);
+    }
+  
+    &:active,
+    &:focus {
+      outline: 4px solid var(--color-focus);
+    }
+  }
+
+  &[open] summary {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-secondary-hover);
+  }
+
+  &__content {
+    padding: 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
