@@ -214,7 +214,7 @@
         "links": [
           { "text": "Home", "url": "index.html" },
           { "text": "Blog", "url": "blog.html" },
-          { "text": "Catalog", "url": "#" },
+          { "text": "Catalog", "url": "catalog.html" },
           { "text": "Contact us", "url": "contact-us.html" }
         ]
       },

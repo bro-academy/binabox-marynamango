@@ -44,7 +44,7 @@
       }
     ]
   },
-    "path": "contact-us.html",
+    "path": "catalog.html",
       "nav": [
         {
           "url": "index.html",
@@ -64,122 +64,11 @@
         }
       ],
   "hero": {
-    "title": "Contact Us",
+    "title": "Explore catalog",
     "breadcrumbs": [
       { "name": "Home", "url": "/" },
-      { "name": "Contact Us" }
+      { "name": "Catalog" }
     ]
-  },
-  "contacts": [
-    {
-      "src": "#",
-      "alt": "Location pin",
-      "width": "56",
-      "height": "56",
-      "title": "Location",
-      "info": "2163 Phillips Gap Rd",
-      "isLink": false
-    },
-    {
-      "src": "#",
-      "alt": "Email icon",
-      "width": "56",
-      "height": "56",
-      "title": "Email",
-      "info": "Info.avitex@gmail.com",
-      "linkType": "mailto",
-      "isLink": true
-    },
-    {
-      "src": "#",
-      "alt": "Phone icon",
-      "width": "56",
-      "height": "56",
-      "title": "Phone",
-      "info": "+1 666 8888",
-      "linkType": "tel",
-      "isLink": true
-    }
-  ],
-  "form": {
-    "title": "Get in touch",
-    "description": "Browse through the most freuently asked questions",
-    "consent": {
-      "id": "toggle",
-      "label": "Use my profile information"
-    },
-    "fields": [
-      {
-        "type": "text",
-        "id": "name",
-        "label": "Name",
-        "required": true,
-        "minlength": 2,
-        "error": "Please enter your name"
-      },
-      {
-        "type": "text",
-        "id": "surname",
-        "label": "Last name",
-        "required": true,
-        "minlength": 2,
-        "error": "Please enter your surname"
-      },
-      {
-        "type": "date",
-        "id": "birthday",
-        "label": "Date of Birth",
-        "required": true,
-        "min": "1925-04-21",
-        "max": "2007-04-21",
-        "error": "Users must be over 18 years old"
-      },
-      {
-        "type": "radio-group",
-        "label": "Gender",
-        "name": "gender",
-        "required": true,
-        "options": [
-          { "id": "male", "label": "Male", "value": "male" },
-          { "id": "female", "label": "Female", "value": "female" }
-        ]
-      },
-      {
-        "type": "email",
-        "id": "email",
-        "label": "Email",
-        "required": true,
-        "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
-        "error": "Please enter a valid email"
-      },
-      {
-        "type": "tel",
-        "id": "tel",
-        "label": "Phone Number",
-        "required": true,
-        "minlength": 9,
-        "error": "Please enter a valid phone number"
-      },
-      {
-        "type": "textarea",
-        "id": "message",
-        "label": "Message",
-        "rows": 5,
-        "required": true,
-        "error": "Please enter your message"
-      }
-    ],
-    "terms": {
-      "id": "terms",
-      "label": "By clicking on the \"Send Message\" button I agree to",
-      "linkText": " all the terms of the security policy",
-      "linkUrl": "#"
-    },
-    "button": {
-      "text": "Send Message",
-      "typeAttr": "submit",
-      "modFirst": "primary"
-    }
   },
   "footer": {
     "logo":{
