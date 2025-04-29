@@ -1,0 +1,70 @@
+@use "../base/base" as *;
+
+.catalog-heading {
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+
+    &--top {
+      justify-content: space-between;
+    }
+
+    &--bottom {
+      background-color: var(--background-color-cards);
+      padding: 16px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    flex: 1;
+  }
+
+  &__sorting {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__select {
+    @include text-base;
+    color: var(--color-secondary);
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid var(--color-separator);
+    padding: var(--button-padding);
+    cursor: pointer;
+    appearance: none;
+
+    &:hover {
+      border-color: var(--color-focus);
+    }
+
+    &:focus-visible {
+      border-color: var(--color-focus);
+      outline: 1px solid var(--color-focus);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__search {
+    background-color: var(--background-color-secondary);
+  }
+
+  &__tags {
+    gap: 16px;
+  }
+}

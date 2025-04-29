@@ -20,3 +20,15 @@
   margin: 0 auto;
   padding: 64px 16px;
 }
+
+.catalog-layout {
+  max-width: 1728px;
+  margin: 0 auto;
+  padding-inline: 160px;
+  display: flex;
+  gap: 64px;
+}
+
+.catalog-content {
+  width: 100%;
+}

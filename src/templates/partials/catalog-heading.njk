@@ -1,6 +1,6 @@
 <div class="catalog-heading">
-  <div class="catalog-heading__top">
-    <h2 class="section-title section-title--left">{{ catalog.title }}</h2>
+  <div class="catalog-heading__wrapper catalog-heading__wrapper--top">
+    <h2 class="catalog-heading__title section-title section-title--left">{{ catalog.title }}</h2>
 
     <div class="catalog-heading__sorting">
       <label for="sort" class="visually-hidden">{{ catalog.sorting.label }}</label>
@@ -37,26 +37,28 @@
     </form>
   </div>
 
-  <ul class="action-tag catalog-heading__tags">
-    {% for tag in catalog.tags.items %}
-      <li class="action-tag__item">
-        <button class="action-tag__link" type="button">
-          {{ tag.text }}
-          <span class="visually-hidden">Remove {{ tag.text }}</span>
-          <img
-            src="{{ tag.removeIcon.src }}"
-            alt="{{ tag.removeIcon.alt }}"
-            width="{{ tag.removeIcon.width }}"
-            height="{{ tag.removeIcon.height }}"/>
-        </button>
-      </li>
-    {% endfor %}
+  <div class="catalog-heading__wrapper catalog-heading__wrapper--bottom">
+    <ul class="action-tag catalog-heading__tags">
+      {% for tag in catalog.tags.items %}
+        <li class="action-tag__item">
+          <button class="action-tag__link" type="button">
+            {{ tag.text }}
+            <span class="visually-hidden">Remove {{ tag.text }}</span>
+            <img
+              src="{{ tag.removeIcon.src }}"
+              alt="{{ tag.removeIcon.alt }}"
+              width="{{ tag.removeIcon.width }}"
+              height="{{ tag.removeIcon.height }}"/>
+          </button>
+        </li>
+      {% endfor %}
 
-    {% if catalog.tags.showClear %}
-      <li class="action-tag__item">
-        {% set button = catalog.tags.clearButton %}
-        {% include "partials/button.njk" %}
-      </li>
-    {% endif %}
-  </ul>
+      {% if catalog.tags.showClear %}
+        <li class="action-tag__item">
+          {% set button = catalog.tags.clearButton %}
+          {% include "partials/button.njk" %}
+        </li>
+      {% endif %}
+    </ul>
+  </div>
 </div>
