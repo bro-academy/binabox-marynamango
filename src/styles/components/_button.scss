@@ -50,6 +50,33 @@
         }
     }
 
+    &--tertiary {
+      color: var(--background-color);
+      background-color: var(--color-button-bg-white);
+      border-color: var(--color-button-bg-white);
+      
+      &:hover {
+          background-color: var(--color-button-bh-white-hover);
+          border-color: var(--color-button-bh-white-hover);
+      }
+
+      &:active {
+          background-color: var(--color-text-disabled);
+          border-color: var(--color-text-disabled);
+          color: var(--color-secondary);
+      }
+      
+      &:focus {
+          border-color: var(--color-focus);
+          outline: 2px solid var(--color-focus);
+      }
+    }
+
+    &--action-tag-clear {
+      @include text-sm($fw: var(--font-weight-bold));
+      padding: 6px 12px;
+    }
+
     &--small {
         @include text-sm(var(--font-weight-bold));
         padding: var(--button-padding-small);
