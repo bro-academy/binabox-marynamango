@@ -117,6 +117,31 @@
     }
   },
   "catalog": {
+    "title": "All item",
+    "sorting": {
+      "label": "Sort by",
+      "icon": {
+        "src": "/img/chevron-left.svg",
+        "alt": "Dropdown arrow",
+        "width": "24",
+        "height": "24"
+      },
+      "options": [
+        { "value": "newest", "text": "Newest" },
+        { "value": "popular", "text": "Most popular" },
+        { "value": "price-up", "text": "Increasing price" },
+        { "value": "price-down", "text": "Lowering price" }
+      ]
+    },
+    "search": {
+      "icon": {
+        "src": "/img/search.svg",
+        "alt": "Search icon",
+        "width": "20",
+        "height": "20"
+      },
+      "placeholder": "Search NFT"
+    },
     "tags": {
       "items": [
         {
