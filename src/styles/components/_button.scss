@@ -96,3 +96,9 @@
     display: flex;
     gap: 16px;
 }
+
+.section-title--left {
+    & + .button {
+        margin-bottom: 32px;
+    }
+}
