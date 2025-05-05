@@ -49,7 +49,6 @@
   }
   
   &:user-invalid:hover + .radio-label::before {
-    border-color: var(--color-invalid);
     background-color: var(--background-color-cards);
   }
 
