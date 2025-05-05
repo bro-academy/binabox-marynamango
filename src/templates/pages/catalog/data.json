@@ -109,11 +109,12 @@
     }
   ],
   "openIndexes": [1, 2, 6],
-  "asideForm": {
+  "filterForm": {
     "button": {
       "text": "Apply",
       "typeAttr": "submit",
-      "modFirst": "primary"
+      "modFirst": "primary",
+      "modSecond": "full"
     }
   },
   "catalog": {
