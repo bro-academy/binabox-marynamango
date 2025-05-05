@@ -23,10 +23,10 @@
 }
 
 .radio-input {
-  &:focus-visible + .radio-label::before {
+  &:focus + .radio-label::before {
     border-color: var(--color-disabled);
     outline: 2px solid var(--color-focus);
-    outline-offset: 1px;
+    outline-offset: 2px; // Using 2px instead of 1px because with 1px the visual gap does not appear
   }
 
   &:checked + .radio-label::before {
@@ -40,7 +40,7 @@
 
   &:disabled + .radio-label::before {
     background-color: var(--color-separator);
-    border-color: var(--color-separator);
+    border-color: transparent;
   }
 
   &:user-invalid + .radio-label::before {
@@ -51,5 +51,11 @@
   &:user-invalid:hover + .radio-label::before {
     border-color: var(--color-invalid);
     background-color: var(--background-color-cards);
+  }
+
+  &:checked:focus + .radio-label::before {
+    border-color: var(--color-focus);
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px; // Using 2px instead of 1px because with 1px the visual gap does not appear
   }
 }

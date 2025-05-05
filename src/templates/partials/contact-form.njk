@@ -19,7 +19,7 @@
             {% for field in form.fields %}
               {% set input = field %}
               {% if input.type == "radio-group" %}
-                <div class="contact-form__item contact-form__item-radio">
+                <div class="contact-form__item contact-form__item--group">
                   <span class="form-label">{{ input.label }}</span>
                   {% for option in input.options %}
                     <input
