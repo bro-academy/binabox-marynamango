@@ -32,18 +32,18 @@
     background-size: 8px;
     opacity: 0;
   }
-
-  &:hover::before {
-    background-color: var(--background-color-cards);
-  }
-
-  &:active::before {
-    background-color: var(--color-active-background);
-  }
 }
 
 .checkbox-input {
-  &:focus-visible + .checkbox-label::before {
+  &:hover + .checkbox-label::before {
+    background-color: var(--background-color-cards);
+  }
+
+  &:active + .checkbox-label::before {
+    background-color: var(--color-active-background);
+  }
+
+  &:focus + .checkbox-label::before {
     background-color: var(--background-color-secondary);
     border-color: var(--background-color-secondary);
     outline: 2px solid var(--color-focus);
@@ -67,7 +67,7 @@
     border-color: var(--color-invalid);
   }
 
-  &:checked:focus-visible + .checkbox-label::before {
+  &:checked:focus + .checkbox-label::before {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
     outline: 2px solid var(--color-focus);

@@ -16,13 +16,13 @@
     border: 2px solid var(--color-border-default);
     background-color: var(--background-color);
   }
-
-  &:hover::before {
-    background-color: var(--background-color-cards);
-  }
 }
 
 .radio-input {
+  &:hover + .radio-label::before {
+    background-color: var(--background-color-cards);
+  }
+
   &:focus + .radio-label::before {
     border-color: var(--color-disabled);
     outline: 2px solid var(--color-focus);
