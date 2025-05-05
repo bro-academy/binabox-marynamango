@@ -1,8 +1,8 @@
-<aside class="aside-form">
-          <form class="aside-form__form" action="url" method="get">
+<aside class="aside aside--catalog">
+          <form class="filter-form" action="url" method="get">
             {% for filter in filters %}
               {% set title = filter.title %}
-              {% set extraClass = "aside-form__details" %}
+              {% set extraClass = "filter-form__details" %}
               {% set isOpen = openIndexes.includes(loop.index) %}
 
               {% set content %}

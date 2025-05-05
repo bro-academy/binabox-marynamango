@@ -23,7 +23,7 @@
 @use "../components/footer-nav";
 
 @use "../components/hero";
-@use "../components/blog/aside";
+@use "../components/aside";
 @use "../components/tag";
 @use "../components/blog/article";
 
@@ -32,5 +32,5 @@
 @use "../components/radio";
 @use "../components/checkbox";
 
-@use "../components/catalog/aside-form";
+@use "../components/catalog/filter-form";
 @use "../components//catalog/catalog-heading";
