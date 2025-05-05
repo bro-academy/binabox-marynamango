@@ -5,7 +5,7 @@
     <div class="catalog-heading__sorting">
       <label for="sort" class="visually-hidden">{{ catalog.sorting.label }}</label>
       <select id="sort" name="sort" class="catalog-heading__select">
-        <option value="" disabled selected>{{ catalog.sorting.label }}</option>
+        <option value="" disabled selected hidden>{{ catalog.sorting.label }}</option>
 
         {% for option in catalog.sorting.options %}
           <option value="{{ option.value }}">{{ option.text }}</option>
