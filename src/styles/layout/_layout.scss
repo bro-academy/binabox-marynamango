@@ -1,11 +1,12 @@
 .main-container {
     padding-bottom: 40px;
+    padding-top: var(--header-height);
 }
 
 .section-wrapper {
-    max-width: 1632px;
+    max-width: 1728px;
     margin: 0 auto;
-    padding: 64px 16px;
+    padding-inline: 64px;
 }
 
 .page-layout {
