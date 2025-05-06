@@ -1,0 +1,13 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<main class="main-container">
+      {% include "partials/hero.njk" %}
+      <div class="catalog-layout">
+        {% include "partials/filter-form.njk" %}
+        <section class="catalog-content">
+          {% include "partials/catalog-heading.njk" %}
+        </section>
+      </div>
+    </main>
+{% endblock %}

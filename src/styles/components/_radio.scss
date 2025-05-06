@@ -1,0 +1,60 @@
+@use "../base/base" as *;
+
+.radio-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--color-border-default);
+    background-color: var(--background-color);
+  }
+}
+
+.radio-input {
+  &:hover + .radio-label::before {
+    background-color: var(--background-color-cards);
+  }
+
+  &:focus + .radio-label::before {
+    border-color: var(--color-disabled);
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px; // Using 2px instead of 1px because with 1px the visual gap does not appear
+  }
+
+  &:checked + .radio-label::before {
+    border: 5px solid var(--color-accent);
+  }
+
+  &:disabled + .radio-label {
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+  }
+
+  &:disabled + .radio-label::before {
+    background-color: var(--color-separator);
+    border-color: transparent;
+  }
+
+  &:user-invalid + .radio-label::before {
+    border-color: var(--color-invalid);
+    background-color: var(--background-color);
+  }
+  
+  &:user-invalid:hover + .radio-label::before {
+    background-color: var(--background-color-cards);
+  }
+
+  &:checked:focus + .radio-label::before {
+    border-color: var(--color-focus);
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px; // Using 2px instead of 1px because with 1px the visual gap does not appear
+  }
+}

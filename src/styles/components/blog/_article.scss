@@ -4,6 +4,8 @@
 
 .article {
     margin-left: 32px;
+    flex: 1 1 0;
+    min-width: 0; // prevents overflow when content gets wide
 
     .info {
         margin-bottom: 32px;
@@ -28,24 +30,6 @@
 
     &__spotlight {
         background-color: var(--color-accent);
-    }
-
-    &__highlight {
-        color: var(--color-highlight);
-        font-weight: var(--font-weight-bold);
-
-        &:hover {
-            color: var(--color-focus);
-        }
-
-        &:active {
-            color: var(--color-active);
-        }
-
-        &:focus {
-            outline: 4px solid var(--color-focus);
-            border-radius: 5px;
-        }
     }
 
     &__list,

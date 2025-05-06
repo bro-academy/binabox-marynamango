@@ -1,0 +1,32 @@
+@use "../base/base" as *;
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 64px;
+
+  &__item {
+    @include text-md;
+    flex: 1 1 288px;
+    max-width: 328px;
+    padding: 40px 32px;
+    border: 1px solid var(--color-border-default);
+    text-align: center;
+  }
+
+  &__icon {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include heading-title;
+    color: var(--color-primary);
+    margin: 0;
+  }
+
+  &__info {
+    margin: 0;
+    color: var(--color-muted);
+  }
+}

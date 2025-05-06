@@ -48,8 +48,34 @@ button {
     text-align: left;
     margin-top: 0;
     margin-bottom: 16px;
+}
 
-    & + .button {
-        margin-bottom: 32px;
-    }
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.form-label {
+  padding-block: 2px;
+  margin: 0;
+}
+
+.link-highlight {
+  color: var(--color-highlight);
+  font-weight: var(--font-weight-bold);
+
+  &:hover {
+      color: var(--color-focus);
+  }
+
+  &:active {
+      color: var(--color-active);
+  }
+
+  &:focus {
+      outline: 4px solid var(--color-focus);
+      border-radius: 5px;
+  }
 }

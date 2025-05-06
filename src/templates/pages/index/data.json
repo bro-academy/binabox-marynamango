@@ -12,7 +12,11 @@
       "textHeight": 21
     },
     "search": {
-        "placeholder": "search"
+        "placeholder": "Search",
+        "icon": "/img/search.svg",
+        "alt": "Search icon",
+        "width": 20,
+        "height": 20
       },
     "buttons": [
       {
@@ -595,8 +599,8 @@
         "links": [
           { "text": "Home", "url": "index.html" },
           { "text": "Blog", "url": "blog.html" },
-          { "text": "Catalog", "url": "#" },
-          { "text": "Contact us", "url": "#" }
+          { "text": "Catalog", "url": "catalog.html" },
+          { "text": "Contact us", "url": "contact-us.html" }
         ]
       },
       {

@@ -1,9 +1,5 @@
 @use "../base/variables" as *;
 
-@mixin border-style($color) {
-    border-color: #{$color};
-}
-
 @mixin card-background($bg: var(--background-color-cards)) {
     background-color: $bg;
 }

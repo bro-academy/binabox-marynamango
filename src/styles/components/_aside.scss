@@ -1,9 +1,14 @@
 @use "../base/base" as *;
 
 .aside {
-    width: 328px;
-    flex-shrink: 0;
+    &--catalog {
+      flex: 0 0 320px;
+    }
 
+    &--blog {
+      flex: 0 0 328px;
+    }
+    
     &__box {
         @include card-background;
         padding: 24px;

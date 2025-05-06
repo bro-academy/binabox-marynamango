@@ -1,0 +1,83 @@
+<section class="contact-form">
+          <h2 class="contact-form__title">{{ form.title }}</h2>
+          <p class="contact-form__desc">{{ form.description }}</p>
+
+          <form class="contact-form__form" action="url" method="post">
+            <div class="contact-form__toggle">
+              <input
+                class="visually-hidden contact-form__toggle-input"
+                type="checkbox"
+                name="consent"
+                value="agree"
+                id="{{ form.consent.id }}" />
+              <label
+                class="form-label contact-form__toggle-label"
+                for="{{ form.consent.id }}">{{ form.consent.label }}
+              </label>
+            </div>
+
+            {% for field in form.fields %}
+              {% set input = field %}
+              {% if input.type == "radio-group" %}
+                <div class="contact-form__item contact-form__item--group">
+                  <span class="form-label">{{ input.label }}</span>
+                  {% for option in input.options %}
+                    <input
+                      class="visually-hidden radio-input"
+                      type="radio"
+                      id="{{ option.id }}"
+                      name="{{ input.name }}"
+                      value="{{ option.value }}"
+                      {% if input.required and loop.first %}required{% endif %} />
+                    <label class="form-label radio-label" for="{{ option.id }}">
+                      {{option.label }}
+                    </label>
+                  {% endfor %}
+                </div>
+              {% elif input.type == "textarea" %}
+                <div class="contact-form__item">
+                  <label class="form-label" for="{{ input.id }}">{{ input.label }}</label>
+                  <textarea
+                    class="contact-form__input"
+                    id="{{ input.id }}"
+                    name="{{ input.id }}"
+                    rows="{{ input.rows }}"
+                    {% if input.required %}required{% endif%}></textarea>
+                  <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+                </div>
+              {% else %}
+                <div class="contact-form__item">
+                  <label class="form-label" for="{{ input.id }}">{{ input.label }}</label>
+                  <input
+                    class="contact-form__input"
+                    id="{{ input.id }}"
+                    type="{{ input.type }}"
+                    name="{{ input.id }}"
+                    {% if input.required %}required{% endif %}
+                    {% if input.minlength %}minlength="{{ input.minlength }}"{% endif %}
+                    {% if input.min %}min="{{ input.min }}"{% endif %}
+                    {% if input.max %}max="{{ input.max }}"{% endif %}
+                    {% if input.pattern %}pattern="{{ input.pattern | safe }}"{% endif %} />
+                  <span class="contact-form__error" id="{{ input.id }}_error">{{ input.error }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+
+            {% set terms = form.terms %}
+            <div class="contact-form__item">
+              <input
+                class="visually-hidden checkbox-input"
+                type="checkbox"
+                name="{{ terms.id }}"
+                value="agree"
+                id="{{ terms.id }}"
+                required />
+              <label class="form-label checkbox-label" for="{{ terms.id }}">
+                {{ terms.label }}<a class="link-highlight" href="{{ terms.linkUrl}}">{{ terms.linkText }}</a>
+              </label>
+            </div>
+            
+            {% set button = form.button %}
+            {% include "partials/button.njk" %}
+          </form>
+        </section>

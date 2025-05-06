@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<main class="main-container">
+      {% include "partials/hero.njk" %}
+      <div class="contact-layout">
+        {% include "partials/contact-info.njk" %}
+        {% include "partials/contact-form.njk" %}
+      </div>
+    </main>
+{% endblock %}

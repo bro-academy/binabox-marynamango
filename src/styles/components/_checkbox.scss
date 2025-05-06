@@ -1,0 +1,104 @@
+@use "../base/base" as *;
+
+.checkbox-label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    border-radius: 4px;
+    border: 2px solid var(--color-border-default);
+    background-color: var(--background-color);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4px;
+    background-image: url("../img/mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    opacity: 0;
+  }
+}
+
+.checkbox-input {
+  &:hover + .checkbox-label::before {
+    background-color: var(--background-color-cards);
+  }
+
+  &:active + .checkbox-label::before {
+    background-color: var(--color-active-background);
+  }
+
+  &:focus + .checkbox-label::before {
+    background-color: var(--background-color-secondary);
+    border-color: var(--background-color-secondary);
+    outline: 2px solid var(--color-focus);
+  }
+
+  &:disabled + .checkbox-label::before {
+    background-color: var(--color-separator);
+    border-color: transparent;
+  }
+
+  &:checked + .checkbox-label::before {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+    
+  &:checked + .checkbox-label::after {
+    opacity: 1;
+  }
+
+  &:user-invalid + .checkbox-label::before {
+    border-color: var(--color-invalid);
+  }
+
+  &:checked:focus + .checkbox-label::before {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    outline: 2px solid var(--color-focus);
+  }
+
+  &:checked:active + .checkbox-label::before {
+    background-color: var(--color-active-background);
+    border-color: var(--color-active-background);
+  }
+
+  &:checked:active + .checkbox-label::after {
+    filter: invert(32%) sepia(86%) saturate(5779%) hue-rotate(204deg)
+    brightness(95%) contrast(98%);
+  }
+
+  &:checked:disabled + .checkbox-label::before {
+    background-color: var(--color-separator);
+    border-color: transparent;
+  }
+
+  &:checked:disabled + .checkbox-label::after {
+    filter: brightness(0.4) contrast(0.8) grayscale(1);
+  }
+
+  &:checked:hover + .checkbox-label::before {
+    background-color: var(--color-focus);
+    border-color: var(--color-focus);
+  }
+
+  &:user-invalid:hover + .checkbox-label::before {
+    border-color: var(--color-invalid);
+    background-color: var(--color-secondary-hover);
+  }
+}

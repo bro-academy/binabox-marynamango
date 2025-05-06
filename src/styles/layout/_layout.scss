@@ -14,3 +14,22 @@
     max-width: 1416px;
     margin: 0 auto;
 }
+
+.contact-layout {
+  max-width: 1048px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.catalog-layout {
+  max-width: 1728px;
+  margin: 0 auto;
+  padding-inline: 160px;
+  display: flex;
+  gap: 64px;
+}
+
+.catalog-content {
+  flex: 1 1 0;
+  min-width: 0; // prevents overflow when content gets wide
+}

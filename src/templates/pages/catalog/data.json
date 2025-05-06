@@ -1,0 +1,228 @@
+{
+  "title": "Catalog",
+  "header": {
+    "logo": {
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 35,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21,
+      "url": "/"
+    },
+    "search": {
+        "placeholder": "Search",
+        "icon": "/img/search.svg",
+        "alt": "Search icon",
+        "width": 20,
+        "height": 20
+    },
+    "buttons": [
+      {
+        "text": "Discord",
+        "iconAlt": "Discord logo",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "icon": "#",
+        "modFirst": "secondary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      },
+      {
+        "text": "Connect",
+        "iconAlt": "Connect icon",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "icon": "#",
+        "modFirst": "primary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      }
+    ]
+  },
+    "path": "catalog.html",
+      "nav": [
+        {
+          "url": "index.html",
+          "text": "Home"
+        },
+        {
+          "url": "blog.html",
+          "text": "Blog"
+        },
+        {
+          "url": "catalog.html",
+          "text": "Catalog"
+        },
+        {
+          "url": "contact-us.html",
+          "text": "Contact us"
+        }
+      ],
+  "hero": {
+    "title": "Explore catalog",
+    "breadcrumbs": [
+      { "name": "Home", "url": "/" },
+      { "name": "Catalog" }
+    ]
+  },
+  "filters": [
+    {
+      "title": "Clothing",
+      "name": "clothing",
+      "type": "checkbox",
+      "options": ["Combatant", "Ninja", "King", "Queen", "Robot"]
+    },
+    {
+      "title": "Eyes",
+      "name": "eyes",
+      "type": "radio",
+      "options": ["Yellow", "Green", "Mix", "Orange"]
+    },
+    {
+      "title": "Face",
+      "name": "face",
+      "type": "checkbox",
+      "options": ["Round", "Oval", "Square", "Mix"]
+    },
+    {
+      "title": "Skin",
+      "name": "skin",
+      "type": "radio",
+      "options": ["Yellow", "Blue", "Mix", "Beige"]
+    },
+    {
+      "title": "Background",
+      "name": "background",
+      "type": "radio",
+      "options": ["Yellow", "Green", "Mix", "Blue"]
+    },
+    {
+      "title": "Special",
+      "name": "special",
+      "type": "checkbox",
+      "options": ["Yellow", "Green", "Mix", "Orange"]
+    }
+  ],
+  "openIndexes": [1, 2, 6],
+  "filterForm": {
+    "button": {
+      "text": "Apply",
+      "typeAttr": "submit",
+      "modFirst": "primary",
+      "modSecond": "full"
+    }
+  },
+  "catalog": {
+    "title": "All item",
+    "sorting": {
+      "label": "Sort by",
+      "icon": {
+        "src": "/img/chevron-left.svg",
+        "alt": "Dropdown arrow",
+        "width": "24",
+        "height": "24"
+      },
+      "options": [
+        { "value": "newest", "text": "Newest" },
+        { "value": "popular", "text": "Most popular" },
+        { "value": "price-up", "text": "Increasing price" },
+        { "value": "price-down", "text": "Lowering price" }
+      ]
+    },
+    "search": {
+      "icon": {
+        "src": "/img/search.svg",
+        "alt": "Search icon",
+        "width": "20",
+        "height": "20"
+      },
+      "placeholder": "Search NFT"
+    },
+    "tags": {
+      "items": [
+        {
+          "text": "NFT",
+          "removeIcon": {
+            "src": "/img/x-close.svg",
+            "alt": "Remove NFT",
+            "width": "16",
+            "height": "16"
+          }
+        },
+        {
+          "text": "ICO",
+          "removeIcon": {
+            "src": "/img/x-close.svg",
+            "alt": "Remove ICO",
+            "width": "16",
+            "height": "16"
+          }
+        },
+        {
+          "text": "Crypto",
+          "removeIcon": {
+            "src": "/img/x-close.svg",
+            "alt": "Remove Crypto",
+            "width": "16",
+            "height": "16"
+          }
+        }
+      ],
+      "showClear": true,
+      "clearButton": {
+        "text": "Clear all",
+        "typeAttr": "reset",
+        "modFirst": "tertiary",
+        "modSecond": "action-tag-clear"
+      }
+    }
+  },
+  "footer": {
+    "logo":{
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 36,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21,
+      "url": "/"
+    },
+    "description": "We are the best way to check the rarity of NFT collection.",
+    "footerNav": [
+      {
+        "title": "Subscribe",
+        "links": [
+          { "text": "Home", "url": "index.html" },
+          { "text": "Blog", "url": "blog.html" },
+          { "text": "Catalog", "url": "catalog.html" },
+          { "text": "Contact us", "url": "contact-us.html" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "text": "Terms Conditions", "url": "#" },
+          { "text": "Privacy Policy", "url": "#" },
+          { "text": "Whitepaper", "url": "#" },
+          { "text": "Help Center", "url": "#" }
+        ]
+      }
+    ],
+    "copyright": "BINABOX 2022 - All rights reserved",
+    "socials": [
+      { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
+    ]
+  }
+}

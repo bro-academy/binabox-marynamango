@@ -1,0 +1,227 @@
+{
+  "title": "Contact us",
+  "header": {
+    "logo": {
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 35,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21,
+      "url": "/"
+    },
+    "search": {
+        "placeholder": "Search",
+        "icon": "/img/search.svg",
+        "alt": "Search icon",
+        "width": 20,
+        "height": 20
+    },
+    "buttons": [
+      {
+        "text": "Discord",
+        "iconAlt": "Discord logo",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "icon": "#",
+        "modFirst": "secondary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      },
+      {
+        "text": "Connect",
+        "iconAlt": "Connect icon",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "url": "#",
+        "icon": "#",
+        "modFirst": "primary",
+        "modSecond": "icon-left",
+        "target": "_blank"
+      }
+    ]
+  },
+    "path": "contact-us.html",
+      "nav": [
+        {
+          "url": "index.html",
+          "text": "Home"
+        },
+        {
+          "url": "blog.html",
+          "text": "Blog"
+        },
+        {
+          "url": "catalog.html",
+          "text": "Catalog"
+        },
+        {
+          "url": "contact-us.html",
+          "text": "Contact us"
+        }
+      ],
+  "hero": {
+    "title": "Contact Us",
+    "breadcrumbs": [
+      { "name": "Home", "url": "/" },
+      { "name": "Contact Us" }
+    ]
+  },
+  "contacts": [
+    {
+      "src": "#",
+      "alt": "Location pin",
+      "width": "56",
+      "height": "56",
+      "title": "Location",
+      "info": "2163 Phillips Gap Rd",
+      "isLink": false
+    },
+    {
+      "src": "#",
+      "alt": "Email icon",
+      "width": "56",
+      "height": "56",
+      "title": "Email",
+      "info": "Info.avitex@gmail.com",
+      "linkType": "mailto",
+      "isLink": true
+    },
+    {
+      "src": "#",
+      "alt": "Phone icon",
+      "width": "56",
+      "height": "56",
+      "title": "Phone",
+      "info": "+1 666 8888",
+      "linkType": "tel",
+      "isLink": true
+    }
+  ],
+  "form": {
+    "title": "Get in touch",
+    "description": "Browse through the most freuently asked questions",
+    "consent": {
+      "id": "toggle",
+      "label": "Use my profile information"
+    },
+    "fields": [
+      {
+        "type": "text",
+        "id": "name",
+        "label": "Name",
+        "required": true,
+        "minlength": 2,
+        "error": "Please enter your name"
+      },
+      {
+        "type": "text",
+        "id": "surname",
+        "label": "Last name",
+        "required": true,
+        "minlength": 2,
+        "error": "Please enter your surname"
+      },
+      {
+        "type": "date",
+        "id": "birthday",
+        "label": "Date of Birth",
+        "required": true,
+        "min": "1925-04-21",
+        "max": "2007-04-21",
+        "error": "Users must be over 18 years old"
+      },
+      {
+        "type": "radio-group",
+        "label": "Gender",
+        "name": "gender",
+        "required": true,
+        "options": [
+          { "id": "male", "label": "Male", "value": "male" },
+          { "id": "female", "label": "Female", "value": "female" }
+        ]
+      },
+      {
+        "type": "email",
+        "id": "email",
+        "label": "Email",
+        "required": true,
+        "pattern": "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$",
+        "error": "Please enter a valid email"
+      },
+      {
+        "type": "tel",
+        "id": "tel",
+        "label": "Phone Number",
+        "required": true,
+        "minlength": 9,
+        "error": "Please enter a valid phone number"
+      },
+      {
+        "type": "textarea",
+        "id": "message",
+        "label": "Message",
+        "rows": 5,
+        "required": true,
+        "error": "Please enter your message"
+      }
+    ],
+    "terms": {
+      "id": "terms",
+      "label": "By clicking on the \"Send Message\" button I agree to",
+      "linkText": " all the terms of the security policy",
+      "linkUrl": "#"
+    },
+    "button": {
+      "text": "Send Message",
+      "typeAttr": "submit",
+      "modFirst": "primary"
+    }
+  },
+  "footer": {
+    "logo":{
+      "img": "#",
+      "alt": "Binabox logo",
+      "width": 36,
+      "height": 40,
+      "textImg": "#",
+      "textAlt": "Binabox",
+      "textWidth": 133,
+      "textHeight": 21,
+      "url": "/"
+    },
+    "description": "We are the best way to check the rarity of NFT collection.",
+    "footerNav": [
+      {
+        "title": "Subscribe",
+        "links": [
+          { "text": "Home", "url": "index.html" },
+          { "text": "Blog", "url": "blog.html" },
+          { "text": "Catalog", "url": "catalog.html" },
+          { "text": "Contact us", "url": "contact-us.html" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "text": "Terms Conditions", "url": "#" },
+          { "text": "Privacy Policy", "url": "#" },
+          { "text": "Whitepaper", "url": "#" },
+          { "text": "Help Center", "url": "#" }
+        ]
+      }
+    ],
+    "copyright": "BINABOX 2022 - All rights reserved",
+    "socials": [
+      { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
+      { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
+    ]
+  }
+}

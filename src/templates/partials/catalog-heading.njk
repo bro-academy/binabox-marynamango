@@ -1,0 +1,65 @@
+<div class="catalog-heading">
+  <div class="catalog-heading__wrapper catalog-heading__wrapper--top">
+    <h2 class="catalog-heading__title section-title section-title--left">{{ catalog.title }}</h2>
+
+    <div class="catalog-heading__sorting">
+      <label for="sort" class="visually-hidden">{{ catalog.sorting.label }}</label>
+      <select id="sort" name="sort" class="catalog-heading__select">
+        <option value="" disabled selected hidden>{{ catalog.sorting.label }}</option>
+
+        {% for option in catalog.sorting.options %}
+          <option value="{{ option.value }}">{{ option.text }}</option>
+        {% endfor %}
+      </select>
+      <img
+        class="catalog-heading__arrow"
+        src="{{ catalog.sorting.icon.src }}"
+        alt="{{ catalog.sorting.icon.alt }}"
+        width="{{ catalog.sorting.icon.width }}"
+        height="{{ catalog.sorting.icon.height }}" />
+    </div>
+
+    <form class="search catalog-heading__search" action="/search" method="get">
+      <button class="search__button" type="submit">
+        <img
+          class="search__icon"
+          src="{{ catalog.search.icon.src }}"
+          alt="{{ catalog.search.icon.alt }}"
+          width="{{ catalog.search.icon.width }}"
+          height="{{ catalog.search.icon.height }}" />
+      </button>
+      <input
+        class="search__input"
+        type="search"
+        name="q"
+        placeholder="{{ catalog.search.placeholder }}"
+        minlength="3"
+        required />
+    </form>
+  </div>
+
+  <div class="catalog-heading__wrapper catalog-heading__wrapper--bottom">
+    <ul class="action-tag catalog-heading__tags">
+      {% for tag in catalog.tags.items %}
+        <li class="action-tag__item">
+          <button class="action-tag__link" type="button">
+            {{ tag.text }}
+            <span class="visually-hidden">Remove {{ tag.text }}</span>
+            <img
+              src="{{ tag.removeIcon.src }}"
+              alt="{{ tag.removeIcon.alt }}"
+              width="{{ tag.removeIcon.width }}"
+              height="{{ tag.removeIcon.height }}"/>
+          </button>
+        </li>
+      {% endfor %}
+
+      {% if catalog.tags.showClear %}
+        <li class="action-tag__item">
+          {% set button = catalog.tags.clearButton %}
+          {% include "partials/button.njk" %}
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>

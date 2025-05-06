@@ -18,12 +18,19 @@
 @use "../components/home/team-card";
 @use "../components/social";
 @use "../components/home/faq";
+@use "../components/details";
 @use "../components/footer";
 @use "../components/footer-nav";
 
 @use "../components/hero";
-@use "../components/blog/aside";
+@use "../components/aside";
 @use "../components/tag";
 @use "../components/blog/article";
 
+@use "../components/contact-us/contact-info";
+@use "../components/contact-us/contact-form";
+@use "../components/radio";
+@use "../components/checkbox";
 
+@use "../components/catalog/filter-form";
+@use "../components//catalog/catalog-heading";
