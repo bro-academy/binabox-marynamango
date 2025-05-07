@@ -2,10 +2,11 @@
 
 .blog {
     padding-block: 64px;
-    
+
     &__list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
         gap: 32px;
         margin-bottom: 40px;
     }

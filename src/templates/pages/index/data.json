@@ -333,10 +333,10 @@
       {
         "category": "NFT",
         "image": {
-          "src": "img/duck-1x.webp",
-          "alt": "Duck",
+          "src": "img/gamebox-1x.webp",
+          "alt": "Gamebox",
           "width": 736,
-          "height": 198
+          "height": 664
         },
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",
@@ -368,10 +368,10 @@
       {
         "category": "NFT",
         "image": {
-          "src": "img/gamebox-1x.webp",
-          "alt": "Gamebox",
+          "src": "img/duck-1x.webp",
+          "alt": "Duck",
           "width": 736,
-          "height": 664
+          "height": 198
         },
         "title": "Sonic Live",
         "description": "One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet..",

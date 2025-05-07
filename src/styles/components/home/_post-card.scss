@@ -3,8 +3,13 @@
 .post {
     @include card-background;
     padding: 24px;
-    width: calc((100% - 32px) / 2);
     position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &--large {
+      grid-row-end: span 2;
+    }
 
     &__link {
         display: block;
