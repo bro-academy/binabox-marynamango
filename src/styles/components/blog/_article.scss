@@ -55,12 +55,12 @@
         display: flex;
         justify-content: space-between;
 
+        &--tags {
+          gap: 12px;
+        }
+
         .action-tag:not(:last-child) {
             margin-right: 16px;
-        }
-        
-        .action-tag__item:not(:last-child) {
-            margin-right: 4px;
         }
     }
 }

@@ -21,10 +21,12 @@
         gap: 8px;
     }
 
+    &__item {
+        padding: 4px 8px;
+    }
+    
     &__link {
         color: var(--color-secondary);
-        display: inline-block;
-        padding: 4px 8px;
 
         :hover {
             color: var(--color-focus);

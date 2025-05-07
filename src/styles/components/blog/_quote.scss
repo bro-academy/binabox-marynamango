@@ -5,6 +5,9 @@
     padding: 16px;
     border-radius: 16px;
     margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     
     blockquote {
         margin: 0;
@@ -13,17 +16,17 @@
     .quote {
         &__text {
             @include heading-subtitle;
-            margin-top: 0;
-            margin-bottom: 8px;
+            margin-block: 0;
         }
 
         &__footer {
             @include text-sm($fw: var(--font-weight-bold));
+            display: flex;
+            gap: 8px;
         }
 
         &__rating {
             color: var(--color-muted);
-            margin-inline: 8px;
         }
 
         &__author {
