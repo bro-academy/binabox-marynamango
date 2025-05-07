@@ -3,13 +3,14 @@
 .product {
     @include card-background;
     padding: 24px;
-    display: inline-block;
     border-image-slice: 50;
     border-image-width: 50px;
     object-fit: cover;
     outline: none;
     outline-color: transparent;
     transition: outline 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
         border-image-source: url("../img/hover-1x.webp");
