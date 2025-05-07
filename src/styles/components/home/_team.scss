@@ -1,6 +1,8 @@
 @use "../base/base" as *;
 
 .team {
+    padding-block: 64px;
+    
     &__list {
         display: flex;
         gap: 40px;

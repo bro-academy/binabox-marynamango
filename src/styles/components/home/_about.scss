@@ -1,6 +1,7 @@
 @use "../base/base" as *;
 
 .about-us {
+    padding-block: 64px;
     &__desc {
         @include text-lg;
         color: var(--color-muted);

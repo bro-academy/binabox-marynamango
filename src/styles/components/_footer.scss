@@ -4,23 +4,31 @@
     @include card-background(var(--background-color-secondary));
     @include text-sm;
     color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding-block: 64px 32px;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
 
         &:last-child {
-            padding-block: 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--color-secondary-hover);
         }
-    
+        
+        & > .footer__col:first-child {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
         & > .footer__col:last-child {
             display: flex;
             margin-left: 16px;
+            gap: 24px;
         }
-    }
-
-    .logo {
-        margin-bottom: 12px;
     }
 
     &__text {
@@ -28,6 +36,6 @@
     }
 
     .copyright {
-        margin-block: 0;
+        margin: 0 16px 0 0;
     }
 }
