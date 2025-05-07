@@ -3,7 +3,8 @@
 .post {
     @include card-background;
     padding: 24px;
-    flex: 0 0 50%;
+    width: calc((100% - 32px) / 2);
+    position: relative;
 
     &__link {
         display: block;
