@@ -16,7 +16,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        padding: 6px 12px;
+        padding: var(--item-padding);
         cursor: pointer;
 
         &:hover,
