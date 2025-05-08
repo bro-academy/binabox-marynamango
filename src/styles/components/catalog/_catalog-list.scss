@@ -1,0 +1,7 @@
+@use "../base/base" as *;
+
+.catalog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+    gap: 32px;
+}

@@ -8,7 +8,7 @@
 @use "../components/home/promo";
 @use "../layout/layout";
 @use "../components/home/catalog";
-@use "../components/home/product-card";
+@use "../components/product-card";
 @use "../components/home/blog";
 @use "../components/home/post-card";
 @use "../components/home/info";
@@ -32,3 +32,4 @@
 @use "../components/checkbox";
 @use "../components/catalog/filter-form";
 @use "../components//catalog/catalog-heading";
+@use "../components//catalog/catalog-list";

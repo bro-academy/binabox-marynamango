@@ -182,6 +182,125 @@
       }
     }
   },
+  "products": [
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "Popular",
+        "state": "Popular",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "Sold out",
+        "state": "Sold out",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      }
+    ],
   "footer": {
     "logo":{
       "img": "#",
