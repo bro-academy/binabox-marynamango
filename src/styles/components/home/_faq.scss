@@ -1,6 +1,8 @@
 @use "../base/base" as *;
 
 .faq {
+  padding-block: 64px;
+  
   &__item {
     &:not(:last-child) {
       margin-bottom: 24px;

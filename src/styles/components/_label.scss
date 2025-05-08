@@ -5,6 +5,9 @@
     color: var(--color-accent);
     background-color: var(--color-secondary);
     padding: 8px 10px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
 
     &--updated {
         color: var(--color-secondary);

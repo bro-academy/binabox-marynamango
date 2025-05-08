@@ -3,9 +3,9 @@
 @use "../components/blog/quote" as *;
 
 .article {
-    margin-left: 32px;
-    flex: 1 1 0;
+    flex: 1 1 auto;
     min-width: 0; // prevents overflow when content gets wide
+    max-width: calc(100% - 320px - 32px);
 
     .info {
         margin-bottom: 32px;
@@ -43,6 +43,8 @@
     }
 
     &__custom-list {
+        display: flex;
+        flex-direction: column;
         gap: 8px
     }
 
@@ -55,12 +57,12 @@
         display: flex;
         justify-content: space-between;
 
+        &--tags {
+          gap: 12px;
+        }
+
         .action-tag:not(:last-child) {
             margin-right: 16px;
-        }
-        
-        .action-tag__item:not(:last-child) {
-            margin-right: 4px;
         }
     }
 }

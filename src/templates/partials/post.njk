@@ -1,4 +1,4 @@
-<article class="post">
+<article class="post{% if loop.index == 1 or loop.index == 5 %} post--large{% endif %}">
               <a class="post__link" href="{{ post.link }}">
                 <span class="label">{{ post.category }}</span>
                 <img

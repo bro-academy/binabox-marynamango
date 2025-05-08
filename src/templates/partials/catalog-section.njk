@@ -1,5 +1,4 @@
-<section class="catalog">
-        <div class="catalog__wrapper section-wrapper">
+<section class="catalog section-wrapper">
           <div class="catalog__header-wrapper">
             <h2 class="catalog__title catalog__header-wrapper-title">
               <img src="{{ catalog.icon.src }}" alt="{{ catalog.icon.alt }}" width="{{ catalog.icon.width }}" height="{{ catalog.icon.height }}" />{{ catalog.title }}
@@ -10,11 +9,9 @@
             {% endfor %}
             </div>
           </div>
-          <!-- Catalog Products -->
           <div class="catalog__list">
             {% for product in catalog.products %}
               {% include "partials/product-card.njk" %}
             {% endfor %}
           </div>
-        </div>
       </section>

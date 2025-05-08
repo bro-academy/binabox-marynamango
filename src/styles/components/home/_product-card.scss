@@ -3,13 +3,16 @@
 .product {
     @include card-background;
     padding: 24px;
-    display: inline-block;
     border-image-slice: 50;
     border-image-width: 50px;
     object-fit: cover;
     outline: none;
     outline-color: transparent;
     transition: outline 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1 1 300px;
 
     &:hover {
         border-image-source: url("../img/hover-1x.webp");
@@ -24,6 +27,7 @@
     &__img {
         margin-bottom: 24px;
         object-fit: cover;
+        width: 100%;
     }
 
     &__price {
