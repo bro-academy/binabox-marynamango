@@ -119,6 +119,23 @@
   },
   "catalog": {
     "title": "All item",
+    "hoverButtons": [
+      {
+        "text": "Favourites",
+        "icon": "/img/heart.svg",
+        "iconAlt": "Heart icon",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "modFirst": "tertiary",
+        "modSecond": "hover",
+        "modThird": "icon-left"
+      },
+      {
+        "text": "Buy",
+        "modFirst": "primary",
+        "modSecond": "hover"
+      }
+    ],
     "sorting": {
       "label": "Sort by",
       "icon": {
