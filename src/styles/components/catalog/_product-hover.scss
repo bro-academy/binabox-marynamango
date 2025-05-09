@@ -1,0 +1,40 @@
+@use "../base/base" as *;
+
+.product--hover {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(13 13 21 / 0);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+
+  .product--hover-actions {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+
+  &:hover {
+    &::before {
+      background-color: rgb(13 13 21 / 0.7);
+    }
+
+    .product--hover-actions {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}

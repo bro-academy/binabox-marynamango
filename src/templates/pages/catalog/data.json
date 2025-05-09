@@ -119,6 +119,23 @@
   },
   "catalog": {
     "title": "All item",
+    "hoverButtons": [
+      {
+        "text": "Favourites",
+        "icon": "/img/heart.svg",
+        "iconAlt": "Heart icon",
+        "iconWidth": 24,
+        "iconHeight": 24,
+        "modFirst": "tertiary",
+        "modSecond": "hover",
+        "modThird": "icon-left"
+      },
+      {
+        "text": "Buy",
+        "modFirst": "primary",
+        "modSecond": "hover"
+      }
+    ],
     "sorting": {
       "label": "Sort by",
       "icon": {
@@ -182,6 +199,125 @@
       }
     }
   },
+  "products": [
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "Popular",
+        "state": "Popular",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "Sold out",
+        "state": "Sold out",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      },
+      {
+        "label": "New",
+        "state": "New",
+        "image": {
+          "src": "img/face-1x.webp",
+          "alt": "Face",
+          "width": 272,
+          "height": 367
+        },
+        "price": "199$",
+        "name": "Name product",
+        "url": "#"
+      }
+    ],
   "footer": {
     "logo":{
       "img": "#",

@@ -86,8 +86,21 @@
         padding: 12px;
     }
 
+    &--icon-left {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
     &--full {
       width: 100%;
+    }
+
+    &--hover {
+      width: 100%;
+      max-width: 240px;
+      text-align: center;
     }
 }
 

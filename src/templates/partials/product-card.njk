@@ -1,4 +1,4 @@
-<a class="product" href="{{ product.url }}">
+<a class="product{% if catalog.hoverButtons %} product--hover{% endif %}" href="{{ product.url }}">
               <article class="product__card">
                 {% if product.label %}
                 <span class="label{% if product.label == 'Sold out' %} label--updated{% endif %}">{{ product.label }}</span>
@@ -12,5 +12,13 @@
                 />
                 <p class="product__price">{{ product.price }}</p>
                 <h3 class="product__name">{{ product.name }}</h3>
+
+                {% if catalog.hoverButtons %}
+                  <div class="product--hover-actions">
+                    {% for button in catalog.hoverButtons %}
+                      {% include "partials/button.njk" %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
               </article>
             </a>
