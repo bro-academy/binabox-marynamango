@@ -39,6 +39,7 @@
         "url": "#",
         "modFirst": "primary",
         "modSecond": "icon-left",
+        "modThird": "connect",
         "target": "_blank"
       }
     ]

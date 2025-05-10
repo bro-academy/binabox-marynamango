@@ -92,6 +92,20 @@
             order: -1;
         }
     }
+    //Header buttons text visibility
+    .button__text {
+        display: none;
+
+        @include desk {
+            display: inline;
+        }
+    }
+
+    .button--connect .button__text {
+        @include tab {
+            display: inline;
+        }
+    }
 }
 
 .header__toggle:checked ~ .header__burger-logo .header__menu-icon {
