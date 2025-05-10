@@ -7,8 +7,19 @@
     left: 0;
     width: 100%;
     background-color: var(--background-color);
-
     margin-right: 16px; /* Just to not stick to each other */
+
+    .header__toggle:checked ~ & {
+        display: block;
+    }
+
+    @include desk {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        margin: 0;
+    }
 
     &__list {
         list-style: none;
@@ -17,6 +28,12 @@
         gap: 8px;
         padding: 16px; //mobile only
         margin: 0;
+
+        @include desk {
+          flex-direction: row;
+          gap: 0;
+          padding: 0;
+        }
     }
 
     &__link {
@@ -43,8 +60,4 @@
         border-color: var(--color-accent);
         }
     }
-
-    .header__toggle:checked ~ & {
-    display: block;
-  }
 }

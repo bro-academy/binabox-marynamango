@@ -27,6 +27,12 @@
     }
     
     //mobile
+    &__toggle {
+        @include desk {
+            display: none;
+        }
+    }
+
     &__burger-group {
         display: flex;
         gap: 16px;
@@ -43,6 +49,10 @@
         cursor: pointer;
         z-index: 4;
         position: relative;
+
+        @include desk {
+            display: none;
+        }
 
         &-icon,
         &-icon::before,
