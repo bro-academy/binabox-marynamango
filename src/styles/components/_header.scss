@@ -7,7 +7,11 @@
     width: 100%;
     z-index: 3;
     background-color: var(--background-color);
-    padding-block: 32px;
+    padding-block: 16px;
+
+    @include desk {
+      padding-block: 32px;
+    }
     
     &__wrapper {
         max-width: 1728px;
@@ -15,9 +19,19 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-inline: 32px;
+        padding-inline: 16px;
+        
+        @include desk {
+          padding-inline: 32px;
+        }
     }
     
+    //mobile
+    &__burger-group {
+        display: flex;
+        gap: 16px;
+    }
+
     &__menu {
         display: flex;
         flex-direction: column;
@@ -49,22 +63,8 @@
         &-icon::after {
             top: 6px;
         }
-
-        .header__toggle:checked ~ .header__menu &-icon {
-        background-color: transparent;
-
-            &::before {
-                transform: rotate(45deg);
-                top: 0;
-            }
-
-            &::after {
-                transform: rotate(-45deg);
-                top: 0;
-            }
-        }
     }
-
+//desktop
     &__actions {
         display: flex;
         align-items: center;
@@ -82,4 +82,18 @@
             order: -1;
         }
     }
+}
+
+.header__toggle:checked ~ .header__burger-logo .header__menu-icon {
+  background-color: transparent;
+}
+
+.header__toggle:checked ~ .header__burger-logo .header__menu-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.header__toggle:checked ~ .header__burger-logo .header__menu-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
 }

@@ -1,12 +1,21 @@
 @use "../base/base" as *;
 
 .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+
     margin-right: 16px; /* Just to not stick to each other */
 
     &__list {
         list-style: none;
         display: flex;
-        padding: 0;
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px; //mobile only
         margin: 0;
     }
 
@@ -14,7 +23,7 @@
         @include text-md($fw: var(--font-weight-bold));
         color: var(--color-secondary);
         padding: var(--button-padding-small);
-        display: block;
+        display: inline-block;
         border-bottom: 2px solid transparent;
         
         &:hover {
@@ -34,4 +43,8 @@
         border-color: var(--color-accent);
         }
     }
+
+    .header__toggle:checked ~ & {
+    display: block;
+  }
 }
