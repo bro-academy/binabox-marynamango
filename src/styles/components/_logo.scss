@@ -19,7 +19,7 @@
     &__text {
         display: none;
 
-        @include desk {
+        @include tab {
             display: inline;
         }
     }

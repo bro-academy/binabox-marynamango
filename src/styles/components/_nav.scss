@@ -9,11 +9,7 @@
     background-color: var(--background-color);
     margin-right: 16px; /* Just to not stick to each other */
 
-    .header__toggle:checked ~ & {
-        display: block;
-    }
-
-    @include desk {
+    @include laptop {
         display: block;
         position: static;
         width: auto;
@@ -29,7 +25,8 @@
         padding: 16px; //mobile only
         margin: 0;
 
-        @include desk {
+        @include laptop {
+          display: flex;
           flex-direction: row;
           gap: 0;
           padding: 0;
