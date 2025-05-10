@@ -1,6 +1,11 @@
 <header class="header">
       <div class="header__wrapper">
-      <a class="logo" {% if header.logo.url %}href="{{ header.logo.url }}"{% endif %}>
+        {# Toggle Button #}
+        <input type="checkbox" id="nav-toggle" class="header__toggle" hidden />
+        <label for="nav-toggle" class="header__menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+          <span class="header__menu-icon"></span>
+        </label>
+        <a class="logo" {% if header.logo.url %}href="{{ header.logo.url }}"{% endif %}>
           <img src="{{ header.logo.img }}" alt="{{ header.logo.alt }}" width="{{ header.logo.width }}" height="{{ header.logo.height }}" />
           <img src="{{ header.logo.textImg}}" alt="{{ header.logo.textAlt}}" width="{{ header.logo.textWidth }}" height="{{ header.logo.textHeight }}" />
         </a>

@@ -17,6 +17,53 @@
         justify-content: space-between;
         padding-inline: 32px;
     }
+    
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--color-separator);
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 4;
+        position: relative;
+
+        &-icon,
+        &-icon::before,
+        &-icon::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 18px;
+            background-color: var(--color-secondary);
+            transition: all 0.3s ease;
+            position: absolute;
+        }
+
+        &-icon::before {
+            top: -6px;
+        }
+
+        &-icon::after {
+            top: 6px;
+        }
+
+        .header__toggle:checked ~ .header__menu &-icon {
+        background-color: transparent;
+
+            &::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+        }
+    }
 
     &__actions {
         display: flex;
