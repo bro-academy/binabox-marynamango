@@ -2,19 +2,16 @@
 
 .nav {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--background-color);
     margin-right: 16px; /* Just to not stick to each other */
+    //show on toggle
+    .header__toggle:checked ~ .header__nav-wrapper & {
+        display: block;
+    }
 
     @include laptop {
         display: block;
         position: static;
-        width: auto;
         background-color: transparent;
-        margin: 0;
     }
 
     &__list {
@@ -22,7 +19,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
-        padding: 16px; //mobile only
+        padding: 16px;
         margin: 0;
 
         @include laptop {
