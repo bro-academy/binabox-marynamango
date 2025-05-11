@@ -37,6 +37,21 @@
         background-color: var(--background-color);
         padding: 16px;
         z-index: 2;
+
+        .header__toggle:checked ~ & {
+            display: flex;
+        }
+
+        @include laptop {
+            display: flex;
+            position: static;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+            padding: 0;
+            background-color: transparent;
+        }
     }
 
     &__burger-group {
@@ -133,14 +148,4 @@
       top: 0;
     }
   }
-}
-
-.header__toggle:checked ~ .header__nav-wrapper {
-    display: flex;
-}
-
-@include laptop {
-    .header__toggle:checked ~ .header__nav-wrapper {
-        display: none;
-    }
 }
