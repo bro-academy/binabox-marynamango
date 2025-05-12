@@ -12,7 +12,19 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    flex-grow: 0;
+    min-width: 328px;
+
+    @include tab {
+      min-width: 303px; 
+    }
+
+    @include laptop {
+      min-width: 270px;
+    }
+
+    @include desk {
+      min-width: 301px;
+    }
 
     &:hover {
         border-image-source: url("../img/hover-1x.webp");

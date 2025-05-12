@@ -33,6 +33,14 @@
       gap: 8px;
       flex-grow: 1;
 
+      @include tab {
+        @include heading-subtitle;
+      }
+
+      @include laptop {
+        @include text-xl;
+      }
+
       &::after {
         content: "";
         flex-grow: 1;
@@ -71,8 +79,12 @@
     }
 
     &__slider {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        display: flex;
         gap: 24px;
+        overflow-x: auto;
+
+        @include desk {
+          overflow-x: visible; // Disable scroll on desktop
+        }
     }
 }
