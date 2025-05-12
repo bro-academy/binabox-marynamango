@@ -125,7 +125,13 @@
 
 .button-layout {
     display: flex;
+    flex-direction: column;
     gap: 16px;
+    text-align: center;
+
+    @include tab {
+      flex-direction: row;
+    }
 }
 
 .section-title--left {
