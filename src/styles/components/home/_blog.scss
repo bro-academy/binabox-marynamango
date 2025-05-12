@@ -1,13 +1,29 @@
 @use "../base/base" as *;
 
 .blog {
-    padding-block: 64px;
+    padding-block: 32px;
+
+    @include tab {
+        padding-top: 0;
+        padding-bottom: 64px;
+    }
+
+    @include laptop{
+        padding-block: 64px;
+    }
 
     &__list {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
         margin-bottom: 40px;
+        height: 560px;
+
+        @include desk {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
     }
 }
