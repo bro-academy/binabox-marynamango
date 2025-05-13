@@ -2,7 +2,11 @@
 
 .main-container {
     padding-bottom: 40px;
-    padding-top: var(--header-height);
+    padding-top: var(--header-height-small);
+
+    @include laptop {
+      padding-top: var(--header-height);
+    }
 }
 
 .section-wrapper {
