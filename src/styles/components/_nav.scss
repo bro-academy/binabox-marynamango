@@ -1,32 +1,26 @@
 @use "../base/base" as *;
 
 .nav {
-    display: none;
-    margin-right: 16px; /* Just to not stick to each other */
-    //show on toggle
-    .header__toggle:checked ~ .header__nav-wrapper & {
-        display: block;
-    }
-
-    @include laptop {
-        display: block;
-        position: static;
-        background-color: transparent;
+    // Show nav when visible (JS removes `hidden`)
+    &:not([hidden]) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
     }
 
     &__list {
         list-style: none;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 8px;
-        padding: 16px;
+        padding: 0;
         margin: 0;
 
         @include laptop {
-          display: flex;
-          flex-direction: row;
-          gap: 0;
-          padding: 0;
+            flex-direction: row;
+            gap: 0;
         }
     }
 
