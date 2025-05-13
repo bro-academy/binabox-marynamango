@@ -6,24 +6,33 @@
   &__summary {
     @include text-xl;
     color: var(--color-secondary);
-    padding: 24px;
     cursor: pointer;
     outline: none;
     outline-color: transparent;
     transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
     position: relative;
     list-style: none;
+    padding: 16px 48px 16px 16px;
+
+    @include tab{
+      padding: 24px 56px 24px 24px;
+    }
 
     &::after {
       content: "";
       position: absolute;
-      width: 32px;
-      height: 32px;
+      width: 16px;
+      height: 16px;
+      padding: 8px;
       background: url("../img/plus.svg") no-repeat center;
       background-size: contain;
-      right: 24px;
       top: 50%;
       transform: translateY(-50%);
+      right: 16px;
+
+      @include tab{
+        right: 24px;
+      }
     }
 
     .details[open] &::after {
@@ -41,18 +50,30 @@
   }
 
   &[open] &__summary {
-    padding-bottom: 16px;
+    padding-bottom: 24px;
     border-bottom: 1px solid var(--color-secondary-hover);
   }
 
+  .filter-form &[open] &__summary {
+    padding-bottom: 16px;
+  }
+
   &__content {
-    padding: 16px 24px 24px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding: 16px;
+
+    @include tab {
+      padding: 16px 24px 24px;
+    }
 
     .faq__item & {
-      padding-bottom: 32px;
+      padding-bottom: 16px;
+      
+      @include tab {
+        padding-bottom: 32px;
+      }
     }
   }
 }
