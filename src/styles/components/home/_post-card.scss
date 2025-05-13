@@ -6,26 +6,42 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 293px;
+    min-width: 293px; // keep mobile layout fixed
+    min-height: 560px; // keep mobile height consistent
 
     @include tab {
       padding: 24px;
+      min-height: 434px; // all cards have this height from tab up, unless .post--large
+    }
+
+    &:not(.post--large) {
+      @include laptop {
+        grid-column: span 2; // short items span across two columns
+      }
+
+      @include desk {
+        grid-column: span 1;
+      }
     }
 
     &--large {
-      grid-row-end: span 2;
+      grid-row-end: unset;
+
+      @include laptop {
+        grid-row-end: span 2;
+      }
     }
 
     &__link {
         display: block;
         flex: 1 1 auto;
-        outline: none;
         outline-color: transparent;
         transition: outline 0.3s ease-in-out;
         margin-bottom: 16px;
 
         @include tab {
           margin-bottom: 24px;
+          height: 210px; // matches design for tab+
         }
     
         &:hover {
@@ -74,5 +90,10 @@
         line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+
+        @include tab {
+          -webkit-line-clamp: 1;
+          line-clamp: 1;
+        }
     }
 }

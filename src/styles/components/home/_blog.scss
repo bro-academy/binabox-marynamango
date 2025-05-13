@@ -17,13 +17,34 @@
         gap: 16px;
         overflow-x: auto;
         margin-bottom: 40px;
-        height: 560px;
+
+        @include tab {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            overflow-x: unset;
+
+            .post:nth-child(5) {
+                order: 6;
+            }
+
+            .post:nth-child(6) {
+                order: 5;
+            }
+        }
+
+        @include laptop {
+            grid-template-columns: 1fr 64px 1fr;
+            gap: 32px;
+
+            .post:nth-child(5),
+            .post:nth-child(6) {
+                order: unset;
+            }
+        }
 
         @include desk {
-            display: grid;
-            grid-template-rows: auto;
             grid-template-columns: repeat(2, 1fr);
-            gap: 32px;
         }
     }
 }
