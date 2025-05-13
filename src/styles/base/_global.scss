@@ -44,9 +44,13 @@ button {
 }
 
 .section-title {
-    @include mixins.heading-title;
     text-align: center;
     margin: 0 0 40px;
+    @include mixins.heading-subtitle;
+    
+    @include mixins.laptop {
+      @include mixins.heading-title;
+    }
 }
 
 .section-title--alt {
