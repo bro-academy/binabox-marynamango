@@ -19,12 +19,17 @@
         @include laptop {
             display: flex;
             align-items: center;
-            padding-inline: 164px;
+            padding-inline: 118px;
+        }
+
+        @include desk {
+          padding-inline: 164px;
         }
     }
 
     &__content-wrapper {
         padding-block: 32px;
+        flex: 1 1 auto;
 
         @include tab{
             padding-block: 64px;
@@ -72,11 +77,26 @@
         margin: 0;
     }
 
+    &__img-wrapper {
+        @include laptop {
+            display: flex;
+            justify-content: flex-end;
+            flex: 0 0 437px;
+        }
+
+        @include desk {
+            flex: 0 0 533px;
+        }
+    }
+
     &__img {
         display: none;
 
         @include laptop {
-          display: flex;
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
     }
 }

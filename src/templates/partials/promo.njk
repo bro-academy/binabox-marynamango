@@ -21,12 +21,14 @@
               {% endfor %}
             </div>
           </div>
-          <img
-            class="promo__img"
-            src="{{ promo.image.src }}"
-            alt="{{ promo.image.alt }}"
-            width="{{ promo.image.width }}"
-            height="{{ promo.image.height }}"
-          />
+          <div class="promo__img-wrapper">
+            <img
+              class="promo__img"
+              src="{{ promo.image.src }}"
+              alt="{{ promo.image.alt }}"
+              width="{{ promo.image.width }}"
+              height="{{ promo.image.height }}"
+            />
+          </div>
         </div>
       </section>
