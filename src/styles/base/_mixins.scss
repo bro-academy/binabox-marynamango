@@ -24,6 +24,18 @@
     background-color: $bg;
 }
 
+@mixin visually-hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+@mixin visually-shown {
+  opacity: 1;
+  width: auto;
+  height: auto;
+}
+
 //Typography Mixins
 @mixin heading-main {
     font-size: var(--font-size-title-main);

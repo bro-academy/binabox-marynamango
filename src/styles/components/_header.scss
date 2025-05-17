@@ -46,7 +46,7 @@
         position: relative;
 
         @include laptop {
-            display: none;
+            @include visually-hidden;
         }
 
         &-icon,
@@ -86,20 +86,28 @@
     }
 
     &__nav-wrapper {
-        display: none;
-        flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
+        flex-direction: column;
         background-color: var(--background-color);
         padding: 16px;
         z-index: 2;
         gap: 32px;
 
+        // Custom hidden state using [hidden]
+        &[hidden] {
+            opacity: 0;
+            height: 0;
+            pointer-events: none;
+        }
+
         // Show when not hidden (JS-controlled)
         &:not([hidden]) {
-            display: flex;
+            opacity: 1;
+            height: auto;
+            pointer-events: auto;
         }
 
         @include laptop {
@@ -110,6 +118,13 @@
             gap: 40px;
             padding: 0;
             background-color: transparent;
+
+            // Force visibility even if [hidden] is present
+            &[hidden] {
+                opacity: 1;
+                height: auto;
+                pointer-events: auto;
+            }
 
             .search {
                 order: 1;
@@ -140,16 +155,16 @@
     
     //Header buttons text visibility
     .button__text {
-        display: none;
+        @include visually-hidden;
 
         @include laptop {
-            display: inline;
+            @include visually-shown;
         }
     }
 
     .button--connect .button__text {
         @include tab {
-            display: inline;
+          @include visually-shown;
         }
     }
   }
