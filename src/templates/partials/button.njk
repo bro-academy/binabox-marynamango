@@ -7,7 +7,7 @@
       {% if button.icon %}
         <img src="{{ button.icon }}" alt="{{ button.iconAlt }}" width="{{ button.iconWidth }}" height="{{ button.iconHeight }}" />
       {% endif %}
-      {{ button.text }}
+      <span class="button__text">{{ button.text }}</span>
     </a>
 {% else %}
     <button
@@ -17,6 +17,6 @@
       {% if button.icon %}
         <img src="{{ button.icon }}" alt="{{ button.iconAlt }}" width="{{ button.iconWidth }}" height="{{ button.iconHeight }}" />
       {% endif %}
-      {{ button.text }}
+      <span class="button__text">{{ button.text }}</span>
     </button>
 {% endif %}

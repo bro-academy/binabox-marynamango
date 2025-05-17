@@ -1,12 +1,26 @@
+@use "../base/base" as *;
+
 .main-container {
     padding-bottom: 40px;
-    padding-top: var(--header-height);
+    padding-top: var(--header-height-small);
+
+    @include laptop {
+      padding-top: var(--header-height);
+    }
 }
 
 .section-wrapper {
     max-width: 1728px;
     margin: 0 auto;
-    padding-inline: 64px;
+    padding-inline: 16px;
+
+    @include tab {
+      padding-inline: 24px;
+    }
+
+    @include laptop {
+      padding-inline: 64px;
+    }
 }
 
 .blog-layout {

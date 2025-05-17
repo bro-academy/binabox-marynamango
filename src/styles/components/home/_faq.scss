@@ -1,11 +1,24 @@
 @use "../base/base" as *;
 
 .faq {
-  padding-block: 64px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+
+    @include tab {
+      padding-top: 0;
+    }
+
+    @include laptop {
+      padding-block: 64px;
+    }
   
   &__item {
     &:not(:last-child) {
-      margin-bottom: 24px;
+      margin-bottom: 16px;
+
+      @include tab {
+        margin-bottom: 24px;
+      }
     }
   }
 

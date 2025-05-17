@@ -2,7 +2,11 @@
 
 .search {
   position: relative;
-  max-width: 188px;
+  width: 100%;
+
+  @include laptop {
+    max-width: 188px;
+  }
 
   &__button {
     display: flex;
@@ -16,7 +20,6 @@
     background-color: transparent;
     border: 2px solid transparent;
     outline: none;
-    padding: 0;
     cursor: pointer;
 
     &:hover {
@@ -33,10 +36,6 @@
       border-color: var(--color-focus);
       outline: 2px solid var(--color-focus);
     }
-  }
-
-  &__icon {
-    display: block;
   }
 
   &__input {

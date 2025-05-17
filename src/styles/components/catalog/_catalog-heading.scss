@@ -87,6 +87,8 @@
 
   &__search {
     background-color: var(--background-color-secondary);
+    max-width: 423px;
+    width: 100%;
   }
 
   &__tags {
