@@ -1,7 +1,7 @@
 <header class="header">
     <div class="header__wrapper">
         <div class="header__burger-group">
-          <button class="header__menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+          <button type="button" class="header__menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
             <span class="header__menu-icon"></span>
           </button>
           <a class="logo" {% if header.logo.url %}href="{{ header.logo.url }}"{% endif %}>
