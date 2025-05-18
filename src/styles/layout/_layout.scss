@@ -23,8 +23,8 @@
     }
 }
 
-.blog .section-wrapper,
-.team .section-wrapper {
+.blog.section-wrapper,
+.team.section-wrapper {
   padding-right: 0;
 
   @include tab {
