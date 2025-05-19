@@ -1,20 +1,47 @@
+@use "../base/base" as *;
+
 .main-container {
     padding-bottom: 40px;
-    padding-top: var(--header-height);
+    padding-top: var(--header-height-small);
+
+    @include laptop {
+      padding-top: var(--header-height);
+    }
 }
 
 .section-wrapper {
     max-width: 1728px;
     margin: 0 auto;
-    padding-inline: 64px;
+    padding-inline: 16px;
+
+    @include tab {
+      padding-inline: 24px;
+    }
+
+    @include laptop {
+      padding-inline: 64px;
+    }
+}
+
+.blog.section-wrapper,
+.team.section-wrapper {
+  padding-right: 0;
+
+  @include tab {
+    padding-right: 24px;
+  }
+
+  @include laptop {
+    padding-right: 64px;
+  }
 }
 
 .blog-layout {
-    max-width: 1728px;
-    margin: 0 auto;
-    padding: 64px 172px 24px;
-    display: flex;
-    gap: 32px
+  max-width: 1728px;
+  margin: 0 auto;
+  padding: 64px 172px 24px;
+  display: flex;
+  gap: 32px
 }
 
 .contact-layout {

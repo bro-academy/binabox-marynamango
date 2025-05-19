@@ -1,13 +1,24 @@
 <article class="post{% if loop.index == 1 or loop.index == 5 %} post--large{% endif %}">
               <a class="post__link" href="{{ post.link }}">
                 <span class="label">{{ post.category }}</span>
-                <img
-                  class="post__img{% if post.image.alt == 'Skeleton' or post.image.alt == 'Duck' %} post__img--top{% endif %}"
-                  src="{{ post.image.src }}"
-                  alt="{{ post.image.alt }}"
-                  width="{{ post.image.width }}"
-                  height="{{ post.image.height }}"
-                />
+                <picture>
+                  <source 
+                    srcset="{{ post.image.src | replace('-1x.webp', '-1x.avif') }} 1x, {{ post.image.src | replace('-1x.webp', '-2x.avif') }} 2x" 
+                    type="image/avif" 
+                  />
+                  <source 
+                    srcset="{{ post.image.src }} 1x, {{ post.image.src | replace('-1x.webp', '-2x.webp') }} 2x" 
+                    type="image/webp" 
+                  />
+                  <img
+                    class="post__img{% if post.image.alt == 'Skeleton' or post.image.alt == 'Duck' %} post__img--top{% endif %}"
+                    src="{{ post.image.src }}"
+                    alt="{{ post.image.alt }}"
+                    width="{{ post.image.width }}"
+                    height="{{ post.image.height }}"
+                    loading="lazy"
+                  />
+                </picture>
               </a>
               {% set info = post.info %}
               {% include "partials/info.njk" %}

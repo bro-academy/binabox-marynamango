@@ -1,7 +1,17 @@
 @use "../base/base" as *;
 
 .about-us {
-    padding-block: 64px;
+    padding-block: 32px;
+
+    @include tab {
+        padding-top: 0;
+        padding-bottom: 64px;
+    }
+
+    @include laptop{
+        padding-block: 64px;
+    }
+
     &__desc {
         @include text-lg;
         color: var(--color-muted);
@@ -14,8 +24,22 @@
         counter-reset: card;
         padding: 0;
         margin: 0 0 40px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
-        gap: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @include tab {
+          gap: 32px;
+        }
+
+        @include laptop {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include desk {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+        }
     }
 }

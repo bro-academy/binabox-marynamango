@@ -1,9 +1,42 @@
 @use "../base/variables" as *;
 
+//Breakpoint Mixins
+@mixin desk {
+  @media screen and (min-width: #{$screen-desk}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: #{$screen-laptop}) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (min-width: #{$screen-tab}) {
+    @content;
+  }
+}
+
+//Background & Layout
 @mixin card-background($bg: var(--background-color-cards)) {
     background-color: $bg;
 }
 
+@mixin visually-hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+@mixin visually-shown {
+  opacity: 1;
+  width: auto;
+  height: auto;
+}
+
+//Typography Mixins
 @mixin heading-main {
     font-size: var(--font-size-title-main);
     line-height: var(--line-height-title-main);

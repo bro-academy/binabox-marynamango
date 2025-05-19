@@ -18,12 +18,21 @@ body {
     line-height: var(--line-height-base);
     color: var(--color-primary);
     background-color: var(--background-color);
+    min-width: 360px;
 }
 
 h1 {
-    @include mixins.heading-main;
+    @include mixins.heading-subtitle;
     color: var(--color-secondary);
     margin-block: 0;
+
+    @include mixins.tab {
+        @include mixins.heading-title;
+    }
+
+    @include mixins.laptop {
+        @include mixins.heading-main;
+    }
 }
 
 a,
@@ -34,10 +43,18 @@ button {
     text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section-title {
-    @include mixins.heading-title;
     text-align: center;
     margin: 0 0 40px;
+    @include mixins.heading-subtitle;
+    
+    @include mixins.laptop {
+      @include mixins.heading-title;
+    }
 }
 
 .section-title--alt {

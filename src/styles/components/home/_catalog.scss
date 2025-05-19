@@ -1,38 +1,65 @@
 @use "../base/base" as *;
 
 .catalog {
-    padding-block: 64px;
+    padding-block: 32px;
+
+    @include tab {
+      padding-top: 0;
+      padding-bottom: 64px;
+    }
+
+    @include laptop {
+      padding-block: 64px;
+    }
 
     &__header-wrapper {
-        display: flex;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 40px;
+
+      @include tab {
+        flex-wrap: nowrap;
         justify-content: space-between;
-        align-items: center;
-        gap: 32px;
-        margin-bottom: 40px;
-
-        &::before {
-            content: "";
-            min-width: 181px;
-            height: 2px;
-            background-color: var(--color-separator);
-            margin-block: 23px;
-            flex-grow: 1;
-        }
-
-        &-title {
-            order: -1;
-        }
+      }
     }
-    
+
     &__title {
+      @include text-xl;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-grow: 1;
+
+      @include tab {
+        @include heading-subtitle;
+      }
+
+      @include laptop {
         @include text-xl;
-        margin: 0;
+      }
+
+      &::after {
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background-color: var(--color-separator);
+        align-self: center;
+        margin-left: 24px;
+      }
     }
     
     &__controls {
         display: flex;
         align-items: center;
         gap: 16px;
+        flex-grow: 1;
+
+        @include tab {
+          flex-grow: 0;
+        }
     
         &::before {
           content: "";
@@ -43,12 +70,21 @@
 
         .button:first-child {
           order: -1;
+          flex-grow: 1;
+
+          @include tab {
+            flex-grow: 0;
+          }
         }
     }
 
     &__slider {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        display: flex;
         gap: 24px;
+        overflow-x: auto;
+
+        @include desk {
+          overflow-x: visible; // Disable scroll on desktop
+        }
     }
 }

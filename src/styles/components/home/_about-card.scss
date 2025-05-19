@@ -2,11 +2,22 @@
 
 .about-card {
     counter-increment: card;
+
+    &:last-child {
+      @include laptop {
+        grid-column: 1 / -1;
+      }
+
+      @include desk {
+        grid-column: unset;
+      }
+    }
     
     &__link {
         @include card-background(var(--background-color-secondary));
         padding: 32px;
-        display: inline-block;
+        display: block;
+        width: 100%;
         border-image-slice: 50;
         border-image-width: 50px;
         object-fit: cover;
