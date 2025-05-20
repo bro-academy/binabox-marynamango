@@ -79,8 +79,6 @@
 
     &__img-wrapper {
         @include laptop {
-            display: flex;
-            justify-content: flex-end;
             flex: 0 0 437px;
         }
 
