@@ -30,5 +30,9 @@
             border-color: var(--color-focus);
             outline: 2px solid var(--color-focus);
         }
+
+        .article__footer & {
+          padding: 8px;
+        }
     }
 }

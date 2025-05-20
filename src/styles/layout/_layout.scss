@@ -4,8 +4,13 @@
     padding-bottom: 40px;
     padding-top: var(--header-height-small);
 
+    @include tab {
+      padding-bottom: 0;
+    }
+
     @include laptop {
       padding-top: var(--header-height);
+      padding-bottom: 40px;
     }
 }
 
@@ -39,9 +44,23 @@
 .blog-layout {
   max-width: 1728px;
   margin: 0 auto;
-  padding: 64px 172px 24px;
   display: flex;
-  gap: 32px
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 16px 24px;
+
+  @include tab {
+    padding: 24px 64px;
+  }
+
+  @include laptop {
+    padding: 64px 64px 24px;
+    flex-direction: row;
+  }
+
+  @include desk {
+    padding: 64px 172px 24px;
+  }
 }
 
 .contact-layout {
