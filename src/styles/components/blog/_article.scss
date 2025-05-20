@@ -9,7 +9,7 @@
       max-width: calc(100% - 320px - 32px);
       min-width: 0; // prevents overflow when content gets wide
     }
-    
+
     .info {
         margin-bottom: 32px;
     }
@@ -58,7 +58,13 @@
 
     &__footer {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 24px;
+
+        @include tab {
+          flex-direction: row;
+          justify-content: space-between;
+        }
 
         &--tags {
           gap: 12px;
