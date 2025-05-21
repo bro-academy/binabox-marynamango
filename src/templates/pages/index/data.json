@@ -85,10 +85,7 @@
   "catalog": {
     "title": "Catalog",
     "icon": {
-      "src": "#",
-      "alt": "Folder icon",
-      "width": 24,
-      "height": 24
+      "name": "folder"
     },
     "buttons": [
       { 
