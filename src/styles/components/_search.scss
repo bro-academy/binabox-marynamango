@@ -4,10 +4,6 @@
   position: relative;
   width: 100%;
 
-  @include laptop {
-    max-width: 188px;
-  }
-
   &__button {
     display: flex;
     align-items: center;

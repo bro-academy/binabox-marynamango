@@ -134,6 +134,12 @@
         }
     }
 
+    &__search {
+        @include laptop {
+            max-width: 188px;
+        }
+    }
+
     &__actions {
         display: flex;
         align-items: center;
