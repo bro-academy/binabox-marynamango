@@ -45,11 +45,9 @@
           <button class="action-tag__link" type="button">
             {{ tag.text }}
             <span class="visually-hidden">Remove {{ tag.text }}</span>
-            <img
-              src="{{ tag.removeIcon.src }}"
-              alt="{{ tag.removeIcon.alt }}"
-              width="{{ tag.removeIcon.width }}"
-              height="{{ tag.removeIcon.height }}"/>
+            <svg class="icon icon--small" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#x-close"></use>
+            </svg>
           </button>
         </li>
       {% endfor %}

@@ -163,33 +163,9 @@
     },
     "tags": {
       "items": [
-        {
-          "text": "NFT",
-          "removeIcon": {
-            "src": "/img/x-close.svg",
-            "alt": "Remove NFT",
-            "width": "16",
-            "height": "16"
-          }
-        },
-        {
-          "text": "ICO",
-          "removeIcon": {
-            "src": "/img/x-close.svg",
-            "alt": "Remove ICO",
-            "width": "16",
-            "height": "16"
-          }
-        },
-        {
-          "text": "Crypto",
-          "removeIcon": {
-            "src": "/img/x-close.svg",
-            "alt": "Remove Crypto",
-            "width": "16",
-            "height": "16"
-          }
-        }
+        { "text": "NFT" },
+        { "text": "ICO" },
+        { "text": "Crypto" }
       ],
       "showClear": true,
       "clearButton": {
