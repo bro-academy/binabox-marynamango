@@ -92,6 +92,10 @@
   }
 }
 
+.catalog-layout.is-filter-open {
+    gap: 21px;
+}
+
 .catalog-content {
   flex: 1 1 0;
   min-width: 0; // prevents overflow when content gets wide

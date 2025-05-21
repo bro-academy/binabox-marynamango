@@ -24,10 +24,27 @@
         border: 2px solid var(--color-separator);
         background-color: transparent;
         color: var(--color-secondary);
+        position: relative;
 
-      @include laptop {
-          @include visually-hidden;
-          position: absolute;
-      }
+        @include laptop {
+            @include visually-hidden;
+            position: absolute;
+        }
     }
+
+    &__icon {
+        display: inline-block;
+
+        &--close {
+            display: none;
+        }
+    }
+}
+
+.filter-drawer__toggle.is-open .filter-drawer__icon {
+    display: none;
+}
+
+.filter-drawer__toggle.is-open .filter-drawer__icon--close {
+    display: inline-block;
 }
