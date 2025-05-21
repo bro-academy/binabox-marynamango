@@ -57,15 +57,3 @@
         }
     }
 }
-
-.catalog-layout {
-    .aside {
-        @include visually-hidden;
-        position: absolute;
-
-        @include laptop {
-            @include visually-shown;
-            position: sticky;
-        }
-    }
-}
