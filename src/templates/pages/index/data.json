@@ -21,26 +21,26 @@
     "buttons": [
       {
         "text": "Discord",
-        "icon": "#",
-        "iconAlt": "Discord logo",
-        "iconWidth": 24,
-        "iconHeight": 24,
         "url": "#",
         "modFirst": "secondary",
         "modSecond": "icon-left",
-        "target": "_blank"
+        "target": "_blank",
+        "icon": {
+          "name": "discord",
+          "position": "left"
+        }
       },
       {
         "text": "Connect",
-        "icon": "#",
-        "iconAlt": "Connect icon",
-        "iconWidth": 24,
-        "iconHeight": 24,
         "url": "#",
         "modFirst": "primary",
         "modSecond": "icon-left",
         "modThird": "connect",
-        "target": "_blank"
+        "target": "_blank",
+        "icon": {
+          "name": "wallet",
+          "position": "left"
+        }
       }
     ]
   },
