@@ -99,18 +99,20 @@
       {
         "modFirst": "secondary",
         "modSecond": "only-icon",
-        "icon": "#",
-        "iconAlt": "Chevron left",
-        "iconWidth": 24,
-        "iconHeight": 24
+        "typeAttr": "button",
+        "icon": {
+          "name": "chevron-left",
+          "position": "left"
+        }
       },
       {
         "modFirst": "primary",
         "modSecond": "only-icon",
-        "icon": "#",
-        "iconAlt": "Chevron right",
-        "iconWidth": 24,
-        "iconHeight": 24
+        "typeAttr": "button",
+        "icon": {
+          "name": "chevron-right",
+          "position": "left"
+        }
       }
     ],
     "products": [
