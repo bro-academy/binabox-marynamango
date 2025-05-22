@@ -57,13 +57,9 @@
               {% for social in article.share %}
               <li class="action-tag__item">
                 <a class="action-tag__link" href="{{ social.url }}">
-                  <img
-                    class="action-tag__img"
-                    src="{{ social.icon }}"
-                    alt="{{ social.alt }}"
-                    width="{{ social.width }}"
-                    height="{{ social.height }}"
-                  />
+                  <svg class="icon icon--small" aria-hidden="true" focusable="false">
+                    <use href="/img/sprite.svg#{{ social.name }}"></use>
+                  </svg>
                 </a>
               </li>
               {% endfor %}

@@ -217,12 +217,12 @@
     ],
     "copyright": "BINABOX 2022 - All rights reserved",
     "socials": [
-      { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
+      { "name": "twitter", "url":"#" },
+          { "name": "facebook", "url":"#" },
+          { "name": "telegram", "url":"#" },
+          { "name": "youtube", "url":"#" },
+          { "name": "tiktok", "url":"#" },
+          { "name": "discord", "url":"#" }
     ]
   }
 }
