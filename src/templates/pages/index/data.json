@@ -2,45 +2,34 @@
   "title": "Home",
   "header": {
     "logo": {
-      "img": "#",
-      "alt": "Binabox logo",
-      "width": 35,
-      "height": 40,
-      "textImg": "#",
-      "textAlt": "Binabox",
-      "textWidth": 133,
-      "textHeight": 21
+      "img": "logo",
+      "text": "binabox"
     },
     "search": {
         "placeholder": "Search",
-        "icon": "/img/search.svg",
-        "alt": "Search icon",
-        "width": 20,
-        "height": 20
+        "icon": "search"
       },
     "buttons": [
       {
         "text": "Discord",
-        "icon": "#",
-        "iconAlt": "Discord logo",
-        "iconWidth": 24,
-        "iconHeight": 24,
         "url": "#",
         "modFirst": "secondary",
         "modSecond": "icon-left",
-        "target": "_blank"
+        "target": "_blank",
+        "icon": {
+          "name": "discord"
+        }
       },
       {
         "text": "Connect",
-        "icon": "#",
-        "iconAlt": "Connect icon",
-        "iconWidth": 24,
-        "iconHeight": 24,
         "url": "#",
         "modFirst": "primary",
         "modSecond": "icon-left",
         "modThird": "connect",
-        "target": "_blank"
+        "target": "_blank",
+        "icon": {
+          "name": "wallet"
+        }
       }
     ]
   },
@@ -85,10 +74,7 @@
   "catalog": {
     "title": "Catalog",
     "icon": {
-      "src": "#",
-      "alt": "Folder icon",
-      "width": 24,
-      "height": 24
+      "name": "folder"
     },
     "buttons": [
       { 
@@ -99,18 +85,18 @@
       {
         "modFirst": "secondary",
         "modSecond": "only-icon",
-        "icon": "#",
-        "iconAlt": "Chevron left",
-        "iconWidth": 24,
-        "iconHeight": 24
+        "typeAttr": "button",
+        "icon": {
+          "name": "chevron-left"
+        }
       },
       {
         "modFirst": "primary",
         "modSecond": "only-icon",
-        "icon": "#",
-        "iconAlt": "Chevron right",
-        "iconWidth": 24,
-        "iconHeight": 24
+        "typeAttr": "button",
+        "icon": {
+          "name": "chevron-right"
+        }
       }
     ],
     "products": [
@@ -205,25 +191,20 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -240,25 +221,20 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -275,25 +251,20 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -310,25 +281,20 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -345,25 +311,20 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -380,25 +341,20 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       }
     ]
@@ -450,11 +406,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url": "#" },
+          { "name": "facebook", "url": "#" },
+          { "name": "telegram", "url": "#" },
+          { "name": "linkedin", "url": "#" },
+          { "name": "instagram", "url": "#" }
         ]
       },
       {
@@ -467,11 +423,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url": "#" },
+          { "name": "facebook", "url": "#" },
+          { "name": "telegram", "url": "#" },
+          { "name": "linkedin", "url": "#" },
+          { "name": "instagram", "url": "#" }
         ]
       },
       {
@@ -484,11 +440,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url": "#" },
+          { "name": "facebook", "url": "#" },
+          { "name": "telegram", "url": "#" },
+          { "name": "linkedin", "url": "#" },
+          { "name": "instagram", "url": "#" }
         ]
       },
       {
@@ -501,11 +457,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url": "#" },
+          { "name": "facebook", "url": "#" },
+          { "name": "telegram", "url": "#" },
+          { "name": "linkedin", "url": "#" },
+          { "name": "instagram", "url": "#" }
         ]
       },
       {
@@ -518,11 +474,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url": "#" },
+          { "name": "facebook", "url": "#" },
+          { "name": "telegram", "url": "#" },
+          { "name": "linkedin", "url": "#" },
+          { "name": "instagram", "url": "#" }
         ]
       },
       {
@@ -535,11 +491,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url": "#" },
+          { "name": "facebook", "url": "#" },
+          { "name": "telegram", "url": "#" },
+          { "name": "linkedin", "url": "#" },
+          { "name": "instagram", "url": "#" }
         ]
       },
       {
@@ -552,11 +508,11 @@
         "name": "Jason Smith",
         "position": "Co - Founder",
         "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Linkedin", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Instagram", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url": "#" },
+          { "name": "facebook", "url": "#" },
+          { "name": "telegram", "url": "#" },
+          { "name": "linkedin", "url": "#" },
+          { "name": "instagram", "url": "#" }
         ]
       }
     ]
@@ -584,14 +540,8 @@
   },
   "footer": {
     "logo":{
-      "img": "#",
-      "alt": "Binabox logo",
-      "width": 36,
-      "height": 40,
-      "textImg": "#",
-      "textAlt": "Binabox",
-      "textWidth": 133,
-      "textHeight": 21
+      "img": "logo",
+      "text": "binabox"
     },
     "description": "We are the best way to check the rarity of NFT collection.",
     "footerNav": [
@@ -616,12 +566,12 @@
     ],
     "copyright": "BINABOX 2022 - All rights reserved",
     "socials": [
-          { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
-          { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
+          { "name": "twitter", "url":"#" },
+          { "name": "facebook", "url":"#" },
+          { "name": "telegram", "url":"#" },
+          { "name": "youtube", "url":"#" },
+          { "name": "tiktok", "url":"#" },
+          { "name": "discord", "url":"#" }
         ]
   }
 }

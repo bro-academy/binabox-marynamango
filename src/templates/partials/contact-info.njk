@@ -1,12 +1,9 @@
 <section class="contact-info">
           {% for contact in contacts %}
           <div class="contact-info__item">
-            <img
-              class="contact-info__icon"
-              src="{{ contact.src }}"
-              alt="{{ contact.alt }}"
-              width="{{ contact.width }}"
-              height="{{ contact.height }}" />
+            <svg class="contact-info__icon" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#{{ contact.icon.name }}"></use>
+            </svg>
             <h2 class="contact-info__title">{{ contact.title }}</h2>
             {% if contact.isLink %}
             <a class="contact-info__info" href="{{ contact.linkType }}:{{ contact.info }}">{{ contact.info }}</a>

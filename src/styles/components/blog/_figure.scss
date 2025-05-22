@@ -21,9 +21,24 @@
 
 .figure-wrapper {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 32px;
+
+    @include tab {
+        gap: 24px;
+    }
+
+    @include laptop {
+        flex-direction: row;
+
+        .figure {
+            width: 50%;
+        }
+    }
 
     .figure {
-        width: 50%;
+        width: 100%;
+        margin-bottom: 0;
     }
 }

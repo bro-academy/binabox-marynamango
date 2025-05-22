@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    align-items: center;
 
     &__link {
         @include text-sm($fw: var(--font-weight-bold));
@@ -15,6 +16,7 @@
         border: 2px solid var(--color-separator);
         display: inline-flex;
         align-items: center;
+        vertical-align: middle;
         gap: 8px;
         padding: var(--item-padding);
         cursor: pointer;
@@ -29,6 +31,10 @@
             background-color: var(--color-secondary-hover);
             border-color: var(--color-focus);
             outline: 2px solid var(--color-focus);
+        }
+
+        .article__footer & {
+          padding: 8px;
         }
     }
 }

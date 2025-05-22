@@ -2,46 +2,37 @@
   "title": "Catalog",
   "header": {
     "logo": {
-      "img": "#",
-      "alt": "Binabox logo",
-      "width": 35,
-      "height": 40,
-      "textImg": "#",
-      "textAlt": "Binabox",
-      "textWidth": 133,
-      "textHeight": 21,
+      "img": "logo",
+      "text": "binabox",
       "url": "/"
     },
     "search": {
         "placeholder": "Search",
-        "icon": "/img/search.svg",
-        "alt": "Search icon",
-        "width": 20,
-        "height": 20
+        "icon": "search"
     },
     "buttons": [
       {
         "text": "Discord",
-        "iconAlt": "Discord logo",
-        "iconWidth": 24,
-        "iconHeight": 24,
         "url": "#",
-        "icon": "#",
         "modFirst": "secondary",
         "modSecond": "icon-left",
-        "target": "_blank"
+        "target": "_blank",
+        "icon": {
+          "name": "discord",
+          "position": "left"
+        }
       },
       {
         "text": "Connect",
-        "iconAlt": "Connect icon",
-        "iconWidth": 24,
-        "iconHeight": 24,
         "url": "#",
-        "icon": "#",
         "modFirst": "primary",
         "modSecond": "icon-left",
         "modThird": "connect",
-        "target": "_blank"
+        "target": "_blank",
+        "icon": {
+          "name": "wallet",
+          "position": "left"
+        }
       }
     ]
   },
@@ -140,10 +131,7 @@
     "sorting": {
       "label": "Sort by",
       "icon": {
-        "src": "/img/chevron-left.svg",
-        "alt": "Dropdown arrow",
-        "width": "24",
-        "height": "24"
+        "name": "chevron-left"
       },
       "options": [
         { "value": "newest", "text": "Newest" },
@@ -163,33 +151,9 @@
     },
     "tags": {
       "items": [
-        {
-          "text": "NFT",
-          "removeIcon": {
-            "src": "/img/x-close.svg",
-            "alt": "Remove NFT",
-            "width": "16",
-            "height": "16"
-          }
-        },
-        {
-          "text": "ICO",
-          "removeIcon": {
-            "src": "/img/x-close.svg",
-            "alt": "Remove ICO",
-            "width": "16",
-            "height": "16"
-          }
-        },
-        {
-          "text": "Crypto",
-          "removeIcon": {
-            "src": "/img/x-close.svg",
-            "alt": "Remove Crypto",
-            "width": "16",
-            "height": "16"
-          }
-        }
+        { "text": "NFT" },
+        { "text": "ICO" },
+        { "text": "Crypto" }
       ],
       "showClear": true,
       "clearButton": {
@@ -321,14 +285,8 @@
     ],
   "footer": {
     "logo":{
-      "img": "#",
-      "alt": "Binabox logo",
-      "width": 36,
-      "height": 40,
-      "textImg": "#",
-      "textAlt": "Binabox",
-      "textWidth": 133,
-      "textHeight": 21,
+      "img": "logo",
+      "text": "binabox",
       "url": "/"
     },
     "description": "We are the best way to check the rarity of NFT collection.",
@@ -354,12 +312,12 @@
     ],
     "copyright": "BINABOX 2022 - All rights reserved",
     "socials": [
-      { "name": "Twitter", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Facebook", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Telegram", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Youtube", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "TikTok", "url":"#", "icon": "#", "width": 24, "height": 24 },
-      { "name": "Discord", "url":"#", "icon": "#", "width": 24, "height": 24 }
+      { "name": "twitter", "url":"#" },
+          { "name": "facebook", "url":"#" },
+          { "name": "telegram", "url":"#" },
+          { "name": "youtube", "url":"#" },
+          { "name": "tiktok", "url":"#" },
+          { "name": "discord", "url":"#" }
     ]
   }
 }

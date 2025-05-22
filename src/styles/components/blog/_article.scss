@@ -4,8 +4,11 @@
 
 .article {
     flex: 1 1 auto;
-    min-width: 0; // prevents overflow when content gets wide
-    max-width: calc(100% - 320px - 32px);
+
+    @include laptop {
+      max-width: calc(100% - 320px - 32px);
+      min-width: 0; // prevents overflow when content gets wide
+    }
 
     .info {
         margin-bottom: 32px;
@@ -45,7 +48,26 @@
     &__custom-list {
         display: flex;
         flex-direction: column;
-        gap: 8px
+        gap: 8px;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__custom-item {
+        position: relative;
+        padding-left: 32px;
+    }
+
+    &__custom-item::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background: url("/img/logo.svg") no-repeat center center;
+        background-size: contain;
     }
 
     &__subtitle {
@@ -55,7 +77,13 @@
 
     &__footer {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 24px;
+
+        @include tab {
+          flex-direction: row;
+          justify-content: space-between;
+        }
 
         &--tags {
           gap: 12px;

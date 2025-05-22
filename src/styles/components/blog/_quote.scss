@@ -23,10 +23,15 @@
             @include text-sm($fw: var(--font-weight-bold));
             display: flex;
             gap: 8px;
+            align-items: center;
         }
 
         &__rating {
             color: var(--color-muted);
+
+            &-icon {
+              color: var(--color-disabled);
+            }
         }
 
         &__author {

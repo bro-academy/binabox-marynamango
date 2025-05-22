@@ -1,5 +1,4 @@
-<aside class="aside">
-          <form class="filter-form" action="url" method="get">
+<form class="filter-form" action="url" method="get">
             {% for filter in filters %}
               {% set title = filter.title %}
               {% set extraClass = "filter-form__details" %}
@@ -19,4 +18,3 @@
             {% set button = filterForm.button %}
             {% include "partials/button.njk" %}
           </form>
-        </aside>

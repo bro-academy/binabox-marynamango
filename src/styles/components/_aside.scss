@@ -2,9 +2,12 @@
 
 .aside {
     flex: 0 0 320px;
-    position: sticky;
-    top: calc(var(--header-height) + 64px);
-    align-self: start; // ensures sticky works inside flex container
+    
+    @include laptop {
+      position: sticky;
+      top: calc(var(--header-height) + 64px);
+      align-self: start; // ensures sticky works inside flex container
+    }
     
     &__box {
         @include card-background;

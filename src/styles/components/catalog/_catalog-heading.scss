@@ -8,6 +8,11 @@
     align-items: center;
     gap: 16px;
     margin-bottom: 32px;
+    flex-wrap: wrap;
+
+    @include tab {
+      flex-wrap: nowrap;
+    }
 
     &--top {
       justify-content: space-between;
@@ -39,6 +44,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    flex: 0 0 145px;
 
     &:focus-within .catalog-heading__arrow {
       transform: translateY(-50%) rotate(90deg);
@@ -54,6 +60,7 @@
     padding: var(--button-padding);
     cursor: pointer;
     appearance: none;
+    width: 100%;
 
     &:hover {
       border-color: var(--color-focus);
@@ -87,8 +94,11 @@
 
   &__search {
     background-color: var(--background-color-secondary);
-    max-width: 423px;
     width: 100%;
+
+    @include tab {
+      flex: 1;
+    }
   }
 
   &__tags {

@@ -2,8 +2,12 @@
       <div class="footer__wrapper">
         <div class="footer__col">
           <a class="logo" {% if footer.logo.url %}href="{{ footer.logo.url }}"{% endif %}>
-            <img src="{{ footer.logo.img }}" alt="{{ footer.logo.alt }}" width="{{ footer.logo.width }}" height="{{ footer.logo.height }}" />
-            <img src="{{ footer.logo.textImg}}" alt="{{ footer.logo.textAlt }}" width="{{ footer.logo.textWidth}}" height="{{ footer.logo.textHeight }}" />
+            <svg class="logo__img" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#{{ footer.logo.img }}"></use>
+            </svg>
+            <svg class="logo__text logo__text--footer" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#{{ footer.logo.text }}"></use>
+            </svg>
           </a>
           <p class="footer__text">{{ footer.description }}</p>
         </div>

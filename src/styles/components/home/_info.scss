@@ -11,6 +11,16 @@
     &__profile {
         display: flex;
         align-items: center;
+        justify-content: center;
+        order: -1;
+        gap: 8px;
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
     }
 
     &::before {
@@ -19,8 +29,4 @@
         height: 16px;
         background-color: var(--color-separator);
     }
-}
-
-.info-profile {
-    order: -1;
 }

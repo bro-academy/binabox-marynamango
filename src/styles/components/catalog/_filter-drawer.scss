@@ -1,0 +1,50 @@
+@use "../base/base" as *;
+
+.filter-drawer {
+    @include visually-hidden;
+    position: absolute;
+
+    &--open {
+        @include visually-shown;
+        position: static;
+    }
+
+    @include laptop {
+        @include visually-shown;
+        position: sticky;
+    }
+
+    &__toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--button-padding);
+        width: 100%;
+        font-weight: 600;
+        border: 2px solid var(--color-separator);
+        background-color: transparent;
+        color: var(--color-secondary);
+        position: relative;
+
+        @include laptop {
+            @include visually-hidden;
+            position: absolute;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+
+        &--close {
+            display: none;
+        }
+    }
+}
+
+.filter-drawer__toggle.is-open .filter-drawer__icon {
+    display: none;
+}
+
+.filter-drawer__toggle.is-open .filter-drawer__icon--close {
+    display: inline-block;
+}

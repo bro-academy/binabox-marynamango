@@ -3,13 +3,9 @@
               <p class="quote__text">{{ article.quote.text }}</p>
             </blockquote>
             <div class="quote__footer">
-              <img
-                class="quote__rating-icon"
-                src="{{ article.quote.icon }}"
-                alt="{{ article.quote.alt }}"
-                width="{{ article.quote.width }}"
-                height="{{ article.quote.height }}"
-              />
+              <svg class="icon--small quote__rating-icon" aria-hidden="true" focusable="false">
+                <use href="/img/sprite.svg#{{ article.quote.icon }}"></use>
+              </svg>
               <span class="quote__rating">{{ article.quote.rating }}/{{ article.quote.ratingMax }}</span>
               <cite class="quote__author">{{ article.quote.author }}</cite>
             </div>

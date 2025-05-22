@@ -9,10 +9,14 @@
   flex-direction: column;
 
   &__title {
-    @include heading-title;
+    @include heading-subtitle;
     color: var(--color-primary);
     margin: 0 0 8px;
     text-align: center;
+
+    @include tab {
+      @include heading-title;
+    }
   }
 
   &__desc {
