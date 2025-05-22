@@ -47,6 +47,7 @@
 
         @include laptop {
             @include visually-hidden;
+            position: absolute;
         }
 
         &-icon,
