@@ -5,8 +5,12 @@
             <span class="header__menu-icon"></span>
           </button>
           <a class="logo" {% if header.logo.url %}href="{{ header.logo.url }}"{% endif %}>
-            <img src="{{ header.logo.img }}" alt="{{ header.logo.alt }}" width="{{ header.logo.width }}" height="{{ header.logo.height }}" />
-            <img class="logo__text" src="{{ header.logo.textImg}}" alt="{{ header.logo.textAlt}}" width="{{ header.logo.textWidth }}" height="{{ header.logo.textHeight }}" />
+            <svg class="logo__img" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#{{ header.logo.img }}"></use>
+            </svg>
+            <svg class="logo__text" aria-hidden="true" focusable="false">
+              <use href="/img/sprite.svg#{{ header.logo.text }}"></use>
+            </svg>
           </a>
         </div>
 

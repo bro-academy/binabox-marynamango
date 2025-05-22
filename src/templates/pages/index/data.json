@@ -2,14 +2,8 @@
   "title": "Home",
   "header": {
     "logo": {
-      "img": "#",
-      "alt": "Binabox logo",
-      "width": 35,
-      "height": 40,
-      "textImg": "#",
-      "textAlt": "Binabox",
-      "textWidth": 133,
-      "textHeight": 21
+      "img": "logo",
+      "text": "binabox"
     },
     "search": {
         "placeholder": "Search",
@@ -549,14 +543,8 @@
   },
   "footer": {
     "logo":{
-      "img": "#",
-      "alt": "Binabox logo",
-      "width": 36,
-      "height": 40,
-      "textImg": "#",
-      "textAlt": "Binabox",
-      "textWidth": 133,
-      "textHeight": 21
+      "img": "logo",
+      "text": "binabox"
     },
     "description": "We are the best way to check the rarity of NFT collection.",
     "footerNav": [
