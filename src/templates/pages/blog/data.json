@@ -131,10 +131,7 @@
       "rating": "8.5",
       "ratingMax": "10",
       "author": "Markout Corporation",
-      "icon": "#",
-      "alt": "Rating icon",
-      "width": 15,
-      "height": 15
+      "icon": "rating-stars"
     },
     "images": [
       {
