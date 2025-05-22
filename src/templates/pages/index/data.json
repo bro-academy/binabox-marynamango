@@ -200,17 +200,9 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
@@ -238,17 +230,9 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
@@ -276,17 +260,9 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
@@ -314,17 +290,9 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
@@ -352,17 +320,9 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {
@@ -390,17 +350,9 @@
         "info": {
           "author": "Tony Nguyen",
           "date": "20 June 2022",
-          "authorIcon": {
-            "src": "img/user.svg",
-            "alt": "user-icon",
-            "width": 16,
-            "height": 16
-          },
-          "dateIcon": {
-            "src": "img/calendar.svg",
-            "alt": "calendar",
-            "width": 16,
-            "height": 16
+          "icons": {
+            "author": "user",
+            "date": "calendar"
           }
         },
         "button": {

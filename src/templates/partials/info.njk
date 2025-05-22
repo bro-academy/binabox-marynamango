@@ -1,22 +1,14 @@
 <div class="info">
-                <span class="info__profile info-profile">
-                  <img
-                    class="info__profile-icon"
-                    src="{{ info.authorIcon.src }}"
-                    alt="{{ info.authorIcon.alt }}"
-                    width="{{ info.authorIcon.width }}"
-                    height="{{ info.authorIcon.height }}"
-                  />
+                <span class="info__profile">
+                  <svg class="icon icon--small info__profile-icon" aria-hidden="true" focusable="false">
+                    <use href="/img/sprite.svg#{{ info.icons.author }}"></use>
+                  </svg>
                   {{ info.author }}
                 </span>
                 <time class="info__date" datetime="2022-06-20">
-                  <img
-                    class="info__calendar-icon"
-                    src="{{ info.dateIcon.src }}"
-                    alt="{{ info.dateIcon.alt }}"
-                    width="{{ info.dateIcon.width }}"
-                    height="{{ info.dateIcon.height }}"
-                  />
+                  <svg class="icon icon--small info__calendar-icon" aria-hidden="true" focusable="false">
+                    <use href="/img/sprite.svg#{{ info.icons.date }}"></use>
+                  </svg>
                   {{ info.date }}
                 </time>
               </div>
