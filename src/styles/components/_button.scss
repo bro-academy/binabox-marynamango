@@ -85,7 +85,7 @@
     }
 
     &--only-icon {
-        padding: 12px;
+        padding: 10px;
     }
 
     &--icon-left {
@@ -99,6 +99,22 @@
                 padding: var(--button-padding);
                 gap: 8px;
             }
+        }
+    }
+
+    &--icon-right {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        .button__text {
+            order: 0;
+        }
+
+        .icon {
+            order: 1;
+            margin-left: 0;
+            fill: currentColor;
         }
     }
 

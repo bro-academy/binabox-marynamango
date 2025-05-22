@@ -26,8 +26,7 @@
         "modSecond": "icon-left",
         "target": "_blank",
         "icon": {
-          "name": "discord",
-          "position": "left"
+          "name": "discord"
         }
       },
       {
@@ -38,8 +37,7 @@
         "modThird": "connect",
         "target": "_blank",
         "icon": {
-          "name": "wallet",
-          "position": "left"
+          "name": "wallet"
         }
       }
     ]
@@ -98,8 +96,7 @@
         "modSecond": "only-icon",
         "typeAttr": "button",
         "icon": {
-          "name": "chevron-left",
-          "position": "left"
+          "name": "chevron-left"
         }
       },
       {
@@ -107,8 +104,7 @@
         "modSecond": "only-icon",
         "typeAttr": "button",
         "icon": {
-          "name": "chevron-right",
-          "position": "left"
+          "name": "chevron-right"
         }
       }
     ],
@@ -219,10 +215,13 @@
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -254,10 +253,13 @@
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -289,10 +291,13 @@
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -324,10 +329,13 @@
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -359,10 +367,13 @@
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       },
       {
@@ -394,10 +405,13 @@
         },
         "button": {
           "url": "#",
-          "text": "Read more >",
+          "text": "Read more",
           "modFirst": "secondary",
           "modSecond": "icon-right",
-          "modThird": "small"
+          "modThird": "small",
+          "icon": {
+            "name": "chevron-right"
+          }
         }
       }
     ]

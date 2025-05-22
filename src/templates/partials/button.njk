@@ -9,18 +9,14 @@
       class="{% raw %}button{% endraw %}{% if button.modFirst %} {% raw %}button--{% endraw %}{{ button.modFirst }}{% endif %}{% if button.modSecond %} {% raw %}button--{% endraw %}{{ button.modSecond}}{% endif %}{% if button.modThird %} {% raw %}button--{% endraw %}{{ button.modThird}}{% endif %}"
       target="{% if button.target %}_blank{% else %}_self{% endif %}"
     >
-      {% if button.icon and button.icon.position == 'left' %}
-        <svg class="icon icon--left" aria-hidden="true" focusable="false">
+      {% if button.icon %}
+        <svg class="icon" aria-hidden="true" focusable="false">
           <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
         </svg>
       {% endif %}
 
-      <span class="button__text">{{ button.text }}</span>
-
-      {% if button.icon and button.icon.position == 'right' %}
-        <svg class="icon icon--right" aria-hidden="true" focusable="false">
-          <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
-        </svg>
+      {% if button.text %}
+        <span class="button__text">{{ button.text }}</span>
       {% endif %}
     </a>
 {% else %}
@@ -28,18 +24,14 @@
       type="{{ button.typeAttr | default('button') }}"
       class="{{ classes }}"
     >
-      {% if button.icon and button.icon.position == 'left' %}
-        <svg class="icon icon--left" aria-hidden="true" focusable="false">
+      {% if button.icon %}
+        <svg class="icon" aria-hidden="true" focusable="false">
           <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
         </svg>
       {% endif %}
 
-      <span class="button__text">{{ button.text }}</span>
-
-      {% if button.icon and button.icon.position == 'right' %}
-        <svg class="icon icon--right" aria-hidden="true" focusable="false">
-          <use href="/img/sprite.svg#{{ button.icon.name }}"></use>
-        </svg>
+      {% if button.text %}
+        <span class="button__text">{{ button.text }}</span>
       {% endif %}
     </button>
 {% endif %}
