@@ -140,10 +140,7 @@
     "sorting": {
       "label": "Sort by",
       "icon": {
-        "src": "/img/chevron-left.svg",
-        "alt": "Dropdown arrow",
-        "width": "24",
-        "height": "24"
+        "name": "chevron-left"
       },
       "options": [
         { "value": "newest", "text": "Newest" },

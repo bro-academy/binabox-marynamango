@@ -11,12 +11,9 @@
           <option value="{{ option.value }}">{{ option.text }}</option>
         {% endfor %}
       </select>
-      <img
-        class="catalog-heading__arrow"
-        src="{{ catalog.sorting.icon.src }}"
-        alt="{{ catalog.sorting.icon.alt }}"
-        width="{{ catalog.sorting.icon.width }}"
-        height="{{ catalog.sorting.icon.height }}" />
+      <svg class="icon catalog-heading__arrow" aria-hidden="true" focusable="false">
+        <use href="/img/sprite.svg#{{ catalog.sorting.icon.name }}"></use>
+      </svg>
     </div>
 
     <form class="search catalog-heading__search" action="/search" method="get">
